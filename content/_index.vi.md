@@ -1,11 +1,13 @@
 ---
 title: "Báo cáo thực tập"
+date: 2026-07-10
 weight: 1
+chapter: false
 ---
 
 # Báo cáo thực tập
 
-## Thông tin sinh viên
+### Thông tin sinh viên
 
 - **Họ và tên:** Hồ Anh Tuấn
 - **Số điện thoại:** 0783998046
@@ -23,9 +25,8 @@ weight: 1
 
 1. [Worklog](1-Worklog/)
 2. [Proposal](2-Proposal/)
-3. [Blogs](3-BlogsPosted/)
-4. [Sự kiện tham gia](4-EventParticipated/)
+3. [Các bài blogs đã đăng](3-BlogsPosted/)
+4. [Các events đã tham gia](4-EventParticipated/)
 5. [Workshop](5-Workshop/)
 6. [Tự đánh giá](6-Self-evaluation/)
-3. [Blogs](3-BlogsPosted/)
-7. [Phản hồi](7-Feedback/)
+7. [Chia sẻ, đóng góp ý kiến](7-Feedback/)
