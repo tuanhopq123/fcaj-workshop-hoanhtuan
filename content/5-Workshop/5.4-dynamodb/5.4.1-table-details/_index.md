@@ -16,7 +16,7 @@ On the table creation page, proceed to fill in the core configuration details ex
 > ⚠️ **CRITICAL NOTE:** 
 > You must capitalize **PK** and **SK** exactly as shown[cite: 1]. DO NOT write them as lower-case `pk`, `sk`, `roomId`, or `id`[cite: 1]. The backend Lambda function code will interact directly with these exact capitalized keys later on[cite: 1].
 
-![Table Details Configuration](dynamodb-table-details.png)
+![Table Details Configuration](/images/5-Workshop/5.4-dynamodb/dynamodb-open-create-table.png)
 
 ---
 
@@ -30,7 +30,7 @@ Scroll down to configure advanced options optimized for this workshop environmen
 
 > 💡 **Why choose On-demand?** This demo project does not require pre-provisioned read/write capacity limits[cite: 1]. Selecting On-demand reduces configuration steps and fits perfectly for workshop execution[cite: 1].
 
-![On-demand Capacity Mode Configuration](dynamodb-on-demand-settings.png)
+![On-demand Capacity Mode Configuration](/images/5-Workshop/5.4-dynamodb/dynamodb-table-details.png)
 
 ### 3. Finalize Other Default Settings
 * **Secondary indexes:** Leave blank (Do not create)[cite: 1].
@@ -40,4 +40,4 @@ Scroll down to configure advanced options optimized for this workshop environmen
 
 After reviewing all properties, click the **Create table** button at the bottom[cite: 1]. The system will initialize the table until its status switches to **Active**[cite: 1].
 
-![DynamoDB Table in Active Status](dynamodb-table-active.png)
+![DynamoDB Table in Active Status](/images/5-Workshop/5.4-dynamodb/dynamodb-on-demand-settings.png)

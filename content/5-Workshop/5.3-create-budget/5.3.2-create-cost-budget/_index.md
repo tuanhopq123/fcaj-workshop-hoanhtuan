@@ -15,15 +15,15 @@ Follow these steps to set up your cost threshold configurations[cite: 1]:
    * **Budget name:** `energy-waste-project-budget`[cite: 1]
    * **Enter your budgeted amount ($):** `30.00`[cite: 1]
 
-![Create Budget Configuration Form](/images/workshop/create-budget-form.png)
+![Create Budget Configuration Form](/images/5-Workshop/5.3-create-budget/create-budget-form.png)
 > *Figure 5.3.2a: The monthly budget configuration form setup[cite: 1].*
 
 5. After verifying the input information, click **Create budget** at the bottom right to complete the process[cite: 1]. The system will then display a successful creation alert[cite: 1]:
 
-![Budget Created Successfully Alert](/images/workshop/budget-created-successfully.png)
+![Budget Created Successfully Alert](/images/5-Workshop/5.3-create-budget/budget-created-successfully.png)
 > *Figure 5.3.2b: The status display page after the system successfully activates the budget[cite: 1].*
 
 You can monitor and manage your existing budget rules and tracking thresholds directly on the main dashboard[cite: 1].
 
-![Active Budgets Dashboard Overview](/images/workshop/budget.png)
+![Active Budgets Dashboard Overview](/images/5-Workshop/5.3-create-budget/budget.png)
 > *Figure 5.3.2c: Overview list of active account budgets[cite: 1].*

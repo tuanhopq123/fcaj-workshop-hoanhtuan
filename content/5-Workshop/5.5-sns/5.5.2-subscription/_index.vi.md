@@ -17,7 +17,7 @@ Sau khi Topic được khởi tạo, chúng ta cần liên kết một điểm c
    * **Protocol:** Bấm menu xổ xuống và chọn tùy chọn **Email**[cite: 2].
    * **Endpoint:** Nhập chính xác địa chỉ Email cá nhân của bạn (đây sẽ là nơi nhận thư cảnh báo thực tế)[cite: 2].
 
-![Thiết lập thông tin Email Subscription](sns-create-email-subscription.png)
+![Thiết lập thông tin Email Subscription](/images/5-Workshop/5.5-sns/sns-topic-created.png)
 
 4. Nhấn nút **Create subscription** để ghi nhận yêu cầu đăng ký[cite: 2].
 
@@ -33,7 +33,7 @@ Hệ thống bảo mật của AWS đòi hỏi chủ sở hữu Endpoint phải 
 
 Giao diện trình duyệt web sẽ mở ra một tab mới hiển thị thông báo **Subscription confirmed!** kèm theo thông tin mã nhận diện ID[cite: 2].
 
-![Trình duyệt hiển thị Subscription confirmed](sns-email-confirmed-browser.png)
+![Trình duyệt hiển thị Subscription confirmed](/images/5-Workshop/5.5-sns/sns-create-email-subscription.png)
 
 ---
 
@@ -43,4 +43,4 @@ Giao diện trình duyệt web sẽ mở ra một tab mới hiển thị thông 
 2. Kiểm tra danh sách hiển thị ở khu vực **Subscriptions** (Nhấn nút tải lại trang/Refresh nếu giao diện chưa cập nhật)[cite: 2].
 3. Xác nhận cột trạng thái chuyển từ *Pending confirmation* sang màu xanh lá cây: **Confirmed**[cite: 2].
 
-![Xác thực trạng thái Confirmed hoàn tất](sns-subscription-confirmed.png)
+![Xác thực trạng thái Confirmed hoàn tất](/images/5-Workshop/5.5-sns/sns-subscription-confirmed.png)

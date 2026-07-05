@@ -15,7 +15,7 @@ In this practical lab, we will start working with the NoSQL database service **A
 2. Type: `DynamoDB`[cite: 1].
 3. Select the service: **DynamoDB**[cite: 1].
 
-![DynamoDB Dashboard Interface](dynamodb-open-create-table.png)
+![DynamoDB Dashboard Interface](Screenshot-2026-07-01 170457.png)
 
 4. From the left navigation menu, go to **Tables**[cite: 1].
 5. Click the **Create table** button to start configuring a new table[cite: 1].

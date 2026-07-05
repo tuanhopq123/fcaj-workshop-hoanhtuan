@@ -15,7 +15,5 @@ Trong bài thực hành này, chúng ta sẽ bắt đầu làm việc với dị
 2. Gõ cụm từ: `DynamoDB`.
 3. Chọn dịch vụ: **DynamoDB**.
 
-![Giao diện Dashboard DynamoDB](dynamodb-open-create-table.png)
-
 4. Tại menu điều hướng bên trái, chọn mục **Tables**[cite: 1].
 5. Nhấp chọn nút **Create table** để bắt đầu cấu hình bảng mới[cite: 1].

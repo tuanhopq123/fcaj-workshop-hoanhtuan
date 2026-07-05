@@ -17,7 +17,7 @@ With the parent topic established, we must couple a communication endpoint to pr
    * **Protocol:** Click the option dropdown list and choose **Email**[cite: 2].
    * **Endpoint:** Provide your personal, active email address where alert items should be redirected[cite: 2].
 
-![Configuring Email Subscription Settings](sns-create-email-subscription.png)
+![Configuring Email Subscription Settings](/images/5-Workshop/5.5-sns/sns-topic-created.png)
 
 4. Click the **Create subscription** action button[cite: 2].
 
@@ -33,7 +33,7 @@ AWS messaging workflows invoke a safety constraint requiring owner validation be
 
 Your internet browser will open a secondary workspace pane rendering a successful **Subscription confirmed!** block alongside the unique subscription identity string[cite: 2].
 
-![Browser Displaying Subscription Confirmed](sns-email-confirmed-browser.png)
+![Browser Displaying Subscription Confirmed](/images/5-Workshop/5.5-sns/sns-create-email-subscription.png)
 
 ---
 
@@ -43,4 +43,4 @@ Your internet browser will open a secondary workspace pane rendering a successfu
 2. Examine the records pool within the **Subscriptions** layout block (Click the refresh reload option if mandatory)[cite: 2].
 3. Assure that the data column attribute value transitions from *Pending confirmation* to a green label: **Confirmed**[cite: 2].
 
-![Confirming Subscription Status Validation](sns-subscription-confirmed.png)
+![Confirming Subscription Status Validation](/images/5-Workshop/5.5-sns/sns-subscription-confirmed.png)

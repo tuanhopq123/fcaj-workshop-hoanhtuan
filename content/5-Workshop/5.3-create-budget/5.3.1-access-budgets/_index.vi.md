@@ -12,5 +12,5 @@ description: "Hướng dẫn các cách truy cập vào giao diện quản lý A
 * **Cách 2:** Đi theo đường dẫn thanh điều hướng:  
   **Billing and Cost Management** ➔ **Budgets**[cite: 1].
 
-![Giao diện Billing and Cost Management home](/images/workshop/Truy%20c%E1%BA%ADp%20AWS%20Budgets.png)
+![Giao diện Billing and Cost Management home](/images/5-Workshop/5.3-create-budget/truy-cap-aws-budgets.png)
 > *Hình 5.3.1: Giao diện trang chủ Billing and Cost Management[cite: 1].*

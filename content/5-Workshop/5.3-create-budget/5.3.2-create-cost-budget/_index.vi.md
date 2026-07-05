@@ -15,15 +15,15 @@ Thực hiện các bước sau để thiết lập cấu hình hạn mức chi p
    * **Budget name:** `energy-waste-project-budget`[cite: 1]
    * **Enter your budgeted amount ($):** `30.00`[cite: 1]
 
-![Biểu mẫu cấu hình Create Budget](/images/workshop/create-budget-form.png)
+![Biểu mẫu cấu hình Create Budget](/images/5-Workshop/5.3-create-budget/create-budget-form.png)
 > *Hình 5.3.2a: Form nhập thông tin thiết lập ngân sách hàng tháng[cite: 1].*
 
 5. Sau khi kiểm tra thông tin, bấm **Create budget** ở góc dưới để hoàn tất[cite: 1]. Hệ thống sẽ hiển thị thông báo khởi tạo thành công[cite: 1]:
 
-![Thông báo khởi tạo Budget thành công](/images/workshop/budget-created-successfully.png)
+![Thông báo khởi tạo Budget thành công](/images/5-Workshop/5.3-create-budget/budget-created-successfully.png)
 > *Hình 5.3.2b: Trạng thái hiển thị sau khi hệ thống kích hoạt Budget thành công[cite: 1].*
 
 Bạn có thể theo dõi và quản lý danh sách các quy tắc định mức tiền tệ này ngay tại bảng điều khiển chính[cite: 1].
 
-![Danh sách các Budget đang hoạt động](/images/workshop/budget.png)
+![Danh sách các Budget đang hoạt động](/images/5-Workshop/5.3-create-budget/budget.png)
 > *Hình 5.3.2c: Tổng quan danh sách Budgets hiện có của tài khoản[cite: 1].*

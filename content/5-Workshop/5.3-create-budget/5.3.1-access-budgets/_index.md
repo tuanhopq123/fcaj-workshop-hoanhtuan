@@ -10,7 +10,7 @@ To begin the configuration, you can access the budget management page using one 
 
 * **Method 1:** In the AWS Console search bar, type `Budgets` and select the **AWS Budgets** service[cite: 1].
 * **Method 2:** Follow the navigation path:  
-  **Billing and Cost Management** ➔ **Budgets**[cite: 1].
+  **Billing and Cost Management** ➔ **Budgets**[cite: 1]:
 
-![Billing and Cost Management Home Dashboard](/images/workshop/Truy%20c%E1%BA%ADp%20AWS%20Budgets.png)
+![Billing and Cost Management Home Dashboard](/images/5-Workshop/5.3-create-budget/truy-cap-aws-budgets.png)
 > *Figure 5.3.1: The Billing and Cost Management home interface[cite: 1].*
