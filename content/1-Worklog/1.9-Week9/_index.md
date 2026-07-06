@@ -1,57 +1,55 @@
 ---
 title: "Week 9 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
+
+{{% notice warning %}}
+⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** into your report, including this warning.
 {{% /notice %}}
 
+## Week 9 Objectives
 
-### Week 9 Objectives:
+* Complete the remaining Workshop documentation and review all supporting materials.
+* Prepare the Self-evaluation and Feedback sections.
+* Explore future data analytics architecture using AWS Data Lake services.
+* Complete hands-on labs related to AWS Glue, Amazon Athena, and Amazon QuickSight.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+---
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Tasks Completed This Week
 
+| Task | Result |
+|------|--------|
+| Workshop Documentation Review | Finalized the Workshop documentation by reviewing deployment steps, correcting formatting issues, refining code snippets, and completing the Self-evaluation and Feedback sections. |
+| Future Architecture Design | Proposed a future analytics architecture by extending the existing Serverless system with an AWS Data Lake. The design includes exporting operational data to Amazon S3, processing data using AWS Glue, and visualizing business insights through Amazon QuickSight dashboards. |
+| Lab 35 - AWS Glue, Athena & QuickSight | Studied Data Lake architecture, configured AWS Glue Crawlers and ETL jobs, queried data stored in Amazon S3 using Amazon Athena, and created interactive dashboards with Amazon QuickSight for business analytics. |
 
-### Week 9 Achievements:
+---
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+## Achievements
 
-* Successfully created and configured an AWS Free Tier account.
+* Completed the final revision of the Workshop documentation.
+* Prepared the Self-evaluation and Feedback sections required for the internship project.
+* Expanded the system design by proposing a cloud-based data analytics architecture.
+* Improved understanding of Data Lakes, ETL pipelines, metadata management, and business intelligence solutions on AWS.
+* Strengthened knowledge of modern cloud analytics services, including AWS Glue, Amazon Athena, and Amazon QuickSight.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+---
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+## Evaluation
 
-* Used AWS CLI to perform basic operations such as:
+* Successfully achieved all objectives for Week 9.
+* The Workshop documentation is now fully completed and ready for packaging and publication.
+* Learning AWS analytics services provided valuable insight into building scalable reporting and decision-support systems.
+* This week's work enhanced both cloud architecture knowledge and long-term system design capabilities.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+---
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+## Plan for Next Week
+
+* Package the Workshop documentation into the final website and PDF versions.
+* Perform a complete end-to-end validation of the Workshop deployment process.
+* Review all completed AWS labs and finish any remaining exercises before the internship concludes.

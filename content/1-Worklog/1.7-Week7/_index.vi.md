@@ -1,59 +1,56 @@
 ---
 title: "Worklog Tuần 7"
 date: 2024-01-01
-weight: 1
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
+
 {{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+⚠️ **Lưu ý:** Nội dung dưới đây chỉ mang tính chất tham khảo. Vui lòng **không sao chép nguyên văn** vào báo cáo của bạn, bao gồm cả phần lưu ý này.
 {{% /notice %}}
 
+## Mục tiêu Tuần 7
 
-### Mục tiêu tuần 7:
+* Hoàn thiện tài liệu hướng dẫn triển khai hệ thống.
+* Thiết kế giao diện website trình bày Workshop.
+* Chuẩn bị các tập lệnh dọn dẹp tài nguyên AWS.
+* Hoàn thành các bài thực hành về IAM Resource Tags và Permission Boundary.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Công việc thực hiện trong tuần
 
+| Nội dung | Kết quả |
+|----------|----------|
+| Tài liệu Workshop | Xây dựng khung tài liệu hướng dẫn triển khai hệ thống Smart Home Energy Waste Monitoring theo từng bước. Nội dung bao gồm tổng quan hệ thống, kiến trúc Serverless, hướng dẫn cấu hình các dịch vụ AWS và quy trình triển khai. |
+| Thiết kế Website Workshop | Thiết kế giao diện website phục vụ trình bày tài liệu Workshop với bố cục rõ ràng, trực quan và dễ theo dõi, giúp người học dễ dàng thực hiện các bước triển khai. |
+| Clean-up Scripts | Chuẩn bị các AWS CLI Scripts để tự động xóa các tài nguyên như Lambda Functions, DynamoDB Tables, S3 Buckets và CloudWatch Logs sau khi hoàn thành thực hành nhằm tối ưu chi phí. |
+| Lab 28 - Managing EC2 with Resource Tags | Thực hành quản lý quyền truy cập tài nguyên dựa trên Resource Tags bằng IAM Policies và IAM Roles, giúp giới hạn phạm vi thao tác của người dùng theo từng nhóm tài nguyên. |
+| Lab 30 - IAM Permission Boundary | Tìm hiểu và triển khai Permission Boundary nhằm giới hạn quyền tối đa của IAM Users và IAM Roles, ngăn ngừa nguy cơ leo thang đặc quyền trong môi trường AWS. |
 
-### Kết quả đạt được tuần 7:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+## Kết quả đạt được
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Hoàn thành phần lớn tài liệu hướng dẫn triển khai hệ thống.
+* Hoàn thiện giao diện trình bày Workshop phục vụ việc hướng dẫn thực hành.
+* Xây dựng các tập lệnh tự động dọn dẹp tài nguyên nhằm giảm thiểu chi phí phát sinh.
+* Hiểu rõ cách áp dụng Resource Tags và Permission Boundaries để tăng cường bảo mật cho hệ thống AWS.
+* Củng cố kiến thức về quản lý quyền truy cập theo nguyên tắc Least Privilege.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+---
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+## Đánh giá
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Hoàn thành 100% mục tiêu của tuần.
+* Hệ thống tài liệu triển khai đã được xây dựng tương đối đầy đủ và sẵn sàng cho giai đoạn hoàn thiện.
+* Kiến thức từ các bài Lab giúp nâng cao khả năng thiết kế hệ thống AWS theo các tiêu chuẩn bảo mật và quản trị tài nguyên hiện đại.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+---
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+## Kế hoạch tuần tiếp theo
 
-
+* Hoàn thiện toàn bộ nội dung tài liệu Workshop.
+* Kiểm thử lại toàn bộ hệ thống và cập nhật tài liệu theo kết quả thực tế.
+* Tiếp tục hoàn thành các bài thực hành AWS theo lộ trình đào tạo.

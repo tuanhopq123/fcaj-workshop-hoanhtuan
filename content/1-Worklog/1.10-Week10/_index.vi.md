@@ -1,59 +1,57 @@
 ---
-title: "Worklog Tuần 10"
+title: "Nhật ký thực tập Tuần 10"
 date: 2024-01-01
-weight: 2
+weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
+
 {{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+⚠️ **Lưu ý:** Nội dung dưới đây chỉ mang tính chất tham khảo. Vui lòng **không sao chép nguyên văn** vào báo cáo của bạn, bao gồm cả phần cảnh báo này.
 {{% /notice %}}
 
+## Mục tiêu tuần
 
-### Mục tiêu tuần 10:
+* Hoàn thiện và nâng cấp kiến trúc tổng thể của hệ thống theo hướng doanh nghiệp.
+* Thiết kế hạ tầng có tính sẵn sàng cao và khả năng mở rộng tốt hơn.
+* Nghiên cứu các giải pháp lưu trữ và tăng tốc dữ liệu phục vụ mở rộng hệ thống trong tương lai.
+* Hoàn thiện tài liệu kiến trúc cho Workshop.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Công việc đã thực hiện
 
+| Công việc | Kết quả |
+|-----------|----------|
+| Thiết kế kiến trúc doanh nghiệp | Hoàn thiện và tái thiết kế kiến trúc cho dự án **Smart Home Energy Waste Monitoring & Alert System using Virtual Sensors on AWS** theo định hướng kiến trúc Cloud hiện đại, giúp hệ thống dễ mở rộng và quản lý hơn. |
+| Thiết kế hạ tầng High Availability | Xây dựng kiến trúc nhiều Availability Zone, sử dụng cân bằng tải, mạng riêng và kết nối Internet an toàn nhằm tăng khả năng chịu lỗi của hệ thống. |
+| Thiết kế tầng dữ liệu | Đề xuất mô hình lưu trữ dữ liệu kết hợp nhiều loại cơ sở dữ liệu và bộ nhớ đệm nhằm đáp ứng các nhu cầu xử lý khác nhau và hỗ trợ mở rộng trong tương lai. |
+| Tích hợp dịch vụ mở rộng | Thiết kế khả năng tích hợp CDN, dịch vụ lưu trữ, quản lý thông tin bí mật, thông báo và các dịch vụ bên thứ ba theo các tiêu chuẩn bảo mật của AWS. |
+| Hoàn thiện tài liệu kiến trúc | Cập nhật sơ đồ kiến trúc cuối cùng và hoàn thiện tài liệu thiết kế dựa trên các nguyên tắc của AWS Well-Architected Framework. |
 
-### Kết quả đạt được tuần 10:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+## Kết quả đạt được
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Hoàn thành việc thiết kế lại kiến trúc tổng thể của dự án.
+* Nâng cao khả năng mở rộng, tính sẵn sàng và độ an toàn của hệ thống.
+* Hiểu rõ hơn về các mô hình kiến trúc Cloud dành cho hệ thống quy mô doanh nghiệp.
+* Áp dụng các nguyên tắc của AWS Well-Architected Framework vào thiết kế thực tế.
+* Chuẩn bị đầy đủ kiến trúc và tài liệu cho giai đoạn trình bày cuối kỳ.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+---
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+## Đánh giá
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Hoàn thành đầy đủ các mục tiêu của Tuần 10.
+* Kiến trúc mới giúp hệ thống có khả năng mở rộng và bảo trì tốt hơn so với thiết kế ban đầu.
+* Quá trình nghiên cứu các mô hình kiến trúc doanh nghiệp giúp nâng cao tư duy thiết kế hệ thống trên nền tảng AWS.
+* Toàn bộ tài liệu Workshop và kiến trúc hệ thống đã sẵn sàng cho báo cáo và bảo vệ cuối kỳ.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+---
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+## Kế hoạch tuần tới
 
-
+* Rà soát lần cuối toàn bộ tài liệu Workshop.
+* Kiểm tra lại toàn bộ quy trình triển khai trước khi nộp.
+* Chuẩn bị slide và hoàn thành các nội dung báo cáo thực tập.

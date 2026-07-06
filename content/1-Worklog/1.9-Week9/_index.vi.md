@@ -1,59 +1,55 @@
 ---
-title: "Worklog Tuần 9"
+title: "Nhật ký thực tập Tuần 9"
 date: 2024-01-01
-weight: 1
+weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
+
 {{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+⚠️ **Lưu ý:** Nội dung dưới đây chỉ mang tính chất tham khảo. Vui lòng **không sao chép nguyên văn** vào báo cáo của bạn, bao gồm cả phần cảnh báo này.
 {{% /notice %}}
 
+## Mục tiêu tuần
 
-### Mục tiêu tuần 9:
+* Hoàn thiện toàn bộ tài liệu Workshop và rà soát các nội dung còn lại.
+* Hoàn thành mục Tự đánh giá và Phản hồi.
+* Nghiên cứu hướng mở rộng hệ thống bằng kiến trúc Data Lake trên AWS.
+* Hoàn thành bài thực hành về AWS Glue, Amazon Athena và Amazon QuickSight.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Công việc đã thực hiện
 
+| Công việc | Kết quả |
+|-----------|----------|
+| Hoàn thiện tài liệu Workshop | Rà soát toàn bộ tài liệu Workshop, chỉnh sửa định dạng, hoàn thiện các đoạn mã minh họa và bổ sung đầy đủ phần Tự đánh giá cùng Phản hồi theo yêu cầu của chương trình thực tập. |
+| Đề xuất kiến trúc mở rộng | Thiết kế định hướng mở rộng hệ thống bằng kiến trúc Data Lake trên AWS. Đề xuất sử dụng Amazon S3 để lưu trữ dữ liệu, AWS Glue để xử lý ETL và Amazon QuickSight để trực quan hóa dữ liệu phục vụ báo cáo và phân tích. |
+| Lab 35 - AWS Glue, Athena & QuickSight | Tìm hiểu kiến trúc Data Lake, thực hành AWS Glue Crawlers, xây dựng quy trình ETL, truy vấn dữ liệu trên Amazon S3 bằng Amazon Athena và xây dựng Dashboard trực quan với Amazon QuickSight. |
 
-### Kết quả đạt được tuần 9:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+## Kết quả đạt được
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Hoàn thành toàn bộ nội dung tài liệu Workshop.
+* Hoàn thiện phần Tự đánh giá và Phản hồi của dự án.
+* Xây dựng được định hướng phát triển hệ thống theo mô hình phân tích dữ liệu trên nền tảng AWS.
+* Hiểu rõ quy trình xây dựng Data Lake, ETL và trực quan hóa dữ liệu.
+* Nâng cao kiến thức về AWS Glue, Amazon Athena và Amazon QuickSight phục vụ các hệ thống phân tích dữ liệu hiện đại.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+---
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+## Đánh giá
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Hoàn thành đầy đủ các mục tiêu của Tuần 9.
+* Tài liệu Workshop đã sẵn sàng cho giai đoạn đóng gói và công bố.
+* Các kiến thức về Data Lake và Business Intelligence giúp mở rộng tư duy thiết kế hệ thống Cloud theo hướng phân tích dữ liệu.
+* Đây là bước chuẩn bị quan trọng trước khi hoàn thiện toàn bộ dự án và báo cáo thực tập.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+---
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+## Kế hoạch tuần tới
 
-
+* Đóng gói tài liệu Workshop dưới dạng Website và PDF.
+* Kiểm thử toàn bộ quy trình triển khai từ đầu đến cuối.
+* Rà soát lại các bài Lab đã hoàn thành và hoàn tất các nội dung còn lại trước khi kết thúc kỳ thực tập.

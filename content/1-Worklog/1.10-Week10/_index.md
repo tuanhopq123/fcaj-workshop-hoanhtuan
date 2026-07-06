@@ -1,57 +1,57 @@
 ---
 title: "Week 10 Worklog"
 date: 2024-01-01
-weight: 2
+weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
+
+{{% notice warning %}}
+⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** into your report, including this warning.
 {{% /notice %}}
 
+## Week 10 Objectives
 
-### Week 10 Objectives:
+* Improve the overall system architecture to better align with enterprise cloud design principles.
+* Design a highly available infrastructure with enhanced networking and scalability.
+* Explore advanced storage and caching solutions for future system expansion.
+* Finalize the system architecture documentation for the Workshop.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+---
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Tasks Completed This Week
 
+| Task | Result |
+|------|--------|
+| Enterprise Architecture Design | Redesigned the overall architecture of the **Smart Home Energy Waste Monitoring & Alert System using Virtual Sensors on AWS** based on enterprise cloud architecture principles, improving scalability, availability, and maintainability. |
+| High Availability Infrastructure | Designed a highly available network architecture using multiple Availability Zones, Application Load Balancer, private networking, and secure outbound connectivity. |
+| Advanced Data Layer Design | Proposed an enhanced data layer by combining relational databases, document databases, and in-memory caching technologies to support different application workloads and future scalability. |
+| External Service Integration | Extended the architecture to support CDN delivery, secure secret management, cloud storage, notification services, and third-party integrations while maintaining security best practices. |
+| Architecture Documentation | Updated the final architecture documentation and refined the deployment design based on AWS Well-Architected Framework recommendations. |
 
-### Week 10 Achievements:
+---
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+## Achievements
 
-* Successfully created and configured an AWS Free Tier account.
+* Successfully completed the final architecture redesign for the project.
+* Improved the overall scalability, availability, and security of the proposed cloud solution.
+* Expanded knowledge of enterprise cloud architecture patterns and multi-tier application design.
+* Applied AWS Well-Architected Framework concepts when designing the final deployment architecture.
+* Prepared the project architecture for future production-level enhancements.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+---
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+## Evaluation
 
-* Used AWS CLI to perform basic operations such as:
+* Successfully achieved all objectives for Week 10.
+* The redesigned architecture significantly improves the project's scalability, maintainability, and reliability.
+* Researching enterprise cloud architecture provided valuable experience in designing production-ready systems.
+* The Workshop documentation and system architecture are now ready for final presentation.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+---
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+## Plan for Next Week
+
+* Perform a final review of all Workshop documentation.
+* Verify every deployment step before submission.
+* Prepare the final presentation and complete the internship deliverables.

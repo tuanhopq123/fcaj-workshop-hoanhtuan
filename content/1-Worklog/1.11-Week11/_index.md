@@ -1,57 +1,57 @@
 ---
 title: "Week 11 Worklog"
 date: 2024-01-01
-weight: 2
+weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
+
+{{% notice warning %}}
+⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** into your report, including this warning.
 {{% /notice %}}
 
+## Week 11 Objectives
 
-### Week 11 Objectives:
+* Deploy the Report Generator module using AWS Serverless architecture.
+* Integrate AWS Lambda with Amazon DynamoDB and Amazon S3.
+* Strengthen IAM security by applying the Least Privilege principle.
+* Focus on implementing production-ready code instead of completing additional Labs.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+---
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Tasks Completed This Week
 
+| Task | Result |
+|------|--------|
+| AWS Lambda Configuration | Created the **energy-report-generator** Lambda function using Python. Optimized memory allocation and timeout settings to improve report generation performance while maintaining cost efficiency. |
+| Environment Variables | Configured environment variables for DynamoDB tables, Amazon S3 buckets, report prefixes, and application settings to eliminate hardcoded configurations and simplify deployment across multiple environments. |
+| IAM Security Configuration | Implemented IAM Execution Roles following the Least Privilege principle. Granted only the required DynamoDB Query, PutItem, Amazon S3 PutObject, and CloudWatch logging permissions. |
+| Serverless Report Generation | Developed the Report Generator workflow that retrieves data from DynamoDB, generates JSON reports, and automatically stores the generated reports in Amazon S3. |
+| Security Optimization | Reviewed Lambda permissions, configuration management, and logging strategy to ensure the module complies with AWS security best practices. |
 
-### Week 11 Achievements:
+---
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+## Achievements
 
-* Successfully created and configured an AWS Free Tier account.
+* Successfully completed the Serverless Report Generator module.
+* Integrated AWS Lambda, DynamoDB, and Amazon S3 into a complete reporting workflow.
+* Eliminated hardcoded configuration values using Environment Variables.
+* Applied IAM Least Privilege to secure AWS resources.
+* Improved knowledge of Serverless application deployment and security architecture.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+---
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+## Evaluation
 
-* Used AWS CLI to perform basic operations such as:
+* Successfully achieved all objectives for Week 11.
+* The Report Generator module is production-ready and follows AWS Serverless best practices.
+* Security, maintainability, and deployment flexibility were significantly improved through proper IAM policies and environment-based configuration.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+---
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+## Plan for Next Week
+
+* Perform a complete end-to-end system validation.
+* Prepare the final presentation slides and project demonstration.
+* Organize source code, deployment documentation, and cleanup scripts.
+* Review the complete AWS architecture before project submission.

@@ -1,59 +1,56 @@
 ---
 title: "Worklog Tuần 4"
 date: 2024-01-01
-weight: 1
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
+
 {{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+⚠️ **Lưu ý:** Nội dung dưới đây chỉ mang tính chất tham khảo. Vui lòng **không sao chép nguyên văn** vào báo cáo của bạn, bao gồm cả phần lưu ý này.
 {{% /notice %}}
 
+## Mục tiêu Tuần 4
 
-### Mục tiêu tuần 4:
+* Phát triển các hàm AWS Lambda để xử lý nghiệp vụ của hệ thống giám sát điện năng.
+* Kết nối AWS Lambda với Amazon DynamoDB để lưu trữ và truy xuất dữ liệu.
+* Nghiên cứu các giải pháp mạng nâng cao trên AWS thông qua các bài thực hành.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Công việc thực hiện trong tuần
 
+| Nội dung | Kết quả |
+|----------|----------|
+| Phát triển AWS Lambda | Xây dựng các hàm Lambda xử lý dữ liệu từ cảm biến ảo, truy vấn thông tin phòng, thiết bị và cảnh báo lãng phí điện. |
+| Tích hợp Amazon DynamoDB | Kết nối Lambda với DynamoDB để đọc và ghi dữ liệu của hệ thống Smart Home Energy Monitoring. |
+| Thiết kế kiến trúc xử lý | Hoàn thiện luồng xử lý Serverless giữa Lambda và DynamoDB, chuẩn bị cho việc tích hợp API Gateway ở tuần tiếp theo. |
+| Lab 10 - Route 53 Hybrid DNS | Thực hành cấu hình Hybrid DNS với Route 53 Resolver, Inbound/Outbound Endpoints và Resolver Rules. |
+| Lab 19 - VPC Peering & Network ACL | Thiết lập kết nối giữa nhiều VPC bằng VPC Peering, cấu hình Network ACL và Cross-Peering DNS. |
+| Lab 20 - AWS Transit Gateway | Triển khai AWS Transit Gateway để kết nối nhiều VPC, tìm hiểu mô hình mạng ở quy mô doanh nghiệp và thực hiện dọn dẹp tài nguyên sau khi hoàn thành. |
 
-### Kết quả đạt được tuần 4:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+## Kết quả đạt được
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Hoàn thành các hàm AWS Lambda xử lý dữ liệu cho hệ thống giám sát điện năng.
+* Kết nối thành công Lambda với Amazon DynamoDB để lưu trữ và truy xuất dữ liệu.
+* Hiểu được quy trình triển khai ứng dụng Serverless trên AWS.
+* Nắm được sự khác biệt giữa VPC Peering và AWS Transit Gateway trong việc mở rộng hệ thống mạng.
+* Biết cách triển khai Hybrid DNS bằng Amazon Route 53 Resolver.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+---
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+## Đánh giá
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Hoàn thành 100% mục tiêu của tuần.
+* Đã xây dựng được nền tảng xử lý dữ liệu cho hệ thống Smart Home Energy Waste Monitoring.
+* Củng cố kiến thức về kiến trúc mạng AWS và các giải pháp kết nối giữa nhiều VPC.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+---
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+## Kế hoạch tuần tiếp theo
 
-
+* Khởi tạo Amazon API Gateway và xây dựng các RESTful APIs.
+* Tích hợp API Gateway với các hàm AWS Lambda.
+* Kiểm thử API bằng Postman và chuẩn bị cho quá trình triển khai hệ thống.

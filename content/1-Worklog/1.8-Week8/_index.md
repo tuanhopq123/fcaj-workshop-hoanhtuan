@@ -1,57 +1,58 @@
 ---
 title: "Week 8 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
+
+{{% notice warning %}}
+⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** into your report, including this warning.
 {{% /notice %}}
 
+## Week 8 Objectives
 
-### Week 8 Objectives:
+* Finalize the Workshop documentation by completing all remaining deployment instructions.
+* Add API testing procedures and validation results to the Workshop.
+* Improve the system architecture by incorporating AWS KMS and AWS CloudTrail security best practices.
+* Complete hands-on labs related to Amazon RDS, AWS KMS, CloudTrail, Athena, and IAM Roles.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+---
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Tasks Completed This Week
 
+| Task | Result |
+|------|--------|
+| Workshop Documentation | Completed the Workshop guide for the **Smart Home Energy Waste Monitoring & Alert System using Virtual Sensors on AWS** by adding deployment screenshots, API validation procedures, and final documentation updates. |
+| Security Architecture Enhancement | Enhanced the Workshop architecture by introducing AWS KMS for encryption at rest and AWS CloudTrail for auditing and monitoring API activities across AWS services. |
+| Lab 5 - Amazon RDS | Studied Amazon RDS architecture, including Multi-AZ deployment, Read Replicas, storage optimization, and compared relational databases with Amazon DynamoDB. |
+| Lab 33 - AWS KMS, CloudTrail & Athena | Practiced creating AWS KMS encryption keys, enabling CloudTrail for auditing, storing logs in Amazon S3, and querying log data using Amazon Athena. |
+| Lab 44 & Lab 48 - IAM Deep Dive & EC2 Roles | Explored IAM core concepts and implemented IAM Roles for EC2 instances, eliminating the need for hard-coded AWS Access Keys while improving security best practices. |
 
-### Week 8 Achievements:
+---
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+## Achievements
 
-* Successfully created and configured an AWS Free Tier account.
+* Completed the Workshop documentation with deployment screenshots and API validation procedures.
+* Strengthened the overall system security by incorporating encryption and auditing services into the architecture.
+* Gained a deeper understanding of Amazon RDS and its differences compared with Amazon DynamoDB.
+* Learned how AWS KMS, CloudTrail, Athena, and IAM Roles contribute to building secure and production-ready cloud solutions.
+* Reinforced AWS security best practices by eliminating hard-coded credentials through IAM Roles.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+---
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+## Evaluation
 
-* Used AWS CLI to perform basic operations such as:
+* Successfully achieved all objectives for Week 8.
+* The Workshop documentation is now essentially complete and ready for the final review stage.
+* Practical experience with Amazon RDS, AWS KMS, CloudTrail, Athena, and IAM significantly improved my understanding of cloud security, auditing, and database architecture.
+* The knowledge gained this week provides a solid foundation for preparing the final Workshop and presentation.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+---
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+## Plan for Next Week
+
+* Perform a comprehensive review of the Workshop documentation.
+* Refine formatting, code blocks, and deployment instructions.
+* Complete the Self-evaluation and Sharing & Feedback sections.
+* Continue the remaining AWS hands-on labs and monitor the remaining AWS credits.

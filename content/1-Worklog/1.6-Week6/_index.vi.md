@@ -1,58 +1,55 @@
 ---
 title: "Worklog Tuần 6"
 date: 2024-01-01
-weight: 1
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
+
 {{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+⚠️ **Lưu ý:** Nội dung dưới đây chỉ mang tính chất tham khảo. Vui lòng **không sao chép nguyên văn** vào báo cáo của bạn, bao gồm cả phần lưu ý này.
 {{% /notice %}}
 
+## Mục tiêu Tuần 6
 
-### Mục tiêu tuần 6:
+* Tích hợp hệ thống giám sát và ghi log tập trung cho ứng dụng.
+* Kiểm thử toàn bộ luồng xử lý của hệ thống theo mô hình Serverless.
+* Hoàn thành các bài thực hành về AWS Security Hub, AWS Lambda và quản lý tài nguyên bằng Tags.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Công việc thực hiện trong tuần
 
+| Nội dung | Kết quả |
+|----------|----------|
+| Amazon CloudWatch | Tích hợp CloudWatch để thu thập log từ AWS Lambda và API Gateway. Thiết lập Metric Filters và CloudWatch Alarms nhằm theo dõi lỗi hệ thống và gửi cảnh báo qua Amazon SNS khi phát hiện bất thường. |
+| Kiểm thử hệ thống | Thực hiện kiểm thử End-to-End bằng Postman để xác minh các API xử lý dữ liệu cảm biến, cảnh báo lãng phí điện và truy xuất báo cáo. Đồng thời đối chiếu dữ liệu trên DynamoDB với log trong CloudWatch để đảm bảo hệ thống hoạt động chính xác. |
+| Lab 18 - AWS Security Hub | Thực hành kích hoạt và cấu hình AWS Security Hub nhằm đánh giá mức độ bảo mật của tài khoản AWS theo các tiêu chuẩn bảo mật phổ biến như AWS Foundational Security Best Practices và CIS Benchmark. |
+| Lab 22 - Optimizing EC2 Costs with Lambda | Xây dựng giải pháp tự động bật và tắt EC2 theo lịch bằng AWS Lambda kết hợp IAM Role nhằm tối ưu chi phí vận hành và nâng cao hiệu quả quản lý tài nguyên. |
+| Lab 27 - Resource Tags & Resource Groups | Thực hành gán Tags cho tài nguyên AWS và sử dụng Resource Groups để tổ chức, quản lý và tự động hóa các tài nguyên theo từng môi trường hoặc dự án. |
 
-### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+---
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+## Kết quả đạt được
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Hoàn thành việc tích hợp Amazon CloudWatch vào hệ thống Serverless.
+* Thiết lập thành công cơ chế theo dõi log, giám sát lỗi và cảnh báo tự động.
+* Kiểm thử thành công toàn bộ luồng xử lý từ API Gateway đến AWS Lambda và DynamoDB.
+* Hiểu rõ hơn về các giải pháp bảo mật tập trung thông qua AWS Security Hub.
+* Nâng cao kiến thức về tối ưu chi phí bằng AWS Lambda và quản lý tài nguyên thông qua Tags.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+---
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+## Đánh giá
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Hoàn thành 100% mục tiêu của tuần.
+* Hệ thống Smart Home Energy Waste Monitoring đã có khả năng giám sát và theo dõi hoạt động theo thời gian thực.
+* Kiến thức từ các bài Lab giúp nâng cao tư duy thiết kế hệ thống Cloud theo các nguyên tắc bảo mật, khả năng quan sát (Observability) và tối ưu chi phí.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+---
 
+## Kế hoạch tuần tiếp theo
 
+* Hoàn thiện tài liệu hướng dẫn triển khai hệ thống.
+* Xây dựng quy trình triển khai và dọn dẹp tài nguyên trên AWS.
+* Tiếp tục hoàn thành các bài thực hành AWS theo lộ trình đào tạo.
