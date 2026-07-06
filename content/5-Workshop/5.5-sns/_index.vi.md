@@ -1,21 +1,19 @@
 ---
-title: "5.5 Khởi tạo dịch vụ thông báo Amazon SNS"
+title: "5.5 Khởi tạo Dịch vụ Thông báo Amazon SNS"
 weight: 55
 value: 55
-description: "Hướng dẫn các bước truy cập vào dịch vụ Amazon Simple Notification Service để chuẩn bị thiết lập kênh cảnh báo hệ thống."
+description: "Hướng dẫn từng bước truy cập dịch vụ Amazon Simple Notification Service và chuẩn bị tích hợp kênh cảnh báo."
 ---
 
-# 5.5 Mở Amazon SNS
+Trong phần này, chúng ta sẽ làm việc với **Amazon Simple Notification Service (SNS)**. Dịch vụ nhắn tin được quản lý này cho phép hệ thống của chúng ta đẩy các cảnh báo tiêu thụ điện năng tức thời đến người dùng.
 
-Trong phần này, chúng ta sẽ tiếp cận dịch vụ **Amazon Simple Notification Service (SNS)**. Đây là giải pháp quản lý thông báo đẩy giúp hệ thống gửi thông tin cảnh báo tiêu thụ điện năng đến các bên liên quan một cách nhanh chóng.
+Trong phần này, chúng ta sẽ thực hiện ba bước chính:
 
-### Các bước thực hiện:
+### 1. [Tạo SNS Topic](5.5.1-create-topic/)
+Các bước chi tiết để truy cập giao diện điều khiển Amazon SNS, bắt đầu quy trình khởi tạo và cấu hình một Topic mới để phát các thông báo.
 
-1. Trên giao diện quản lý **AWS Console**, di chuyển chuột lên thanh công cụ tìm kiếm trên cùng.
-2. Nhập từ khóa: `SNS`.
-3. Lựa chọn dịch vụ **Simple Notification Service** từ danh sách hiển thị.
+### 2. [Tạo Subscriptions](5.5.2-subscription/)
+Hướng dẫn cách đăng ký các đầu cuối nhận tin của người dùng (như Email hoặc SMS) để đăng ký theo dõi (subscribe) vào Topic vừa tạo nhằm nhận các cảnh báo.
 
-![Truy cập Amazon SNS](sns-open-create-topic.png)
-
-4. Tại danh mục menu điều hướng bên trái, bấm chọn mục **Topics**[cite: 2].
-5. Nhấp chọn nút **Create topic** để chuyển sang bước cấu hình chi tiết[cite: 2].
+### 3. [Kiểm tra Phát Tin nhắn](5.5.3-test-publish/)
+Hướng dẫn cách gửi thử một tin nhắn trực tiếp từ AWS Console để xác minh hệ thống gửi nhận thông báo hoạt động thành công.
