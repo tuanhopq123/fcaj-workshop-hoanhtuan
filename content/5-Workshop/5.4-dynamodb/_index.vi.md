@@ -1,6 +1,6 @@
 ---
 title: "5.4 Khởi tạo Cơ sở Dữ liệu DynamoDB"
-weight: 54
+weight: 4
 value: 54
 description: "Hướng dẫn từng bước để truy cập dịch vụ Amazon DynamoDB và bắt đầu tạo bảng dữ liệu."
 ---

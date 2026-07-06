@@ -1,3 +1,8 @@
+---
+title: "5.6.2 Env variables"
+weight: 1
+---
+
 # 5.6.2 Cấu hình biến môi trường (Environment Variables)
 
 Thay vì viết cứng (hardcode) các thông số hệ thống như tên bảng hoặc mã ARN của topic, chúng ta sẽ sử dụng các biến môi trường để tối ưu hóa việc quản lý cấu hình cho hàm Lambda.

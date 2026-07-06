@@ -1,6 +1,6 @@
 ---
 title: "5.5 Initialize Amazon SNS Notification Service"
-weight: 55
+weight: 5
 value: 55
 description: "Step-by-step instructions to access Amazon Simple Notification Service and prepare for alert channel integration."
 ---

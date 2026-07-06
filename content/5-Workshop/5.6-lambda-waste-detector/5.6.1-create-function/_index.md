@@ -1,3 +1,8 @@
+---
+title: "5.6.1 Create function"
+weight: 1
+---
+
 # 5.6.1 Create AWS Lambda Function
 
 To start processing our IoT ecosystem's telemetry stream, we need to initialize a serverless compute function using AWS Lambda.

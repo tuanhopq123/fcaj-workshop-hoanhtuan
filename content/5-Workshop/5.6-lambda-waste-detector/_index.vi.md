@@ -1,6 +1,6 @@
 ---
 title: "5.6 Cấu hình AWS Lambda và Kiểm thử Hệ thống"
-weight: 56
+weight: 6
 value: 56
 description: "Tổng quan về việc triển khai AWS Lambda để xử lý dữ liệu đo lường IoT và thực hiện kiểm thử tích hợp toàn diện."
 ---

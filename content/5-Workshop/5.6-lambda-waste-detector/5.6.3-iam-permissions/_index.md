@@ -1,3 +1,8 @@
+---
+title: "5.6.3 IAM permission"
+weight: 1
+---
+
 # 5.6.3 Configure IAM Execution Permissions
 
 By default, an AWS Lambda function does not have permission to write to DynamoDB or publish notifications to Amazon SNS. We must attach an inline security policy to grant these operational privileges.

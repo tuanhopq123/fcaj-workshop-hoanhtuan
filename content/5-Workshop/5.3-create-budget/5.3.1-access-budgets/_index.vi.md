@@ -2,7 +2,7 @@
 title: "5.3.1 Truy cập AWS Budgets"
 date: 2026-07-05T21:01:00+07:00
 draft: false
-weight: 531
+weight: 3
 description: "Hướng dẫn các cách truy cập vào giao diện quản lý AWS Budgets."
 ---
 

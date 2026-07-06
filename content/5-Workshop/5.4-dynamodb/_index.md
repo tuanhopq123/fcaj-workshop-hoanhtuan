@@ -1,7 +1,7 @@
 ---
 title: "5.4 Initialize DynamoDB Database"
-weight: 54
-value: 54
+weight: 4
+value: 4
 description: "Step-by-step guide to open Amazon DynamoDB service and start creating a data table."
 ---
 

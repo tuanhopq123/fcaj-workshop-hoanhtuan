@@ -1,3 +1,8 @@
+---
+title: "5.6.3 IAM permission"
+weight: 1
+---
+
 # 5.6.3 Cấu hình phân quyền IAM cho Lambda
 
 Mặc định, một hàm AWS Lambda sẽ không có quyền ghi dữ liệu vào DynamoDB hay gửi thông báo tới Amazon SNS. Chúng ta cần gán một chính sách bảo mật nội bộ (inline policy) để cấp các đặc quyền vận hành này.
