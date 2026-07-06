@@ -13,3 +13,9 @@ Trong phần này, chúng ta sẽ tạo **HTTP API** bằng Amazon API Gateway. 
 #### Nội dung
 
 - [Tạo HTTP API](5.12.1-create-http-api/)
+- [Tạo các API Routes](5.12.2-create-api-routes/)
+- [Chuẩn bị thông tin Amazon Cognito](5.12.3-prepare-cognito-info/)
+- [Tạo JWT Authorizer](5.12.4-create-jwt-authorizer/)
+- [Gắn JWT Authorizer vào các Routes](5.12.5-attach-authorizer/)
+- [Cấu hình CORS](5.12.6-configure-cors/)
+- [Kiểm tra Stage $default](5.12.7-check-default-stage/)

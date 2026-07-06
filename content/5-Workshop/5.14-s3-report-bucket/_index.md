@@ -14,3 +14,9 @@ In this section, you will create and configure an Amazon S3 bucket. This bucket 
 
 - [Create S3 Report Bucket](5.14.1-create-s3-bucket/)
 - [Configure Ownership and Public Access](5.14.2-config-ownership-access/)
+- [Configure Encryption](5.14.3-config-encryption/)
+- [Check Public Access](5.14.4-check-public-access/)
+- [Check Encryption and Versioning](5.14.5-check-encryption-versioning/)
+- [Add Bucket to API Handler](5.14.6-add-bucket-to-api/)
+- [Grant S3 Permissions](5.14.7-grant-s3-permission/)
+- [Add Pre-signed URL to API Handler](5.14.8-add-presigned-url/)
