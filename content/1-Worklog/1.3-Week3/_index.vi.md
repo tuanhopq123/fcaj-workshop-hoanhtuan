@@ -1,59 +1,203 @@
 ---
-title: "Worklog Tuần 3"
+title: "Nhật ký công việc Tuần 3"
 date: 2024-01-01
-weight: 1
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
+
 {{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+⚠️ **Lưu ý:** Nội dung dưới đây chỉ mang tính chất tham khảo. Vui lòng **không sao chép nguyên văn** vào báo cáo của bạn, bao gồm cả phần lưu ý này.
 {{% /notice %}}
 
+## Mục tiêu Tuần 3
 
-### Mục tiêu tuần 3:
+- Thiết lập nền tảng bảo mật cho hệ thống bằng AWS IAM.
+- Khởi tạo cơ sở dữ liệu Amazon DynamoDB phục vụ dự án Smart Home Energy Waste Monitoring & Alert System.
+- Hoàn thành các bài thực hành AWS IAM, Amazon VPC và AWS Budget.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+## Công việc thực hiện trong tuần
 
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành |
+|------|-----------|--------------|-----------------|
+| 2 | Cấu hình IAM Role và IAM Policy cho AWS Lambda. | 25/08/2025 | 25/08/2025 |
+| 3 | Khởi tạo các bảng DynamoDB và chuẩn bị dữ liệu mẫu. | 26/08/2025 | 26/08/2025 |
+| 4 | Hoàn thành Lab AWS IAM. | 27/08/2025 | 27/08/2025 |
+| 5 | Hoàn thành Lab Amazon VPC. | 28/08/2025 | 28/08/2025 |
+| 6 | Hoàn thành Lab AWS Budget và rà soát toàn bộ kết quả. | 29/08/2025 | 29/08/2025 |
 
-### Kết quả đạt được tuần 3:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+## Kết quả đạt được
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+Trong tuần này, em tập trung xây dựng nền tảng bảo mật và cơ sở dữ liệu cho hệ thống, đồng thời hoàn thành các bài thực hành quan trọng về AWS.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+### Tiến độ dự án
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+Hệ thống đã hoàn thành bước thiết lập bảo mật bằng **AWS IAM**.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+Các **IAM Role** và **IAM Policy** được cấu hình theo nguyên tắc **Least Privilege (Quyền tối thiểu)** nhằm đảm bảo mỗi dịch vụ chỉ được cấp đúng quyền cần thiết để thực hiện chức năng của mình.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+Quyền truy cập được cấu hình cho AWS Lambda bao gồm:
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+- Truy cập các bảng Amazon DynamoDB.
+- Ghi log lên Amazon CloudWatch.
+- Truy cập Amazon S3 để lưu trữ và đọc báo cáo (khi cần).
 
+Bên cạnh đó, cơ sở dữ liệu **Amazon DynamoDB** cũng được khởi tạo để phục vụ hệ thống giám sát điện năng.
 
+Các bảng dữ liệu ban đầu bao gồm:
+
+- **Rooms** – Lưu thông tin các phòng.
+- **Telemetry** – Lưu dữ liệu cảm biến ảo.
+- **Alerts** – Lưu các cảnh báo lãng phí điện.
+- **Reports** – Lưu thông tin báo cáo tiêu thụ điện.
+
+Dữ liệu mẫu đã được thêm vào các bảng nhằm chuẩn bị cho quá trình phát triển API và kiểm thử trong các tuần tiếp theo.
+
+---
+
+# Thực hành AWS
+
+## Lab 2 — AWS IAM
+
+Trong bài thực hành này, em tìm hiểu về dịch vụ **AWS Identity and Access Management (IAM)** và thực hiện quản lý người dùng cũng như phân quyền truy cập.
+
+Các nội dung đã thực hiện gồm:
+
+- Tạo IAM Group.
+- Tạo IAM User.
+- Gán quyền thông qua IAM Policy.
+- Kích hoạt xác thực đa yếu tố (MFA).
+- Kiểm tra và xác minh cấu hình bảo mật.
+
+![Tạo IAM Group](/images/1-worklog/1.3-lab2-1.png)
+
+![Tạo IAM User](/images/1-worklog/1.3-lab2-2.png)
+
+![Gán quyền truy cập](/images/1-worklog/1.3-lab2-3.png)
+
+![Cấu hình IAM Policy](/images/1-worklog/1.3-lab2-4.png)
+
+![Bật MFA](/images/1-worklog/1.3-lab2-5.png)
+
+![Hoàn thành Lab IAM](/images/1-worklog/1.3-lab2-6.png)
+
+---
+
+## Lab 3 — Amazon VPC
+
+Bài thực hành giúp em hiểu rõ cách xây dựng một hệ thống mạng riêng trên AWS bằng **Amazon Virtual Private Cloud (VPC)**.
+
+Các bước thực hiện bao gồm:
+
+- Tạo VPC.
+- Cấu hình CIDR Block.
+- Tạo Public Subnet và Private Subnet.
+- Cấu hình Route Table.
+- Tạo Internet Gateway.
+- Cấu hình NAT Gateway.
+- Kiểm tra khả năng kết nối giữa các thành phần trong hệ thống.
+
+![Lab VPC 1](/images/1-worklog/1.3-lab3-1.png)
+
+![Lab VPC 2](/images/1-worklog/1.3-lab3-2.png)
+
+![Lab VPC 3](/images/1-worklog/1.3-lab3-3.png)
+
+![Lab VPC 4](/images/1-worklog/1.3-lab3-4.png)
+
+![Lab VPC 5](/images/1-worklog/1.3-lab3-5.png)
+
+![Lab VPC 6](/images/1-worklog/1.3-lab3-6.png)
+
+![Lab VPC 7](/images/1-worklog/1.3-lab3-7.png)
+
+![Lab VPC 8](/images/1-worklog/1.3-lab3-8.png)
+
+![Lab VPC 9](/images/1-worklog/1.3-lab3-9.png)
+
+![Lab VPC 10](/images/1-worklog/1.3-lab3-10.png)
+
+![Lab VPC 11](/images/1-worklog/1.3-lab3-11.png)
+
+![Lab VPC 12](/images/1-worklog/1.3-lab3-12.png)
+
+![Lab VPC 13](/images/1-worklog/1.3-lab3-13.png)
+
+![Lab VPC 14](/images/1-worklog/1.3-lab3-14.png)
+
+![Lab VPC 15](/images/1-worklog/1.3-lab3-15.png)
+
+![Lab VPC 16](/images/1-worklog/1.3-lab3-16.png)
+
+![Lab VPC 17](/images/1-worklog/1.3-lab3-17.png)
+
+![Lab VPC 18](/images/1-worklog/1.3-lab3-18.png)
+
+![Lab VPC 19](/images/1-worklog/1.3-lab3-19.png)
+
+![Lab VPC 20](/images/1-worklog/1.3-lab3-20.png)
+
+![Lab VPC 21](/images/1-worklog/1.3-lab3-21.png)
+
+![Lab VPC 22](/images/1-worklog/1.3-lab3-22.png)
+
+![Lab VPC 23](/images/1-worklog/1.3-lab3-23.png)
+
+---
+
+## Lab 7 — AWS Budget
+
+Bài thực hành giúp em làm quen với việc quản lý chi phí trên nền tảng AWS.
+
+Các nội dung thực hiện gồm:
+
+- Tạo Cost Budget.
+- Thiết lập ngưỡng cảnh báo.
+- Cấu hình gửi email thông báo khi vượt ngưỡng.
+- Theo dõi mức sử dụng AWS Credits.
+- Kiểm tra hoạt động của Budget.
+
+![AWS Budget 1](/images/1-worklog/1.3-lab7-1.png)
+
+![AWS Budget 2](/images/1-worklog/1.3-lab7-2.png)
+
+![AWS Budget 3](/images/1-worklog/1.3-lab7-3.png)
+
+![AWS Budget 4](/images/1-worklog/1.3-lab7-4.png)
+
+![AWS Budget 5](/images/1-worklog/1.3-lab7-5.png)
+
+---
+
+## Kiến thức thu nhận được
+
+Sau khi hoàn thành các công việc trong tuần, em đã hiểu rõ hơn về:
+
+- Quản lý danh tính và phân quyền bằng AWS IAM.
+- Thiết kế quyền truy cập theo nguyên tắc Least Privilege.
+- Kiến thức nền tảng về mạng trên AWS với Amazon VPC.
+- Quản lý và tối ưu chi phí bằng AWS Budget.
+- Khởi tạo và quản lý cơ sở dữ liệu NoSQL bằng Amazon DynamoDB.
+
+---
+
+## Tổng kết Tuần 3
+
+- Hoàn thành cấu hình bảo mật cho hệ thống.
+- Khởi tạo cơ sở dữ liệu Amazon DynamoDB.
+- Hoàn thành Lab AWS IAM.
+- Hoàn thành Lab Amazon VPC.
+- Hoàn thành Lab AWS Budget.
+
+---
+
+## Kế hoạch Tuần tiếp theo
+
+- Phát triển các hàm AWS Lambda.
+- Xây dựng các REST API cho hệ thống.
+- Kết nối AWS Lambda với Amazon DynamoDB.
+- Thực hiện kiểm thử các chức năng CRUD.

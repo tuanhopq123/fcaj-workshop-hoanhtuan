@@ -6,72 +6,96 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 {{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+
 {{% /notice %}}
 
-Tại phần này, bạn cần tóm tắt các nội dung trong workshop mà bạn **dự tính** sẽ làm.
-
-# IoT Weather Platform for Lab Research  
-## Giải pháp AWS Serverless hợp nhất cho giám sát thời tiết thời gian thực  
+# SMART HOME ENERGY WASTE MONITORING & ALERT SYSTEM 
+## Giải pháp AWS Serverless cho giám sát và cảnh báo lãng phí điện bằng cảm biến ảo 
 
 ### 1. Tóm tắt điều hành  
-IoT Weather Platform được thiết kế dành cho nhóm *ITea Lab* tại TP. Hồ Chí Minh nhằm nâng cao khả năng thu thập và phân tích dữ liệu thời tiết. Nền tảng hỗ trợ tối đa 5 trạm thời tiết, có khả năng mở rộng lên 10–15 trạm, sử dụng thiết bị biên Raspberry Pi kết hợp cảm biến ESP32 để truyền dữ liệu qua MQTT. Nền tảng tận dụng các dịch vụ AWS Serverless để cung cấp giám sát thời gian thực, phân tích dự đoán và tiết kiệm chi phí, với quyền truy cập giới hạn cho 5 thành viên phòng lab thông qua Amazon Cognito.  
+Smart Home Energy Waste Monitoring & Alert System là hệ thống giám sát tiêu thụ điện và phát hiện lãng phí điện theo thời gian thực, được xây dựng trên nền tảng AWS Serverless. Hệ thống sử dụng cảm biến ảo chạy bằng AWS Lambda để mô phỏng dữ liệu điện năng như công suất, điện áp, dòng điện, trạng thái thiết bị và trạng thái có người trong phòng. Dữ liệu được truyền qua AWS IoT Core, xử lý bằng Lambda Waste Detector, lưu trữ trong Amazon DynamoDB và gửi cảnh báo qua Amazon SNS khi phát hiện thiết bị đang bật nhưng không có người sử dụng.
+
+Nền tảng được thiết kế phù hợp cho mô hình smart home, phòng lab hoặc phòng học thông minh, nơi cần theo dõi tình trạng tiêu thụ điện và giảm lãng phí năng lượng. Giao diện dashboard được xây dựng bằng React, Next.js và TailwindCSS, triển khai bằng AWS Amplify, bảo vệ bởi AWS WAF, phân phối qua Amazon CloudFront và xác thực người dùng bằng Amazon Cognito.  
 
 ### 2. Tuyên bố vấn đề  
 *Vấn đề hiện tại*  
-Các trạm thời tiết hiện tại yêu cầu thu thập dữ liệu thủ công, khó quản lý khi có nhiều trạm. Không có hệ thống tập trung cho dữ liệu hoặc phân tích thời gian thực, và các nền tảng bên thứ ba thường tốn kém và quá phức tạp.  
+Trong các phòng lab, phòng học hoặc không gian làm việc chung, thiết bị điện như đèn, quạt, máy lạnh hoặc máy tính thường bị quên tắt sau khi không còn người sử dụng. Việc này gây lãng phí điện năng, tăng chi phí vận hành và làm giảm hiệu quả quản lý năng lượng. Ngoài ra, nếu chỉ kiểm tra thủ công, người quản lý khó có thể theo dõi liên tục trạng thái tiêu thụ điện theo thời gian thực.
+
+Các hệ thống giám sát điện truyền thống thường cần cảm biến thật, máy chủ riêng, cơ sở dữ liệu cố định và chi phí triển khai cao. Đối với đồ án hoặc mô hình thử nghiệm, việc dùng cảm biến thật có thể làm tăng độ phức tạp và chi phí.  
 
 *Giải pháp*  
-Nền tảng sử dụng AWS IoT Core để tiếp nhận dữ liệu MQTT, AWS Lambda và API Gateway để xử lý, Amazon S3 để lưu trữ (bao gồm data lake), và AWS Glue Crawlers cùng các tác vụ ETL để trích xuất, chuyển đổi, tải dữ liệu từ S3 data lake sang một S3 bucket khác để phân tích. AWS Amplify với Next.js cung cấp giao diện web, và Amazon Cognito đảm bảo quyền truy cập an toàn. Tương tự như Thingsboard và CoreIoT, người dùng có thể đăng ký thiết bị mới và quản lý kết nối, nhưng nền tảng này hoạt động ở quy mô nhỏ hơn và phục vụ mục đích sử dụng nội bộ. Các tính năng chính bao gồm bảng điều khiển thời gian thực, phân tích xu hướng và chi phí vận hành thấp.  
+Giải pháp đề xuất sử dụng kiến trúc AWS Serverless để xây dựng hệ thống giám sát điện bằng cảm biến ảo. AWS Lambda Virtual Sensor sẽ tự động sinh dữ liệu điện năng định kỳ mỗi 1 phút thông qua Amazon EventBridge. Dữ liệu này được gửi đến AWS IoT Core bằng giao thức MQTT, sau đó AWS IoT Rule chuyển dữ liệu sang Lambda Waste Detector để phân tích.
 
-*Lợi ích và hoàn vốn đầu tư (ROI)*  
-Giải pháp tạo nền tảng cơ bản để các thành viên phòng lab phát triển một nền tảng IoT lớn hơn, đồng thời cung cấp nguồn dữ liệu cho những người nghiên cứu AI phục vụ huấn luyện mô hình hoặc phân tích. Nền tảng giảm bớt báo cáo thủ công cho từng trạm thông qua hệ thống tập trung, đơn giản hóa quản lý và bảo trì, đồng thời cải thiện độ tin cậy dữ liệu. Chi phí hàng tháng ước tính 0,66 USD (theo AWS Pricing Calculator), tổng cộng 7,92 USD cho 12 tháng. Tất cả thiết bị IoT đã được trang bị từ hệ thống trạm thời tiết hiện tại, không phát sinh chi phí phát triển thêm. Thời gian hoàn vốn 6–12 tháng nhờ tiết kiệm đáng kể thời gian thao tác thủ công.  
+Khi phát hiện tình huống lãng phí điện, ví dụ thiết bị đang bật, không có người trong phòng và công suất vượt ngưỡng cho phép, hệ thống sẽ thực hiện song song hai hành động: lưu telemetry và alert vào Amazon DynamoDB, đồng thời gửi cảnh báo qua Amazon SNS đến email người dùng.
+
+Ngoài ra, hệ thống có Lambda Report Generator chạy hằng ngày lúc 00:05 AM để đọc dữ liệu từ DynamoDB, tạo báo cáo và lưu vào Amazon S3 Report Bucket. Dashboard có thể gọi Amazon API Gateway và Lambda API Handler để xem dữ liệu giám sát, lịch sử cảnh báo và tải báo cáo.  
+
+*Lợi ích  
+Giải pháp giúp tự động hóa quá trình giám sát điện năng, giảm phụ thuộc vào kiểm tra thủ công và cung cấp cảnh báo gần thời gian thực khi có dấu hiệu lãng phí điện. Do sử dụng các dịch vụ serverless như AWS Lambda, Amazon API Gateway, Amazon DynamoDB, Amazon EventBridge, Amazon SNS và Amazon S3, hệ thống có khả năng mở rộng tốt, chi phí vận hành thấp và không cần quản lý máy chủ.
+
+Đối với phạm vi đồ án, hệ thống có thể triển khai với chi phí thấp, phù hợp ngân sách thử nghiệm khoảng 30–50 USD hoặc thấp hơn nếu tối ưu số lần gọi dịch vụ. Đồng thời, kiến trúc có thể mở rộng trong tương lai để kết nối cảm biến thật, bổ sung nhiều phòng, nhiều thiết bị và dashboard phân tích nâng cao. 
 
 ### 3. Kiến trúc giải pháp  
-Nền tảng áp dụng kiến trúc AWS Serverless để quản lý dữ liệu từ 5 trạm dựa trên Raspberry Pi, có thể mở rộng lên 15 trạm. Dữ liệu được tiếp nhận qua AWS IoT Core, lưu trữ trong S3 data lake và xử lý bởi AWS Glue Crawlers và ETL jobs để chuyển đổi và tải vào một S3 bucket khác cho mục đích phân tích. Lambda và API Gateway xử lý bổ sung, trong khi Amplify với Next.js cung cấp bảng điều khiển được bảo mật bởi Cognito.  
+Hệ thống được triển khai theo kiến trúc AWS Serverless tại region ap-southeast-1 Singapore. Lớp truy cập người dùng gồm Amazon Route 53, Amazon CloudFront, AWS WAF và AWS Amplify. Người dùng truy cập dashboard thông qua tên miền được quản lý bởi Route 53. CloudFront đóng vai trò CDN/edge delivery, AWS WAF bảo vệ lớp frontend, còn AWS Amplify host ứng dụng Next.js.
 
-![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
+Lớp xác thực và API sử dụng Amazon Cognito, Amazon API Gateway và Lambda API Handler. Người dùng đăng nhập thông qua Cognito để nhận JWT token. Khi dashboard gọi API, API Gateway kiểm tra token và chuyển request đến Lambda API Handler. Lambda API Handler đọc/ghi dữ liệu từ Amazon DynamoDB và truy xuất báo cáo từ Amazon S3 Report Bucket.
 
-![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
+Lớp xử lý dữ liệu cảm biến sử dụng Amazon EventBridge, Lambda Virtual Sensor, AWS IoT Core, IoT Rule và Lambda Waste Detector. EventBridge kích hoạt Lambda Virtual Sensor mỗi 1 phút để sinh dữ liệu điện năng giả lập. Dữ liệu được publish lên AWS IoT Core, sau đó IoT Rule định tuyến dữ liệu đến Lambda Waste Detector. Lambda Waste Detector phân tích điều kiện lãng phí điện và thực hiện hai nhánh song song: lưu dữ liệu vào DynamoDB và gửi cảnh báo qua SNS Email.
+
+Lớp báo cáo sử dụng EventBridge rule chạy hằng ngày lúc 00:05 AM để kích hoạt Lambda Report Generator. Lambda này đọc dữ liệu telemetry và alerts từ DynamoDB, tổng hợp báo cáo theo ngày và ghi file báo cáo vào Amazon S3 Report Bucket.
+
+Amazon CloudWatch được sử dụng để thu thập logs, metrics và hỗ trợ monitoring cho các thành phần như Lambda, API Gateway, EventBridge, IoT Core và SNS. Nhờ đó, nhóm có thể kiểm tra hệ thống có chạy đúng lịch không, Lambda có lỗi không, IoT Rule có gọi Waste Detector không và SNS có gửi cảnh báo thành công không.  
+
+![Screenshot 2026-07-02 105425.png](/images/2-Proposal/ANH.jpg)
+
+
 
 *Dịch vụ AWS sử dụng*  
-- *AWS IoT Core*: Tiếp nhận dữ liệu MQTT từ 5 trạm, mở rộng lên 15.  
-- *AWS Lambda*: Xử lý dữ liệu và kích hoạt Glue jobs (2 hàm).  
-- *Amazon API Gateway*: Giao tiếp với ứng dụng web.  
-- *Amazon S3*: Lưu trữ dữ liệu thô (data lake) và dữ liệu đã xử lý (2 bucket).  
-- *AWS Glue*: Crawlers lập chỉ mục dữ liệu, ETL jobs chuyển đổi và tải dữ liệu.  
-- *AWS Amplify*: Lưu trữ giao diện web Next.js.  
-- *Amazon Cognito*: Quản lý quyền truy cập cho người dùng phòng lab.  
+- Amazon Route 53: Quản lý tên miền và điều hướng người dùng đến lớp phân phối nội dung.  
+- Amazon CloudFront: Phân phối frontend qua CDN, giúp dashboard truy cập nhanh hơn và ổn định hơn.  
+- AWS WAF: Bảo vệ lớp frontend khỏi các request bất thường hoặc độc hại. 
+- AWS Amplify: Lưu trữ và triển khai ứng dụng web Next.js cho dashboard.  
+- Amazon Cognito: Quản lý đăng nhập, xác thực người dùng và cấp JWT token.
+- Amazon API Gateway: Cung cấp API endpoint để frontend gọi đến backend.  
+- AWS Lambda: Xử lý backend serverless, gồm 4 hàm chính: Lambda API Handler, Lambda Virtual Sensor, Lambda Waste Detector và Lambda Report Generator.
+- Amazon EventBridge: Tạo lịch chạy tự động cho cảm biến ảo mỗi 1 phút và tạo báo cáo hằng ngày lúc 00:05 AM.
+- AWS IoT Core: Tiếp nhận dữ liệu điện năng giả lập thông qua giao thức MQTT.
+- AWS IoT Core Rule: Định tuyến dữ liệu telemetry từ IoT Core đến Lambda Waste Detector.
+- Amazon DynamoDB: Lưu dữ liệu dùng chung gồm Rooms, Telemetry, Alerts và Reports Metadata.
+- Amazon SNS: Gửi cảnh báo qua email khi phát hiện lãng phí điện.
+- Amazon S3: Lưu trữ file báo cáo hằng ngày trong Report Bucket.
+- Amazon CloudWatch: Theo dõi logs, metrics và hỗ trợ debug cho Lambda, API Gateway, EventBridge, IoT Core và SNS.
+- AWS Budgets: Theo dõi chi phí và gửi cảnh báo khi ngân sách vượt ngưỡng dự kiến.
 
 *Thiết kế thành phần*  
-- *Thiết bị biên*: Raspberry Pi thu thập và lọc dữ liệu cảm biến, gửi tới IoT Core.  
-- *Tiếp nhận dữ liệu*: AWS IoT Core nhận tin nhắn MQTT từ thiết bị biên.  
-- *Lưu trữ dữ liệu*: Dữ liệu thô lưu trong S3 data lake; dữ liệu đã xử lý lưu ở một S3 bucket khác.  
-- *Xử lý dữ liệu*: AWS Glue Crawlers lập chỉ mục dữ liệu; ETL jobs chuyển đổi để phân tích.  
-- *Giao diện web*: AWS Amplify lưu trữ ứng dụng Next.js cho bảng điều khiển và phân tích thời gian thực.  
-- *Quản lý người dùng*: Amazon Cognito giới hạn 5 tài khoản hoạt động.  
+- Người dùng: Truy cập dashboard thông qua trình duyệt web để xem dữ liệu điện năng, cảnh báo và báo cáo.
+- Giao diện web: Dashboard được xây dựng bằng React, Next.js và TailwindCSS, triển khai trên AWS Amplify.
+- Lớp Edge/Frontend: Amazon Route 53 điều hướng domain đến Amazon CloudFront. AWS WAF bảo vệ CloudFront, sau đó CloudFront phân phối ứng dụng frontend từ AWS Amplify.
+- Quản lý người dùng: Amazon Cognito thực hiện đăng nhập, xác thực người dùng và cấp JWT token.
+- Backend API: Amazon API Gateway nhận request từ dashboard, kiểm tra JWT token và gọi Lambda API Handler để xử lý nghiệp vụ.
+- Cảm biến ảo: Lambda Virtual Sensor được kích hoạt mỗi 1 phút bởi Amazon EventBridge để sinh dữ liệu điện năng giả lập như công suất, điện áp, dòng điện, trạng thái thiết bị và trạng thái có người trong phòng.
+- Tiếp nhận dữ liệu IoT: AWS IoT Core nhận dữ liệu MQTT từ Lambda Virtual Sensor. AWS IoT Core Rule định tuyến dữ liệu này đến Lambda Waste Detector.
+- Phát hiện lãng phí điện: Lambda Waste Detector kiểm tra điều kiện lãng phí điện, ví dụ thiết bị đang bật, không có người trong phòng và công suất vượt ngưỡng cho phép.
+- Lưu trữ dữ liệu: Amazon DynamoDB lưu telemetry, alerts, rooms và reports metadata trong một bảng dữ liệu dùng chung.
+- Cảnh báo: Amazon SNS gửi email cảnh báo khi phát hiện tình trạng lãng phí điện.
+- Báo cáo: Lambda Report Generator chạy hằng ngày lúc 00:05 AM, đọc dữ liệu từ DynamoDB, tổng hợp báo cáo và lưu vào Amazon S3 Report Bucket.
+- Giám sát hệ thống: Amazon CloudWatch ghi logs và metrics để kiểm tra Lambda có chạy đúng lịch không, IoT Rule có gọi detector không, API có lỗi không và SNS có gửi cảnh báo thành công không.  
 
-### 4. Triển khai kỹ thuật  
-*Các giai đoạn triển khai*  
-Dự án gồm 2 phần — thiết lập trạm thời tiết biên và xây dựng nền tảng thời tiết — mỗi phần trải qua 4 giai đoạn:  
-1. *Nghiên cứu và vẽ kiến trúc*: Nghiên cứu Raspberry Pi với cảm biến ESP32 và thiết kế kiến trúc AWS Serverless (1 tháng trước kỳ thực tập).  
-2. *Tính toán chi phí và kiểm tra tính khả thi*: Sử dụng AWS Pricing Calculator để ước tính và điều chỉnh (Tháng 1).  
-3. *Điều chỉnh kiến trúc để tối ưu chi phí/giải pháp*: Tinh chỉnh (ví dụ tối ưu Lambda với Next.js) để đảm bảo hiệu quả (Tháng 2).  
-4. *Phát triển, kiểm thử, triển khai*: Lập trình Raspberry Pi, AWS services với CDK/SDK và ứng dụng Next.js, sau đó kiểm thử và đưa vào vận hành (Tháng 2–3).  
+### 4. Lộ trình va Mốc triển khai 
+- Giai đoạn 1 — Thiết kế và chuẩn bị:
+Hoàn thiện yêu cầu hệ thống, thiết kế sơ đồ kiến trúc AWS, xác định các service cần dùng và thiết lập AWS Budget để kiểm soát chi phí.
+- Giai đoạn 2 — Triển khai luồng cảm biến ảo:
+Tạo DynamoDB, SNS, Lambda Virtual Sensor, Lambda Waste Detector, IoT Core, IoT Core Rule và EventBridge rule chạy mỗi 1 phút. Kiểm tra dữ liệu có được sinh, truyền qua IoT Core, xử lý và lưu vào DynamoDB hay không.
+- Giai đoạn 3 — Triển khai API và xác thực:
+Tạo Cognito User Pool, API Gateway và Lambda API Handler. Kiểm tra frontend hoặc Postman có thể gọi API bằng JWT token và đọc dữ liệu từ DynamoDB hay không.
+- Giai đoạn 4 — Triển khai dashboard và báo cáo:
+Deploy dashboard Next.js lên AWS Amplify. Tạo Lambda Report Generator, EventBridge rule chạy hằng ngày lúc 00:05 AM và S3 Report Bucket để lưu file báo cáo.
+- Giai đoạn 5 — Kiểm thử và hoàn thiện:
+Kiểm tra toàn bộ hệ thống, xem logs trên CloudWatch, test email cảnh báo qua SNS, kiểm tra report trong S3 và tối ưu chi phí trước khi trình bày đồ án.  
 
-*Yêu cầu kỹ thuật*  
-- *Trạm thời tiết biên*: Cảm biến (nhiệt độ, độ ẩm, lượng mưa, tốc độ gió), vi điều khiển ESP32, Raspberry Pi làm thiết bị biên. Raspberry Pi chạy Raspbian, sử dụng Docker để lọc dữ liệu và gửi 1 MB/ngày/trạm qua MQTT qua Wi-Fi.  
-- *Nền tảng thời tiết*: Kiến thức thực tế về AWS Amplify (lưu trữ Next.js), Lambda (giảm thiểu do Next.js xử lý), AWS Glue (ETL), S3 (2 bucket), IoT Core (gateway và rules), và Cognito (5 người dùng). Sử dụng AWS CDK/SDK để lập trình (ví dụ IoT Core rules tới S3). Next.js giúp giảm tải Lambda cho ứng dụng web fullstack.  
+ 
 
-### 5. Lộ trình & Mốc triển khai  
-- *Trước thực tập (Tháng 0)*: 1 tháng lên kế hoạch và đánh giá trạm cũ.  
-- *Thực tập (Tháng 1–3)*:  
-    - Tháng 1: Học AWS và nâng cấp phần cứng.  
-    - Tháng 2: Thiết kế và điều chỉnh kiến trúc.  
-    - Tháng 3: Triển khai, kiểm thử, đưa vào sử dụng.  
-- *Sau triển khai*: Nghiên cứu thêm trong vòng 1 năm.  
-
-### 6. Ước tính ngân sách  
+### 5. Ước tính ngân sách  
 Có thể xem chi phí trên [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01)  
 Hoặc tải [tệp ước tính ngân sách](../attachments/budget_estimation.pdf).  
 
@@ -88,21 +112,39 @@ Hoặc tải [tệp ước tính ngân sách](../attachments/budget_estimation.p
 *Tổng*: 0,7 USD/tháng, 8,40 USD/12 tháng  
 - *Phần cứng*: 265 USD một lần (Raspberry Pi 5 và cảm biến).  
 
-### 7. Đánh giá rủi ro  
+### 6. Đánh giá rủi ro  
 *Ma trận rủi ro*  
-- Mất mạng: Ảnh hưởng trung bình, xác suất trung bình.  
-- Hỏng cảm biến: Ảnh hưởng cao, xác suất thấp.  
-- Vượt ngân sách: Ảnh hưởng trung bình, xác suất thấp.  
+- Vượt ngân sách AWS: Ảnh hưởng trung bình, xác suất trung bình. Nguyên nhân có thể do CloudWatch logs tăng, WAF/CloudFront phát sinh chi phí hoặc EventBridge chạy liên tục.
+- Lambda thiếu quyền IAM: Ảnh hưởng cao, xác suất trung bình. Có thể làm Lambda không ghi được DynamoDB, không publish SNS hoặc không gửi dữ liệu đến IoT Core.
+- SNS không gửi được email: Ảnh hưởng trung bình, xác suất trung bình. Nguyên nhân thường gặp là email subscription chưa được xác nhận.
+- IoT Rule không gọi Lambda Waste Detector: Ảnh hưởng cao, xác suất trung bình. Có thể do sai topic MQTT, sai SQL statement hoặc thiếu permission invoke Lambda.
+- API Gateway bị lỗi xác thực JWT: Ảnh hưởng cao, xác suất trung bình. Có thể do cấu hình Cognito authorizer sai hoặc frontend gửi thiếu Authorization header.
+- Dữ liệu cảm biến ảo chưa sát thực tế: Ảnh hưởng trung bình, xác suất cao. Do dữ liệu được mô phỏng nên cần thiết kế rule phát hiện phù hợp để demo rõ ràng.
+- Dashboard không đọc được API: Ảnh hưởng trung bình, xác suất trung bình. Nguyên nhân có thể do CORS, sai endpoint API Gateway hoặc sai token.
+- Báo cáo không được tạo đúng lịch: Ảnh hưởng trung bình, xác suất thấp. Có thể do EventBridge rule sai giờ, Lambda timeout hoặc thiếu quyền ghi S3. 
 
 *Chiến lược giảm thiểu*  
-- Mạng: Lưu trữ cục bộ trên Raspberry Pi với Docker.  
-- Cảm biến: Kiểm tra định kỳ, dự phòng linh kiện.  
-- Chi phí: Cảnh báo ngân sách AWS, tối ưu dịch vụ.  
+- Chi phí: Tạo AWS Budget, theo dõi Billing Dashboard và kiểm soát CloudWatch Logs retention.
+- IAM Permission: Tạo quyền tối thiểu cần thiết cho từng Lambda, kiểm tra kỹ quyền DynamoDB, SNS, IoT Core và S3.
+- SNS Email: Xác nhận email subscription ngay sau khi tạo SNS topic.
+- IoT Rule: Test thủ công Lambda Virtual Sensor, kiểm tra topic MQTT và xem logs của Lambda Waste Detector trong CloudWatch.
+- JWT/Cognito: Test đăng nhập, lấy JWT token và gọi API Gateway bằng Postman hoặc dashboard.
+- CORS: Cấu hình CORS cho API Gateway để frontend Amplify gọi được backend.
+- Report: Test Lambda Report Generator thủ công trước, sau đó mới gắn EventBridge rule Daily 00:05 AM.
+- Dữ liệu mô phỏng: Tạo nhiều kịch bản cảm biến ảo như có người/không có người, thiết bị bật/tắt và công suất cao/thấp để chứng minh chức năng phát hiện lãng phí điện.  
 
 *Kế hoạch dự phòng*  
-- Quay lại thu thập thủ công nếu AWS gặp sự cố.  
-- Sử dụng CloudFormation để khôi phục cấu hình liên quan đến chi phí.  
+- Nếu AWS IoT Core gặp lỗi cấu hình, có thể test tạm bằng cách gọi trực tiếp Lambda Waste Detector với JSON sample.
+- Nếu Cognito chưa hoàn thiện, có thể demo API Gateway ở chế độ test trước, sau đó bổ sung JWT authorizer.
+- Nếu Amplify chưa deploy kịp, có thể chạy frontend local và gọi API Gateway thật để chứng minh backend AWS hoạt động.
+- Nếu report chưa tạo tự động, có thể chạy Lambda Report Generator thủ công để sinh file báo cáo trong S3.
+- Nếu chi phí tăng bất thường, tạm disable EventBridge rule và xóa log group không cần thiết sau khi đã chụp minh chứng.  
 
-### 8. Kết quả kỳ vọng  
-*Cải tiến kỹ thuật*: Dữ liệu và phân tích thời gian thực thay thế quy trình thủ công. Có thể mở rộng tới 10–15 trạm.  
-*Giá trị dài hạn*: Nền tảng dữ liệu 1 năm cho nghiên cứu AI, có thể tái sử dụng cho các dự án tương lai.
+### 7. Kết quả kỳ vọng  
+- Cải tiến kỹ thuật:
+Hệ thống giúp tự động hóa quá trình giám sát điện năng trong smart home hoặc phòng lab, thay thế việc kiểm tra thủ công bằng một pipeline serverless chạy định kỳ. Dữ liệu điện năng được sinh bởi cảm biến ảo, truyền qua AWS IoT Core, phân tích bằng Lambda và lưu trữ tập trung trong DynamoDB. Khi phát hiện lãng phí điện, hệ thống có thể gửi cảnh báo qua email gần thời gian thực.
+- Giá trị vận hành:
+Dashboard giúp người dùng theo dõi dữ liệu tiêu thụ điện, xem lịch sử cảnh báo và tải báo cáo hằng ngày. Việc sử dụng AWS Serverless giúp giảm nhu cầu quản lý máy chủ, đơn giản hóa triển khai và dễ mở rộng khi cần thêm phòng, thêm thiết bị hoặc kết nối cảm biến thật trong tương lai.
+- Khả năng mở rộng:
+Trong tương lai, hệ thống có thể mở rộng từ cảm biến ảo sang cảm biến thật như smart meter, ESP32 hoặc thiết bị IoT đo công suất. Ngoài ra, có thể bổ sung phân tích xu hướng tiêu thụ điện, dự đoán bất thường, tối ưu lịch bật/tắt thiết bị và tích hợp dashboard quản trị nhiều phòng hoặc nhiều tòa nhà.
+![Kiến trúc](/images/2-Proposal/2.architecture.png)

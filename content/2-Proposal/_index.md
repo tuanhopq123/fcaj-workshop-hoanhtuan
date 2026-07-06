@@ -5,111 +5,171 @@ weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
+
 {{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
+
 {{% /notice %}}
 
-In this section, you need to summarize the contents of the workshop that you **plan** to conduct.
+# SMART HOME ENERGY WASTE MONITORING & ALERT SYSTEM
 
-# IoT Weather Platform for Lab Research
-## A Unified AWS Serverless Solution for Real-Time Weather Monitoring
+## An AWS Serverless Solution for Monitoring and Alerting Energy Waste Using Virtual Sensors
 
 ### 1. Executive Summary
-The IoT Weather Platform is designed for the ITea Lab team in Ho Chi Minh City to enhance weather data collection and analysis. It supports up to 5 weather stations, with potential scalability to 10-15, utilizing Raspberry Pi edge devices with ESP32 sensors to transmit data via MQTT. The platform leverages AWS Serverless services to deliver real-time monitoring, predictive analytics, and cost efficiency, with access restricted to 5 lab members via Amazon Cognito.
+
+Smart Home Energy Waste Monitoring & Alert System is a real-time electricity consumption monitoring and energy waste detection system built on an AWS Serverless architecture. The system uses virtual sensors running on AWS Lambda to simulate energy data such as power, voltage, current, device status, and room occupancy status. The data is transmitted through AWS IoT Core, processed by Lambda Waste Detector, stored in Amazon DynamoDB, and alerts are sent through Amazon SNS when the system detects that a device is still turned on while no one is using the room.
+
+The platform is suitable for smart homes, laboratories, classrooms, or shared working spaces where electricity consumption needs to be monitored and energy waste should be reduced. The dashboard interface is built with React, Next.js, and TailwindCSS, deployed using AWS Amplify, protected by AWS WAF, distributed through Amazon CloudFront, and secured with Amazon Cognito authentication.
 
 ### 2. Problem Statement
-### What’s the Problem?
-Current weather stations require manual data collection, becoming unmanageable with multiple units. There is no centralized system for real-time data or analytics, and third-party platforms are costly and overly complex.
 
-### The Solution
-The platform uses AWS IoT Core to ingest MQTT data, AWS Lambda and API Gateway for processing, Amazon S3 for storage (including a data lake), and AWS Glue Crawlers and ETL jobs to extract, transform, and load data from the S3 data lake to another S3 bucket for analysis. AWS Amplify with Next.js provides the web interface, and Amazon Cognito ensures secure access. Similar to Thingsboard and CoreIoT, users can register new devices and manage connections, though this platform operates on a smaller scale and is designed for private use. Key features include real-time dashboards, trend analysis, and low operational costs.
+*Current Problem*
 
-### Benefits and Return on Investment
-The solution establishes a foundational resource for lab members to develop a larger IoT platform, serving as a study resource, and provides a data foundation for AI enthusiasts for model training or analysis. It reduces manual reporting for each station via a centralized platform, simplifying management and maintenance, and improves data reliability. Monthly costs are $0.66 USD per the AWS Pricing Calculator, with a 12-month total of $7.92 USD. All IoT equipment costs are covered by the existing weather station setup, eliminating additional development expenses. The break-even period of 6-12 months is achieved through significant time savings from reduced manual work.
+In laboratories, classrooms, or shared working spaces, electrical devices such as lights, fans, air conditioners, or computers are often left on after people have left the room. This causes energy waste, increases operating costs, and reduces the efficiency of energy management. In addition, if monitoring is performed manually, it is difficult for administrators to continuously track electricity consumption in real time.
+
+Traditional electricity monitoring systems often require physical sensors, dedicated servers, fixed databases, and high deployment costs. For a student project or prototype, using physical sensors may increase both complexity and cost.
+
+*Proposed Solution*
+
+The proposed solution uses an AWS Serverless architecture to build an electricity monitoring system with virtual sensors. AWS Lambda Virtual Sensor automatically generates energy data every 1 minute through Amazon EventBridge. This data is sent to AWS IoT Core using the MQTT protocol, and then an AWS IoT Rule forwards the data to Lambda Waste Detector for analysis.
+
+When the system detects an energy waste condition, such as a device being turned on while no one is in the room and the power consumption exceeds the defined threshold, it performs two actions in parallel: storing telemetry and alert data in Amazon DynamoDB and sending an email alert to the user through Amazon SNS.
+
+In addition, the system includes a Lambda Report Generator that runs daily at 00:05 AM to read data from DynamoDB, generate a report, and store it in an Amazon S3 Report Bucket. The dashboard can call Amazon API Gateway and Lambda API Handler to view monitoring data, alert history, and download reports.
+
+*Benefits*
+
+The solution automates the electricity monitoring process, reduces dependence on manual checking, and provides near real-time alerts when signs of energy waste are detected. By using serverless services such as AWS Lambda, Amazon API Gateway, Amazon DynamoDB, Amazon EventBridge, Amazon SNS, and Amazon S3, the system is scalable, cost-efficient, and does not require server management.
+
+Within the scope of the project, the system can be deployed at a low cost, suitable for a testing budget of around 30–50 USD or lower if service calls are optimized. The architecture can also be expanded in the future to connect real sensors, support more rooms and devices, and provide more advanced analytics dashboards.
 
 ### 3. Solution Architecture
-The platform employs a serverless AWS architecture to manage data from 5 Raspberry Pi-based stations, scalable to 15. Data is ingested via AWS IoT Core, stored in an S3 data lake, and processed by AWS Glue Crawlers and ETL jobs to transform and load it into another S3 bucket for analysis. Lambda and API Gateway handle additional processing, while Amplify with Next.js hosts the dashboard, secured by Cognito. The architecture is detailed below:
 
-![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
+The system is deployed using an AWS Serverless architecture in the ap-southeast-1 Singapore Region. The user access layer includes Amazon Route 53, Amazon CloudFront, AWS WAF, and AWS Amplify. Users access the dashboard through a domain managed by Route 53. CloudFront acts as the CDN/edge delivery layer, AWS WAF protects the frontend layer, and AWS Amplify hosts the Next.js application.
 
-![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
+The authentication and API layer uses Amazon Cognito, Amazon API Gateway, and Lambda API Handler. Users sign in through Cognito to receive a JWT token. When the dashboard calls the API, API Gateway validates the token and forwards the request to Lambda API Handler. Lambda API Handler reads and writes data to Amazon DynamoDB and retrieves reports from the Amazon S3 Report Bucket.
 
-### AWS Services Used
-- **AWS IoT Core**: Ingests MQTT data from 5 stations, scalable to 15.
-- **AWS Lambda**: Processes data and triggers Glue jobs (two functions).
-- **Amazon API Gateway**: Facilitates web app communication.
-- **Amazon S3**: Stores raw data in a data lake and processed outputs (two buckets).
-- **AWS Glue**: Crawlers catalog data, and ETL jobs transform and load it.
-- **AWS Amplify**: Hosts the Next.js web interface.
-- **Amazon Cognito**: Secures access for lab users.
+The sensor data processing layer uses Amazon EventBridge, Lambda Virtual Sensor, AWS IoT Core, IoT Rule, and Lambda Waste Detector. EventBridge triggers Lambda Virtual Sensor every 1 minute to generate simulated electricity data. The data is published to AWS IoT Core, and then IoT Rule routes the data to Lambda Waste Detector. Lambda Waste Detector analyzes energy waste conditions and performs two parallel actions: storing data in DynamoDB and sending alerts through SNS Email.
 
-### Component Design
-- **Edge Devices**: Raspberry Pi collects and filters sensor data, sending it to IoT Core.
-- **Data Ingestion**: AWS IoT Core receives MQTT messages from the edge devices.
-- **Data Storage**: Raw data is stored in an S3 data lake; processed data is stored in another S3 bucket.
-- **Data Processing**: AWS Glue Crawlers catalog the data, and ETL jobs transform it for analysis.
-- **Web Interface**: AWS Amplify hosts a Next.js app for real-time dashboards and analytics.
-- **User Management**: Amazon Cognito manages user access, allowing up to 5 active accounts.
+The reporting layer uses an EventBridge rule that runs daily at 00:05 AM to trigger Lambda Report Generator. This Lambda function reads telemetry and alert data from DynamoDB, summarizes daily reports, and writes report files to the Amazon S3 Report Bucket.
 
-### 4. Technical Implementation
-**Implementation Phases**
-This project has two parts—setting up weather edge stations and building the weather platform—each following 4 phases:
-- Build Theory and Draw Architecture: Research Raspberry Pi setup with ESP32 sensors and design the AWS serverless architecture (1 month pre-internship)
-- Calculate Price and Check Practicality: Use AWS Pricing Calculator to estimate costs and adjust if needed (Month 1).
-- Fix Architecture for Cost or Solution Fit: Tweak the design (e.g., optimize Lambda with Next.js) to stay cost-effective and usable (Month 2).
-- Develop, Test, and Deploy: Code the Raspberry Pi setup, AWS services with CDK/SDK, and Next.js app, then test and release to production (Months 2-3).
+Amazon CloudWatch is used to collect logs, metrics, and monitoring data for components such as Lambda, API Gateway, EventBridge, IoT Core, and SNS. This allows the team to verify whether the system runs on schedule, whether Lambda functions encounter errors, whether IoT Rule invokes Waste Detector, and whether SNS sends alerts successfully.
 
-**Technical Requirements**
-- Weather Edge Station: Sensors (temperature, humidity, rainfall, wind speed), a microcontroller (ESP32), and a Raspberry Pi as the edge device. Raspberry Pi runs Raspbian, handles Docker for filtering, and sends 1 MB/day per station via MQTT over Wi-Fi.
-- Weather Platform: Practical knowledge of AWS Amplify (hosting Next.js), Lambda (minimal use due to Next.js), AWS Glue (ETL), S3 (two buckets), IoT Core (gateway and rules), and Cognito (5 users). Use AWS CDK/SDK to code interactions (e.g., IoT Core rules to S3). Next.js reduces Lambda workload for the fullstack web app.
+![Energy Waste Monitoring Architecture](/images/2-Proposal/ANH.jpg)
 
-### 5. Timeline & Milestones
-**Project Timeline**
-- Pre-Internship (Month 0): 1 month for planning and old station review.
-- Internship (Months 1-3): 3 months.
-    - Month 1: Study AWS and upgrade hardware.
-    - Month 2: Design and adjust architecture.
-    - Month 3: Implement, test, and launch.
-- Post-Launch: Up to 1 year for research.
+*AWS Services Used*
 
-### 6. Budget Estimation
-You can find the budget estimation on the [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01).  
-Or you can download the [Budget Estimation File](../attachments/budget_estimation.pdf).
+- Amazon Route 53: Manages the domain name and routes users to the content delivery layer.
+- Amazon CloudFront: Distributes the frontend through a CDN, allowing the dashboard to load faster and more reliably.
+- AWS WAF: Protects the frontend layer from abnormal or malicious requests.
+- AWS Amplify: Hosts and deploys the Next.js web application for the dashboard.
+- Amazon Cognito: Manages user sign-in, authentication, and JWT token issuance.
+- Amazon API Gateway: Provides API endpoints for the frontend to call the backend.
+- AWS Lambda: Handles serverless backend processing through four main functions: Lambda API Handler, Lambda Virtual Sensor, Lambda Waste Detector, and Lambda Report Generator.
+- Amazon EventBridge: Creates scheduled triggers for the virtual sensor every 1 minute and for the daily report at 00:05 AM.
+- AWS IoT Core: Receives simulated electricity data through the MQTT protocol.
+- AWS IoT Core Rule: Routes telemetry data from IoT Core to Lambda Waste Detector.
+- Amazon DynamoDB: Stores shared data, including Rooms, Telemetry, Alerts, and Reports Metadata.
+- Amazon SNS: Sends email alerts when electricity waste is detected.
+- Amazon S3: Stores daily report files in the Report Bucket.
+- Amazon CloudWatch: Monitors logs and metrics and supports debugging for Lambda, API Gateway, EventBridge, IoT Core, and SNS.
+- AWS Budgets: Tracks costs and sends alerts when the budget exceeds the expected threshold.
 
-### Infrastructure Costs
-- AWS Services:
-    - AWS Lambda: $0.00/month (1,000 requests, 512 MB storage).
-    - S3 Standard: $0.15/month (6 GB, 2,100 requests, 1 GB scanned).
-    - Data Transfer: $0.02/month (1 GB inbound, 1 GB outbound).
-    - AWS Amplify: $0.35/month (256 MB, 500 ms requests).
-    - Amazon API Gateway: $0.01/month (2,000 requests).
-    - AWS Glue ETL Jobs: $0.02/month (2 DPUs).
-    - AWS Glue Crawlers: $0.07/month (1 crawler).
-    - MQTT (IoT Core): $0.08/month (5 devices, 45,000 messages).
+*Component Design*
 
-Total: $0.7/month, $8.40/12 months
+- Users: Access the dashboard through a web browser to view electricity data, alerts, and reports.
+- Web Interface: The dashboard is built with React, Next.js, and TailwindCSS, and deployed on AWS Amplify.
+- Edge/Frontend Layer: Amazon Route 53 routes the domain to Amazon CloudFront. AWS WAF protects CloudFront, and CloudFront distributes the frontend application hosted on AWS Amplify.
+- User Management: Amazon Cognito handles user sign-in, authentication, and JWT token issuance.
+- Backend API: Amazon API Gateway receives requests from the dashboard, validates JWT tokens, and invokes Lambda API Handler to process business logic.
+- Virtual Sensor: Lambda Virtual Sensor is triggered every 1 minute by Amazon EventBridge to generate simulated electricity data such as power, voltage, current, device status, and room occupancy status.
+- IoT Data Ingestion: AWS IoT Core receives MQTT data from Lambda Virtual Sensor. AWS IoT Core Rule routes this data to Lambda Waste Detector.
+- Energy Waste Detection: Lambda Waste Detector checks energy waste conditions, such as a device being turned on, no one being in the room, and power consumption exceeding the allowed threshold.
+- Data Storage: Amazon DynamoDB stores telemetry, alerts, rooms, and reports metadata in a shared data table.
+- Alerting: Amazon SNS sends email alerts when energy waste is detected.
+- Reporting: Lambda Report Generator runs daily at 00:05 AM, reads data from DynamoDB, summarizes reports, and stores them in the Amazon S3 Report Bucket.
+- System Monitoring: Amazon CloudWatch records logs and metrics to verify whether Lambda functions run on schedule, whether IoT Rule invokes the detector, whether APIs encounter errors, and whether SNS sends alerts successfully.
 
-- Hardware: $265 one-time (Raspberry Pi 5 and sensors).
+### 4. Roadmap and Deployment Milestones
 
-### 7. Risk Assessment
-#### Risk Matrix
-- Network Outages: Medium impact, medium probability.
-- Sensor Failures: High impact, low probability.
-- Cost Overruns: Medium impact, low probability.
+- Phase 1 — Design and Preparation:  
+Complete system requirements, design the AWS architecture diagram, identify required services, and set up AWS Budget to control costs.
 
-#### Mitigation Strategies
-- Network: Local storage on Raspberry Pi with Docker.
-- Sensors: Regular checks and spares.
-- Cost: AWS budget alerts and optimization.
+- Phase 2 — Deploy the Virtual Sensor Flow:  
+Create DynamoDB, SNS, Lambda Virtual Sensor, Lambda Waste Detector, IoT Core, IoT Core Rule, and an EventBridge rule that runs every 1 minute. Verify whether data is generated, transmitted through IoT Core, processed, and stored in DynamoDB.
 
-#### Contingency Plans
-- Revert to manual methods if AWS fails.
-- Use CloudFormation for cost-related rollbacks.
+- Phase 3 — Deploy API and Authentication:  
+Create a Cognito User Pool, API Gateway, and Lambda API Handler. Test whether the frontend or Postman can call the API using a JWT token and read data from DynamoDB.
 
-### 8. Expected Outcomes
-#### Technical Improvements: 
-Real-time data and analytics replace manual processes.  
-Scalable to 10-15 stations.
-#### Long-term Value
-1-year data foundation for AI research.  
-Reusable for future projects.
+- Phase 4 — Deploy Dashboard and Reporting:  
+Deploy the Next.js dashboard to AWS Amplify. Create Lambda Report Generator, an EventBridge rule that runs daily at 00:05 AM, and an S3 Report Bucket to store report files.
+
+- Phase 5 — Testing and Finalization:  
+Test the entire system, review logs in CloudWatch, test SNS email alerts, verify reports in S3, and optimize costs before the final project presentation.
+
+### 5. Budget Estimation
+
+Costs can be estimated using [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01).  
+Or download the [budget estimation file](../attachments/budget_estimation.pdf).
+
+*Infrastructure Costs*
+
+- AWS Lambda: 0.00 USD/month for low-volume demo usage.
+- Amazon DynamoDB: 0.00–0.10 USD/month for small on-demand data storage.
+- AWS IoT Core: 0.05–0.10 USD/month for MQTT messages and IoT rule processing.
+- Amazon SNS: 0.00–0.05 USD/month for a small number of email alerts.
+- Amazon API Gateway: approximately 0.01 USD/month for around 2,000 API requests.
+- Amazon S3 Report Bucket: 0.00–0.05 USD/month for storing daily report files.
+- AWS Amplify: approximately 0.30–1.00 USD/month for frontend build, deployment, and hosting.
+- Amazon CloudFront: approximately 0.00–0.10 USD/month for low demo traffic.
+- AWS WAF: approximately 6.00–8.00 USD/month if enabled with one Web ACL and several basic rules.
+- Amazon CloudWatch: approximately 0.00–0.50 USD/month depending on log volume.
+
+*Estimated Total*
+
+- Core AWS demo without WAF and Route 53: approximately 0.5–2 USD/month.
+- Full architecture with WAF, Route 53, CloudFront, and Amplify: approximately 7–10 USD/month.
+- Recommended project budget: 30–50 USD for the full testing and demonstration period.
+
+### 6. Risk Assessment
+
+*Risk Matrix*
+
+- AWS budget overrun: Medium impact, medium probability. This may be caused by increased CloudWatch logs, WAF/CloudFront costs, or EventBridge running continuously.
+- Missing IAM permissions for Lambda: High impact, medium probability. This may prevent Lambda from writing to DynamoDB, publishing to SNS, or sending data to IoT Core.
+- SNS email not sent: Medium impact, medium probability. A common cause is that the email subscription has not been confirmed.
+- IoT Rule does not invoke Lambda Waste Detector: High impact, medium probability. This may be caused by an incorrect MQTT topic, incorrect SQL statement, or missing Lambda invoke permission.
+- API Gateway JWT authentication error: High impact, medium probability. This may be caused by incorrect Cognito authorizer configuration or a missing Authorization header from the frontend.
+- Simulated sensor data is not realistic enough: Medium impact, high probability. Since the data is simulated, the detection rules must be designed carefully for a clear demonstration.
+- Dashboard cannot read the API: Medium impact, medium probability. This may be caused by CORS issues, an incorrect API Gateway endpoint, or an invalid token.
+- Report is not generated on schedule: Medium impact, low probability. This may be caused by an incorrect EventBridge schedule, Lambda timeout, or missing S3 write permission.
+
+*Mitigation Strategies*
+
+- Cost: Create AWS Budget, monitor the Billing Dashboard, and control CloudWatch Logs retention.
+- IAM Permission: Apply least-privilege permissions for each Lambda function and verify DynamoDB, SNS, IoT Core, and S3 permissions carefully.
+- SNS Email: Confirm the email subscription immediately after creating the SNS topic.
+- IoT Rule: Manually test Lambda Virtual Sensor, verify the MQTT topic, and check Lambda Waste Detector logs in CloudWatch.
+- JWT/Cognito: Test sign-in, obtain a JWT token, and call API Gateway using Postman or the dashboard.
+- CORS: Configure CORS for API Gateway so that the Amplify frontend can call the backend.
+- Report: Test Lambda Report Generator manually before attaching the Daily 00:05 AM EventBridge rule.
+- Simulated Data: Create multiple virtual sensor scenarios, such as occupied/unoccupied room, device on/off, and high/low power usage to clearly demonstrate energy waste detection.
+
+*Contingency Plan*
+
+- If AWS IoT Core configuration fails, Lambda Waste Detector can be tested directly using a sample JSON event.
+- If Cognito is not completed in time, API Gateway can be demonstrated in test mode first, then the JWT authorizer can be added later.
+- If Amplify deployment is not ready, the frontend can be run locally and call the real API Gateway endpoint to prove that the AWS backend works.
+- If automatic report generation is not ready, Lambda Report Generator can be run manually to generate a report file in S3.
+- If costs increase unexpectedly, the EventBridge rule can be disabled temporarily and unnecessary log groups can be deleted after screenshots are captured as evidence.
+
+### 7. Expected Outcomes
+
+- Technical Improvement:  
+The system automates electricity monitoring in smart homes or laboratories, replacing manual checking with a scheduled serverless pipeline. Electricity data is generated by virtual sensors, transmitted through AWS IoT Core, analyzed by Lambda, and stored centrally in DynamoDB. When energy waste is detected, the system can send near real-time email alerts.
+
+- Operational Value:  
+The dashboard allows users to monitor electricity consumption, view alert history, and download daily reports. Using AWS Serverless reduces the need for server management, simplifies deployment, and makes it easier to expand to more rooms, more devices, or real sensors in the future.
+
+- Scalability:  
+In the future, the system can be extended from virtual sensors to real sensors such as smart meters, ESP32, or IoT power measurement devices. It can also support electricity consumption trend analysis, anomaly prediction, device on/off schedule optimization, and an administration dashboard for multiple rooms or buildings.
+![Architecture](/images/2-Proposal/2.architecture.png)

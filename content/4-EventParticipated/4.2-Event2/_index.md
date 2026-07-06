@@ -1,7 +1,7 @@
 ---
 title: "Event 2"
 date: 2024-01-01
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
@@ -10,117 +10,114 @@ pre: " <b> 4.2. </b> "
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
 {{% /notice %}}
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: “From First Cloud AI Journey to AWS Partner”
+
+### Event Information
+
+- **Date:** June 13, 2026
+- **Location:** Bitexco Financial Tower, 26th Floor, Ho Chi Minh City
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Share real-world experiences of building careers in Cloud and AI
+- Introduce practical knowledge about DevOps and AWS
+- Demonstrate real-world cloud-native system architecture
+- Inspire students to pursue AWS certifications and career opportunities
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Anh Đạt & Anh Cường** – Real-world stories and multinational company culture
+- **Hoàng Trọng** – *What does a DevOps Engineer really do?*
+- **Hiếu Nghị** – *From First Cloud AI Journey to AWS Partner*
+- **Kiên & Thọ** – *A Scalable URL Shortening Service on AWS*
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Real-world Stories & Multinational Company Culture
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+- Career experiences from engineers working in international companies
+- Professional working culture in global organizations
+- Continuous learning and teamwork in technology projects
 
-#### Transitioning to modern application architecture – Microservices
+#### What Does a DevOps Engineer Really Do?
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- Roles and responsibilities of a DevOps Engineer
+- Collaboration between development and operations teams
+- Automation, CI/CD, infrastructure management, and monitoring
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### From First Cloud AI Journey to AWS Partner
 
-#### Domain-Driven Design (DDD)
+- Personal learning journey from beginner to AWS ecosystem
+- Importance of AWS certifications and hands-on practice
+- Career development opportunities in Cloud and AI
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### A Scalable URL Shortening Service on AWS
 
-#### Event-Driven Architecture
-
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+- Designing a URL shortening application on AWS
+- Building scalable and highly available cloud architecture
+- Using AWS services to improve reliability and performance
 
 ### Key Takeaways
 
-#### Design Mindset
+#### Career Development
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+- Continuous learning is essential for building a Cloud career.
+- Hands-on experience is as important as theoretical knowledge.
+- AWS certifications help validate technical skills.
 
-#### Technical Architecture
+#### Technical Knowledge
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+- Better understanding of the DevOps Engineer role.
+- Learned practical cloud architecture design concepts.
+- Understood scalability and reliability considerations for cloud applications.
 
-#### Modernization Strategy
+#### Professional Mindset
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+- Communication and teamwork are critical in large organizations.
+- Real-world engineering requires continuous improvement and adaptation.
+- Building projects is one of the best ways to improve technical skills.
 
 ### Applying to Work
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- Continue learning AWS services through hands-on projects.
+- Practice designing scalable cloud applications.
+- Apply DevOps principles to future software projects.
+- Prepare for AWS certification exams.
+- Explore Cloud AI technologies for future development.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Attending the **"From First Cloud AI Journey to AWS Partner"** event provided valuable insights into both technical knowledge and career development in Cloud Computing.
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### Learning from industry professionals
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+- Speakers shared practical experiences from real projects and multinational working environments.
+- The sessions provided a clearer understanding of career paths in Cloud, DevOps, and AI.
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### Technical knowledge
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+- Learned the responsibilities of DevOps Engineers in modern software development.
+- Explored the design of scalable cloud applications on AWS through a URL shortening system.
+- Better understood cloud architecture and best practices.
+
+#### Career inspiration
+
+- The journey from learning Cloud technologies to becoming an AWS Partner was inspiring.
+- The event encouraged continuous learning and obtaining AWS certifications.
+
+#### Networking opportunities
+
+- Had opportunities to meet AWS community members and fellow students.
+- Exchanged experiences about learning Cloud technologies and career development.
 
 #### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+
+- Practical experience is essential for mastering cloud technologies.
+- Building real projects is the fastest way to improve technical skills.
+- Continuous learning and community participation are important for long-term career growth.
 
 #### Some event photos
-*Add your event photos here*  
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+*Add your event photos here.*
+
+> Overall, the event not only strengthened my technical knowledge of AWS and DevOps but also inspired me to continue developing my Cloud Computing career through continuous learning and practical experience.
