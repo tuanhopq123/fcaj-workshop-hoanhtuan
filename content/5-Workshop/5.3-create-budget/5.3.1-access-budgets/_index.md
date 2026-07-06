@@ -2,7 +2,7 @@
 title: "5.3.1 Access AWS Budgets"
 date: 2026-07-05T21:01:00+07:00
 draft: false
-weight: 531
+weight: 3
 description: "Instructions on how to access the AWS Budgets management interface."
 ---
 

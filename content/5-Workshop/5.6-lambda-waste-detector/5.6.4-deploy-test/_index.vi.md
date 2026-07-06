@@ -1,3 +1,8 @@
+---
+title: "5.6.4 Deploy test"
+weight: 1
+---
+
 # 5.6.4 Triển khai mã nguồn và Kiểm thử hệ thống
 
 Sau khi hoàn tất cấu hình hệ thống và phân quyền bảo mật, chúng ta tiến hành dán tập lệnh logic xử lý core Python vào hàm Lambda, thực hiện chạy thử với dữ liệu giả lập và xác minh kết quả tại các dịch vụ đầu ra.

@@ -1,6 +1,6 @@
 ---
 title: "5.6 Configuring AWS Lambda and Testing the System"
-weight: 56
+weight: 6
 value: 56
 description: "Overview of implementing AWS Lambda to process IoT telemetry data and executing end-to-end integration tests."
 ---

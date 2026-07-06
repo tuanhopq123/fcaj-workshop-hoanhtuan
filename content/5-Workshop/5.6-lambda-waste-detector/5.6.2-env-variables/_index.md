@@ -1,3 +1,8 @@
+---
+title: "5.6.2 Env variables"
+weight: 1
+---
+
 # 5.6.2 Configure Environment Variables
 
 Instead of hardcoding system values like table names or topic ARNs, we will leverage environment variables within our Lambda function to ensure modular configuration.

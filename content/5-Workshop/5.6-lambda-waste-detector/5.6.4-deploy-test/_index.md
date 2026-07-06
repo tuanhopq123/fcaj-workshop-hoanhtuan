@@ -1,3 +1,8 @@
+---
+title: "5.6.4 Deploy test"
+weight: 1
+---
+
 # 5.6.4 Deploy Logic and Verify System Results
 
 Now that configurations and permissions are set, we will inject the core Python processing script into our Lambda function, invoke a manual mock testing payload, and audit the results across downstream AWS components.

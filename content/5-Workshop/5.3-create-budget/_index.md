@@ -2,7 +2,7 @@
 title: "5.3. Create Budget and Select Region"
 date: 2026-07-05T21:00:00+07:00
 draft: false
-weight: 530
+weight: 3
 tags: ["aws", "budget", "billing"]
 categories: ["Workshop"]
 description: "Overview of setting up AWS Budgets to control project infrastructure costs."

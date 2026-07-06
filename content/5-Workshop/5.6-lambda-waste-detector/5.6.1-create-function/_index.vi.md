@@ -1,3 +1,8 @@
+---
+title: "5.6.1 Create function"
+weight: 1
+---
+
 # 5.6.1 Khởi tạo hàm AWS Lambda
 
 Để bắt đầu xử lý luồng dữ liệu telemetry từ hệ thống IoT, chúng ta cần khởi tạo một hàm tính toán serverless bằng dịch vụ AWS Lambda.

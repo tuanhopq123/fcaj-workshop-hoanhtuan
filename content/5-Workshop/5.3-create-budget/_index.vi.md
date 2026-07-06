@@ -2,7 +2,7 @@
 title: "5.3. Tạo Budget và Chọn Region"
 date: 2026-07-05T21:00:00+07:00
 draft: false
-weight: 530
+weight: 3
 tags: ["aws", "budget", "billing"]
 categories: ["Workshop"]
 description: "Tổng quan về việc thiết lập AWS Budgets để kiểm soát chi phí hạ tầng dự án."

@@ -1,6 +1,6 @@
 ---
 title: "5.5 Khởi tạo Dịch vụ Thông báo Amazon SNS"
-weight: 55
+weight: 5
 value: 55
 description: "Hướng dẫn từng bước truy cập dịch vụ Amazon Simple Notification Service và chuẩn bị tích hợp kênh cảnh báo."
 ---
