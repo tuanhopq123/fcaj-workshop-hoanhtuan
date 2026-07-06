@@ -9,6 +9,7 @@ Mã nguồn Python dưới đây sẽ tự động tính toán dữ liệu và g
 1. Quay trở lại tab **Code** của hàm Lambda `energy-virtual-sensor`.
 2. Trong trình soạn thảo **Code source**, mở tệp `lambda_function.py`.
 3. Xóa toàn bộ nội dung mã mặc định cũ và dán đoạn mã nguồn hoàn chỉnh dưới đây *(Xem cấu trúc hiển thị file tại tệp `04-ma-nguon-virtual-sensor.png`)*:
+   ![Triển khai mã nguồn Virtual Sensor](/images/5-Workshop/5.7-lambda-virtual-sensor/04-ma-nguon-virtual-sensor.png)
 
 ```python
 import json
