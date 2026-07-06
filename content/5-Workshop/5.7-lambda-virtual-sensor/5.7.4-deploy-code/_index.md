@@ -9,6 +9,7 @@ The Python script below calculates data and randomly simulates one of four opera
 1. Return to the **Code** tab of the `energy-virtual-sensor` Lambda function.
 2. In the **Code source** editor, open the `lambda_function.py` file.
 3. Delete all default placeholder code and paste the following complete production code *(Reference: `04-ma-nguon-virtual-sensor.png`)*:
+   ![Triển khai mã nguồn Virtual Sensor](/images/5-Workshop/5.7-lambda-virtual-sensor/04-ma-nguon-virtual-sensor.png)
 
 ```python
 import json

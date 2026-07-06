@@ -9,6 +9,7 @@ weight: 3
 1. Tại tab **Configuration**, chọn mục **Permissions** từ menu bên trái.
 2. Tại phần **Execution role**, click vào đường dẫn liên kết màu xanh của Role dạng: `energy-virtual-sensor-role-xxxxxx` để chuyển hướng sang trang quản lý IAM Role.
 3. Trong trang chi tiết của IAM Role, bấm nút **Add permissions** và chọn **Create inline policy** *(Tham chiếu tệp `03-iam-iot-publish-policy.png`)*.
+   ![Giao diện đính kèm chính sách IAM](/images/5-Workshop/5.7-lambda-virtual-sensor/03-iam-iot-publish-policy.png)
 4. Chuyển sang tab **JSON**, xóa toàn bộ mã mẫu hiện tại và dán đoạn chính sách bảo mật sau:
 
 ```json

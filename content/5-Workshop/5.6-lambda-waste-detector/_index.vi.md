@@ -1,16 +1,30 @@
-# 5.6 Cấu hình AWS Lambda và Kiểm thử Hệ thống
+---
+title: "5.6 Cấu hình AWS Lambda và Kiểm thử Hệ thống"
+weight: 56
+value: 56
+description: "Tổng quan về việc triển khai AWS Lambda để xử lý dữ liệu đo lường IoT và thực hiện kiểm thử tích hợp toàn diện."
+---
 
-### Tổng quan
-Trong chương này, chúng ta sẽ tìm hiểu và triển khai dịch vụ **AWS Lambda** nhằm thiết lập cầu nối xử lý logic giữa luồng dữ liệu telemetry thu thập từ IoT Core với các hệ thống phân tích và thông báo đầu ra. AWS Lambda đóng vai trò là một dịch vụ tính toán hướng sự kiện (serverless), tự động thực thi mã nguồn để xử lý các gói tin khi có yêu cầu.
+Trong phần này, chúng ta sẽ tìm hiểu và triển khai **AWS Lambda** để kết nối dữ liệu thu thập từ IoT Core với các dịch vụ phân tích và xử lý thông báo phía sau. AWS Lambda đóng vai trò là một dịch vụ tính toán phi máy chủ (serverless) hoạt động theo kiến trúc hướng sự kiện, tự động xử lý các gói dữ liệu theo nhu cầu thực tế.
 
 ### Mục tiêu bài học
-* **Khởi tạo tính toán Serverless:** Triển khai môi trường thực thi độc lập cho hàm xử lý AWS Lambda dựa trên ngôn ngữ Python.
-* **Tách biệt cấu hình bằng biến môi trường:** Bảo mật các thông số cấu hình hệ thống quan trọng thông qua việc thiết lập Lambda Environment Variables.
-* **Quản trị phân quyền bảo mật IAM:** Áp dụng chính sách bảo mật nội bộ để cấp đặc quyền ghi/đọc dữ liệu an toàn với Amazon DynamoDB và Amazon SNS.
-* **Kiểm thử tích hợp toàn diện hệ thống:** Kích hoạt thử nghiệm bằng các gói tin mô phỏng hành vi lãng phí điện năng, đồng thời kiểm tra tính đồng bộ của cơ sở dữ liệu và hệ thống gửi thông báo thời gian thực.
+* **Khởi tạo tính toán phi máy chủ:** Triển khai môi trường hàm AWS Lambda độc lập dựa trên ngôn ngữ Python.
+* **Cô lập biến quản lý trạng thái:** Bảo mật thông tin cấu hình hệ thống bằng cách sử dụng Biến môi trường (Environment Variables) của Lambda.
+* **Kiểm soát quyền truy cập IAM:** Áp dụng các chính sách bảo mật để cấp quyền tương tác đọc/ghi dữ liệu với Amazon DynamoDB và Amazon SNS.
+* **Kiểm thử tích hợp hệ thống toàn diện:** Kích hoạt các gói dữ liệu giả lập sự kiện lãng phí điện năng, tiến hành kiểm tra bảng dữ liệu thực tế và các kênh nhận thông báo thời gian thực.
 
-### Nội dung chi tiết
-1. [5.6.1 Khởi tạo hàm AWS Lambda](5.6.1-create-function/)
-2. [5.6.2 Cấu hình biến môi trường (Environment Variables)](5.6.2-env-variables/)
-3. [5.6.3 Cấu hình phân quyền IAM cho Lambda](5.6.3-iam-permissions/)
-4. [5.6.4 Triển khai mã nguồn và Kiểm thử hệ thống](5.6.4-deploy-test/)
+---
+
+### Cấu trúc chương học
+
+#### 1. [5.6.1 Tạo Hàm AWS Lambda](5.6.1-create-function/)
+Hướng dẫn từng bước để khởi tạo môi trường thực thi runtime Python bên trong giao diện AWS Lambda console.
+
+#### 2. [5.6.2 Cấu hình Biến môi trường](5.6.2-env-variables/)
+Hướng dẫn thiết lập các cấu hình key-value tách biệt nhằm lưu trữ an toàn các tham chiếu đến tài nguyên AWS đích.
+
+#### 3. [5.6.3 Cấu hình Quyền thực thi IAM](5.6.3-iam-permissions/)
+Chỉnh sửa IAM execution role của Lambda để cấp quyền ghi dữ liệu một cách an toàn vào Amazon DynamoDB và Amazon SNS.
+
+#### 4. [5.6.4 Triển khai Mã nguồn và Xác minh Kết quả](5.6.4-deploy-test/)
+Triển khai đoạn mã xử lý logic hoàn chỉnh, kích hoạt thử nghiệm các gói dữ liệu giả lập lỗi và kiểm tra kết quả đầu ra của hệ thống.

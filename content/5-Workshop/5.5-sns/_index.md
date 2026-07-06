@@ -5,17 +5,15 @@ value: 55
 description: "Step-by-step instructions to access Amazon Simple Notification Service and prepare for alert channel integration."
 ---
 
-# 5.5 Open Amazon SNS
+In this section, we will work with **Amazon Simple Notification Service (SNS)**. This managed messaging service allows our system to push immediate power consumption alerts to users.
 
-In this section, we will access **Amazon Simple Notification Service (SNS)**. This managed messaging service allows our system to push immediate power consumption alerts to users.
+In this section, we will perform three main steps:
 
-### Step-by-step Instructions:
+### 1. [Create an SNS Topic](5.5.1-create-topic/)
+Detailed steps to access the Amazon SNS console, initiate the creation process, and configure a new Topic to broadcast notification messages.
 
-1. On the **AWS Console** dashboard, locate the global search bar at the top.
-2. Type: `SNS`[cite: 2].
-3. Select the **Simple Notification Service** option from the result dropdown list[cite: 2].
+### 2. [Create Subscriptions](5.5.2-subscription/)
+Instructions on how to register end-user endpoints (such as Email or SMS) to subscribe to the created Topic to receive alerts.
 
-![Accessing Amazon SNS](sns-open-create-topic.png)
-
-4. From the left navigation pane, select **Topics**[cite: 2].
-5. Click the **Create topic** button to proceed with the specific properties configuration[cite: 2].
+### 3. [Test Publish Messages](5.5.3-test-publish/)
+Guidance on how to publish a test message directly from the AWS Console to verify that your subscription system works successfully.
