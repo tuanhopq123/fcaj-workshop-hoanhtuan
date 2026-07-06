@@ -1,44 +1,110 @@
 ---
-title: "Chia sẻ, đóng góp ý kiến"
+title: "Chia sẻ và phản hồi"
 date: 2026-07-10
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
+
 {{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+⚠️ **Lưu ý:** Nội dung dưới đây chỉ mang tính chất tham khảo. Vui lòng **không sao chép nguyên văn** vào báo cáo của bạn, bao gồm cả phần lưu ý này.
 {{% /notice %}}
 
->Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud AI Journey, giúp team FCAJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau:
+## Đánh giá chung
 
-### Đánh giá chung
+### 1. Môi trường học tập
 
-**1. Môi trường làm việc**  
-Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCAJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn. Tuy nhiên, mình nghĩ có thể bổ sung thêm một số buổi giao lưu hoặc team bonding để mọi người hiểu nhau hơn.
+Môi trường thực tập được tổ chức khoa học với lộ trình học rõ ràng theo từng tuần. Mỗi giai đoạn đều có mục tiêu cụ thể, giúp em từng bước tiếp cận các dịch vụ AWS từ cơ bản đến nâng cao và áp dụng trực tiếp vào dự án thực tế.
 
-**2. Sự hỗ trợ của mentor / team admin**  
-Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Team admin hỗ trợ các thủ tục, tài liệu và tạo điều kiện để mình làm việc thuận lợi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
+Việc kết hợp giữa học lý thuyết, thực hành Hands-on Labs và phát triển dự án giúp em hiểu bản chất của từng dịch vụ thay vì chỉ học theo tài liệu.
 
-**3. Sự phù hợp giữa công việc và chuyên ngành học**  
-Công việc mình được giao phù hợp với kiến thức mình đã học ở trường, đồng thời mở rộng thêm những mảng mới mà mình chưa từng được tiếp cận. Nhờ vậy, mình vừa củng cố kiến thức nền tảng, vừa học thêm kỹ năng thực tế.
+---
 
-**4. Cơ hội học hỏi & phát triển kỹ năng**  
-Trong quá trình thực tập, mình học được nhiều kỹ năng mới như sử dụng công cụ quản lý dự án, kỹ năng làm việc nhóm, và cả cách giao tiếp chuyên nghiệp trong môi trường công ty. Mentor cũng chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn cho sự nghiệp.
+### 2. Sự hỗ trợ từ Mentor và cộng đồng
 
-**5. Văn hóa & tinh thần đồng đội**  
-Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
+Trong suốt quá trình thực tập, Mentor và các thành viên trong cộng đồng luôn sẵn sàng hỗ trợ khi em gặp khó khăn.
 
-**6. Chính sách / phúc lợi cho thực tập sinh**  
-Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
+Thay vì đưa ra lời giải ngay lập tức, Mentor thường hướng dẫn cách tìm kiếm tài liệu chính thức của AWS, phân tích nguyên nhân và tự giải quyết vấn đề. Điều này giúp em hình thành tư duy nghiên cứu và khả năng xử lý các tình huống thực tế tốt hơn.
 
+---
 
-### Một số câu hỏi khác
-- Điều bạn **hài lòng nhất** trong thời gian thực tập?  
-- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
-- Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
+### 3. Mức độ phù hợp với chuyên ngành
 
+Nội dung thực tập có sự liên kết chặt chẽ với chuyên ngành Kỹ thuật Phần mềm mà em đang theo học.
 
-### Đề xuất & mong muốn
-- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
-- Bạn có muốn tiếp tục chương trình này trong tương lai?
-- Góp ý khác (tự do chia sẻ):
+Những kiến thức về lập trình, cơ sở dữ liệu, RESTful API, thiết kế hệ thống và phát triển phần mềm được áp dụng trực tiếp trong quá trình xây dựng dự án **Smart Home Energy Waste Monitoring & Alert System using Virtual Sensors on AWS**.
+
+Đồng thời, chương trình cũng giúp em tiếp cận nhiều công nghệ điện toán đám mây hiện đại mà chương trình đại học chưa có điều kiện khai thác sâu.
+
+---
+
+### 4. Cơ hội học tập và phát triển kỹ năng
+
+Trong 12 tuần thực tập, em có cơ hội làm việc với nhiều dịch vụ AWS như:
+
+- AWS Lambda
+- Amazon API Gateway
+- Amazon DynamoDB
+- Amazon S3
+- Amazon CloudWatch
+- Amazon IAM
+- AWS KMS
+- AWS CloudTrail
+- Amazon RDS
+- AWS Glue
+- Amazon Athena
+- Amazon QuickSight
+
+Ngoài kiến thức chuyên môn, em còn cải thiện đáng kể kỹ năng viết tài liệu kỹ thuật, thiết kế kiến trúc hệ thống, phân tích lỗi, tối ưu chi phí trên Cloud và tư duy xây dựng hệ thống theo AWS Well-Architected Framework.
+
+---
+
+### 5. Trải nghiệm trong quá trình thực tập
+
+Điều em đánh giá cao nhất là chương trình tạo cơ hội thực hành liên tục.
+
+Thay vì chỉ tìm hiểu lý thuyết, em được trực tiếp triển khai hạ tầng trên AWS, thực hiện nhiều bài Hands-on Labs, xử lý lỗi phát sinh và từng bước hoàn thiện dự án từ một hệ thống Serverless đơn giản đến một kiến trúc Cloud hoàn chỉnh.
+
+Việc tham gia FCAJ Community Day cũng giúp em cập nhật thêm nhiều xu hướng mới về Cloud Computing và Generative AI.
+
+---
+
+### 6. Mức độ hài lòng
+
+Nhìn chung, em rất hài lòng với chương trình thực tập.
+
+Không chỉ nâng cao kiến thức về AWS, chương trình còn giúp em rèn luyện tư duy thiết kế hệ thống, khả năng tự nghiên cứu và giải quyết vấn đề, đồng thời tạo nền tảng tốt để phát triển trong lĩnh vực Cloud Computing và Software Engineering.
+
+---
+
+## Một số câu hỏi bổ sung
+
+### Điều em cảm thấy hài lòng nhất trong quá trình thực tập là gì?
+
+Điều em cảm thấy giá trị nhất là được tự tay xây dựng một dự án Cloud hoàn chỉnh từ những bước đầu tiên cho đến khi hoàn thiện tài liệu, triển khai và kiểm thử toàn bộ hệ thống.
+
+Thông qua đó, em hiểu rõ cách các dịch vụ AWS phối hợp với nhau để tạo thành một hệ thống thực tế thay vì chỉ học từng dịch vụ riêng lẻ.
+
+---
+
+### Theo em chương trình có thể cải thiện điều gì?
+
+Em mong chương trình sẽ có thêm nhiều buổi chia sẻ chuyên sâu về kiến trúc hệ thống thực tế, CI/CD, Infrastructure as Code (Terraform hoặc CloudFormation), cũng như các bài toán triển khai trong môi trường doanh nghiệp.
+
+---
+
+### Em có sẵn sàng giới thiệu chương trình cho các bạn khác không?
+
+Có.
+
+Em sẵn sàng giới thiệu chương trình cho các bạn quan tâm đến AWS và Cloud Computing vì chương trình có lộ trình rõ ràng, nhiều bài thực hành thực tế và tạo điều kiện để sinh viên xây dựng một dự án hoàn chỉnh trong suốt quá trình thực tập.
+
+---
+
+## Đề xuất và mong muốn
+
+Em hy vọng chương trình sẽ tiếp tục phát triển thêm nhiều nội dung thực hành nâng cao, tổ chức thêm các buổi chia sẻ kỹ thuật từ các chuyên gia AWS và cập nhật các công nghệ Cloud mới.
+
+Nếu có cơ hội, em rất mong muốn tiếp tục tham gia các chương trình đào tạo chuyên sâu hơn về Cloud Architecture, DevOps và Trí tuệ nhân tạo trên nền tảng AWS.
+
+Đối với em, đây là một chương trình thực tập rất ý nghĩa, giúp em tích lũy nhiều kiến thức và kinh nghiệm thực tế, đồng thời tạo nền tảng vững chắc cho công việc sau khi tốt nghiệp.
