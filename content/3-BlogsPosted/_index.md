@@ -1,22 +1,17 @@
 ---
 title: "Blogs Posted"
-date: 2024-01-01
+date: 2026-07-06
 weight: 3
 chapter: false
 pre: " <b> 3. </b> "
 ---
+This section will list and introduce the technical blogs I have shared regarding cloud security, data engineering automation, and identity management on AWS.
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+###  [Blog 1 - SECURING AI AGENTS ON AWS WITH AUTH0 AND AMAZON BEDROCK AGENTCORE](3.1-Blog1/)
+This post analyzes the security challenges of deploying AI Agents and introduces a joint solution combining Auth0 and Amazon Bedrock AgentCore[cite: 1]. By adopting an Identity-First architecture, the system enforces robust user authentication via OIDC, manages temporary access through the Auth0 Token Vault, applies Fine-Grained Authorization (FGA), and integrates Human-in-the-loop (CIBA) mechanisms to ensure maximum security in production environments[cite: 1].
 
-This section will list and introduce the blogs you have posted to [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj). For example:
+###  [Blog 2 - AUTOMATING DMS MIGRATION TROUBLESHOOTING (ORACLE ➡️ REDSHIFT) WITH AWS DEVOPS AGENT](3.2-Blog2/)
+This blog focuses on optimizing Root Cause Analysis (RCA) when large-scale data migration pipelines encounter failure or high latency[cite: 2]. The proposed design shifts from reactive troubleshooting to an automated workflow by combining CloudWatch Alarms with EventBridge, Lambda, and AWS DevOps Agent to autonomously investigate logs/metrics deep within Oracle and Redshift, providing immediate remediation recommendations[cite: 2].
 
-###  [Blog 1 - SESSION POLICIES IN AMAZON EKS POD IDENTITY](3.1-Blog1/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
-
-###  [Blog 2 - ...](3.2-Blog2/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
-
-###  [Blog 3 - ...](3.3-Blog3/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+###  [Blog 3 - SUBDOMAIN TAKEOVER: SECURITY RISKS FROM "DANGLING DNS" RECORDS ON AWS](3.3-Blog3/)
+This article warns about the dangerous vulnerability known as Subdomain Takeover, which arises from dangling DNS records left behind after deprovisioning AWS resources (like S3 buckets or CloudFront distributions) without removing their corresponding Route 53 entries[cite: 3]. It also highlights key defense strategies, including synchronized infrastructure lifecycle management, leveraging Alias Records, and building automated scanning scripts using AWS Lambda[cite: 3].
