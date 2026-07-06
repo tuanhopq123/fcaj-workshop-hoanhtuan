@@ -5,53 +5,43 @@ weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
+
+{{% notice warning %}}
+⚠️ **Note:** The following information is for reference purposes only. Please **do not copy it verbatim** into your own report, including this warning.
 {{% /notice %}}
 
+### Week 1 Objectives
 
-### Week 1 Objectives:
+- Successfully register an Amazon Web Services (AWS) Free Tier account.
+- Complete the required introductory AWS labs to prepare the cloud environment for the **Smart Home Energy Waste Monitoring & Alert System using Virtual Sensors on AWS**.
+- Become familiar with AWS core services and the AWS Management Console.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+### Tasks Carried Out This Week
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 1 | Registered an AWS Free Tier account, completed identity verification, linked a payment method, and activated the Free Account Plan. | 06/01/2026 | 06/01/2026 | AWS Documentation |
+| 2 | Resolved the SMS verification issue by creating an AWS Support ticket and successfully activating the AWS account. | 06/02/2026 | 06/02/2026 | AWS Support Center |
+| 3 | Configured AWS Budgets and created an email budget alert to monitor cloud spending. | 06/03/2026 | 06/03/2026 | AWS Budgets Documentation |
+| 4 | Completed hands-on labs with Amazon EC2 and Amazon RDS to understand cloud infrastructure and database deployment. | 06/04/2026 | 06/04/2026 | AWS Skill Builder |
+| 5 | Practiced creating AWS Lambda functions and explored Amazon Bedrock Foundation Models while resolving permission-related issues. | 06/05/2026 | 06/05/2026 | AWS Documentation |
 
+### Week 1 Achievements
 
-### Week 1 Achievements:
+- Successfully created and activated an AWS Free Tier account.
+- Learned the complete AWS account registration process, including billing setup and identity verification.
+- Resolved account activation issues by communicating with AWS Support.
+- Configured AWS Budgets to receive automatic email notifications when cloud costs reach predefined thresholds.
+- Gained hands-on experience with Amazon EC2 by launching and terminating Free Tier instances to understand resource lifecycle management.
+- Practiced deploying a relational database using Amazon RDS.
+- Created and tested a basic AWS Lambda function to understand serverless computing.
+- Explored Amazon Bedrock Playground and learned how to interact with Foundation Models.
+- Successfully resolved Amazon Bedrock permission limitations by switching to a supported model configuration.
+- Built a solid foundation of AWS services that will be used throughout the development of the **Smart Home Energy Waste Monitoring & Alert System using Virtual Sensors on AWS**.
+- Successfully completed all assigned introductory AWS laboratory exercises.
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Plan for Next Week
 
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Continue studying AWS services required for the project.
+- Begin designing the architecture of the Smart Home Energy Waste Monitoring & Alert System.
+- Practice additional AWS hands-on labs related to storage, networking, and serverless services.

@@ -172,3 +172,4 @@ The dashboard allows users to monitor electricity consumption, view alert histor
 
 - Scalability:  
 In the future, the system can be extended from virtual sensors to real sensors such as smart meters, ESP32, or IoT power measurement devices. It can also support electricity consumption trend analysis, anomaly prediction, device on/off schedule optimization, and an administration dashboard for multiple rooms or buildings.
+![Architecture](/images/2-Proposal/2.architecture.png)

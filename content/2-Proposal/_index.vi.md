@@ -147,3 +147,4 @@ Hệ thống giúp tự động hóa quá trình giám sát điện năng trong 
 Dashboard giúp người dùng theo dõi dữ liệu tiêu thụ điện, xem lịch sử cảnh báo và tải báo cáo hằng ngày. Việc sử dụng AWS Serverless giúp giảm nhu cầu quản lý máy chủ, đơn giản hóa triển khai và dễ mở rộng khi cần thêm phòng, thêm thiết bị hoặc kết nối cảm biến thật trong tương lai.
 - Khả năng mở rộng:
 Trong tương lai, hệ thống có thể mở rộng từ cảm biến ảo sang cảm biến thật như smart meter, ESP32 hoặc thiết bị IoT đo công suất. Ngoài ra, có thể bổ sung phân tích xu hướng tiêu thụ điện, dự đoán bất thường, tối ưu lịch bật/tắt thiết bị và tích hợp dashboard quản trị nhiều phòng hoặc nhiều tòa nhà.
+![Kiến trúc](/images/2-Proposal/2.architecture.png)
