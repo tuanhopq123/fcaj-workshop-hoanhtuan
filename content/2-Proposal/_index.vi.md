@@ -5,9 +5,6 @@ weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
-{{% notice warning %}}
-
-{{% /notice %}}
 
 # SMART HOME ENERGY WASTE MONITORING & ALERT SYSTEM 
 ## Giải pháp AWS Serverless cho giám sát và cảnh báo lãng phí điện bằng cảm biến ảo 

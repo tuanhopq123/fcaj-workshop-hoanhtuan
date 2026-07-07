@@ -6,9 +6,6 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo. Vui lòng **không sao chép nguyên văn** vào báo cáo của bạn, bao gồm cả phần cảnh báo này.
-{{% /notice %}}
 
 Trong quá trình thực tập tại FPT Smart Cloud, em đã có cơ hội tham gia các sự kiện do cộng đồng FCAJ Community và các chuyên gia trong lĩnh vực AWS, Cloud Computing và Trí tuệ nhân tạo (AI) tổ chức. Đây là những hoạt động giúp em cập nhật các xu hướng công nghệ mới, tiếp cận những kinh nghiệm triển khai thực tế từ doanh nghiệp, đồng thời mở rộng kiến thức chuyên môn và kết nối với cộng đồng yêu thích công nghệ.
 

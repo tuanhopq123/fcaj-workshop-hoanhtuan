@@ -6,9 +6,6 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-{{% notice warning %}}
-
-{{% /notice %}}
 
 # SMART HOME ENERGY WASTE MONITORING & ALERT SYSTEM
 

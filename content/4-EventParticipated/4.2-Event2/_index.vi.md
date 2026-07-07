@@ -6,9 +6,6 @@ chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Nội dung dưới đây chỉ mang tính tham khảo. Vui lòng **không sao chép nguyên văn** vào báo cáo của bạn, bao gồm cả phần cảnh báo này.
-{{% /notice %}}
 
 # Báo cáo tổng kết: “From First Cloud AI Journey to AWS Partner”
 

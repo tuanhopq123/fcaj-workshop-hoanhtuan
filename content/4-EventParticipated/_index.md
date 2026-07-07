@@ -6,9 +6,6 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
 
 During my internship at **FPT Smart Cloud**, I had the opportunity to participate in several events organized by the **FCAJ Community** and industry experts in **AWS, Cloud Computing, and Artificial Intelligence (AI)**. These events allowed me to stay up to date with the latest technology trends, gain practical insights from real-world enterprise implementations, expand my technical knowledge, and connect with the cloud and AI community.
 

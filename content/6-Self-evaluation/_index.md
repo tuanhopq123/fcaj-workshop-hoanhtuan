@@ -1,39 +1,42 @@
 ---
 title: "Self-Assessment"
-date: 2024-01-01
+date: 2026-07-10
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+# Self-Assessment
 
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
+During my internship at **First Cloud Journey (FCAJ)**, I had the opportunity to study and practice various AWS services through hands-on labs and a real-world project. Throughout the **12-week internship**, I successfully completed the **Smart Home Energy Waste Monitoring & Alert System using Virtual Sensors on AWS**, together with a complete Workshop website, deployment documentation, and technical reports.
 
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
+This internship enabled me to apply the knowledge learned at university to a practical environment while gaining experience with modern cloud technologies, including AWS Lambda, Amazon DynamoDB, Amazon API Gateway, Amazon SNS, Amazon Cognito, Amazon IoT Core, Amazon CloudWatch, Amazon EventBridge, Amazon S3, Amazon CloudFront, AWS WAF, and many other AWS services.
 
-To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
+Besides strengthening my technical knowledge, I significantly improved my system analysis skills, cloud architecture design, technical documentation writing, project planning, and problem-solving abilities during system implementation.
 
-| No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
-| 1   | **Professional knowledge & skills** | Understanding of the field, applying knowledge in practice, proficiency with tools, work quality | ✅    | ☐    | ☐       |
-| 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ☐    | ✅    | ☐       |
-| 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ✅    | ☐    | ☐       |
-| 4   | **Sense of responsibility**         | Completing tasks on time and ensuring quality                                                    | ✅    | ☐    | ☐       |
-| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ☐    | ☐    | ✅       |
-| 6   | **Progressive mindset**             | Willingness to receive feedback and improve oneself                                              | ☐    | ✅    | ☐       |
-| 7   | **Communication**                   | Presenting ideas and reporting work clearly                                                      | ☐    | ✅    | ☐       |
-| 8   | **Teamwork**                        | Working effectively with colleagues and participating in teams                                   | ✅    | ☐    | ☐       |
-| 9   | **Professional conduct**            | Respecting colleagues, partners, and the work environment                                        | ✅    | ☐    | ☐       |
-| 10  | **Problem-solving skills**          | Identifying problems, proposing solutions, and showing creativity                                | ☐    | ✅    | ☐       |
-| 11  | **Contribution to project/team**    | Work effectiveness, innovative ideas, recognition from the team                                  | ✅    | ☐    | ☐       |
-| 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
+To objectively evaluate my internship performance, I conducted the following self-assessment:
 
-### Needs Improvement
+| No. | Criteria | Description | Good | Fair | Average |
+|----|--------------------------------------|--------------------------------------------------------------|:---:|:---:|:------:|
+|1|**Professional knowledge & skills**|Applied AWS Cloud and Software Engineering knowledge to a real-world project.|✅||| 
+|2|**Learning ability**|Quickly learned new AWS services and proactively studied official documentation.|✅||| 
+|3|**Proactiveness**|Independently researched, designed, and completed the entire project.|✅||| 
+|4|**Responsibility**|Completed weekly objectives on schedule with satisfactory quality.|✅||| 
+|5|**Discipline**|Followed the internship plan and completed all reports and workshop materials.|✅||| 
+|6|**Growth mindset**|Accepted feedback and continuously improved the project and documentation.|✅||| 
+|7|**Communication**|Communicated effectively with mentors and produced clear technical documentation.| |✅| |
+|8|**Teamwork**|Collaborated well with mentors and program administrators throughout the internship.| |✅| |
+|9|**Professionalism**|Maintained a professional working attitude and organized project documentation systematically.|✅||| 
+|10|**Problem-solving skills**|Independently analyzed AWS documentation, resolved issues, and optimized the system.|✅||| 
+|11|**Contribution to the project**|Successfully completed the entire project, Workshop documentation, and deployment guide.|✅||| 
+|12|**Overall evaluation**|Overall performance throughout the internship period.|✅||| 
 
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization  
-* Improve problem-solving thinking  
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+# Areas for Improvement
+
+Although I achieved many positive results during the internship, I believe there are still several areas where I can continue improving:
+
+- Gain deeper knowledge of large-scale cloud architectures and advanced AWS services.
+- Improve system performance tuning and cloud cost optimization skills.
+- Strengthen DevOps knowledge, especially CI/CD and Infrastructure as Code (Terraform and CloudFormation).
+- Develop stronger technical presentation and public speaking skills.
+- Continue improving English reading skills for technical documentation and keep learning emerging cloud technologies.
