@@ -6,112 +6,114 @@ chapter : false
 pre : " <b> 5.1. </b> "
 ---
 
-# Giới thiệu
+# Introduction
 
 ## Smart Home Energy Waste Monitoring & Alert System
 
-Trong bối cảnh các thiết bị điện thông minh ngày càng được sử dụng rộng rãi trong gia đình và doanh nghiệp, việc theo dõi mức tiêu thụ điện năng và phát hiện các hành vi sử dụng điện không hiệu quả trở thành một yêu cầu quan trọng. Việc để các thiết bị hoạt động khi không có người sử dụng không chỉ gây lãng phí điện năng mà còn làm tăng chi phí vận hành và ảnh hưởng đến mục tiêu tiết kiệm năng lượng.
+As smart electrical devices become increasingly common in homes and businesses, monitoring power consumption and detecting energy waste have become essential requirements. Keeping electrical devices running when no one is present not only wastes electricity but also increases operating costs, reduces resource efficiency, and negatively impacts energy-saving initiatives.
 
-**Smart Home Energy Waste Monitoring & Alert System** là một hệ thống giám sát tiêu thụ điện được xây dựng trên nền tảng AWS Cloud nhằm tự động phát hiện các trường hợp lãng phí điện và gửi cảnh báo đến người dùng theo thời gian thực.
+The **Smart Home Energy Waste Monitoring & Alert System** is built on **Amazon Web Services (AWS)** to monitor electricity consumption in real time, automatically detect energy waste, and notify users whenever abnormal power usage is identified.
 
-Hệ thống sử dụng kiến trúc **Serverless**, giúp giảm chi phí vận hành, dễ dàng mở rộng và không cần quản lý máy chủ. Toàn bộ dữ liệu cảm biến được mô phỏng thông qua các **Virtual Sensors** được xây dựng bằng AWS Lambda.
+The entire system is implemented using a **Serverless Architecture**, leveraging fully managed AWS services to reduce operational costs, improve scalability, and eliminate the need for server management.
 
-Các cảm biến ảo mô phỏng các thông số như:
+To simulate real-world scenarios, the system utilizes **Virtual Sensors** implemented with **AWS Lambda**. These virtual sensors periodically generate the following telemetry data:
 
-- Điện áp (Voltage)
-- Dòng điện (Current)
-- Công suất tiêu thụ (Power Consumption)
-- Trạng thái thiết bị (Device Status)
-- Trạng thái có người trong phòng (Occupancy Status)
+- Voltage
+- Current
+- Power Consumption
+- Device Status
+- Occupancy Status
 
-Hệ thống xác định một trường hợp **lãng phí điện** khi đồng thời thỏa mãn các điều kiện sau:
+The system identifies an **energy waste event** when all of the following conditions are satisfied simultaneously:
 
-- Thiết bị vẫn đang hoạt động.
-- Không phát hiện người trong phòng.
-- Công suất tiêu thụ vượt quá ngưỡng được cấu hình.
+- The electrical device remains turned on.
+- No occupant is detected in the room.
+- Power consumption exceeds the predefined threshold.
 
-Sau khi phát hiện, hệ thống sẽ tự động:
+Once an energy waste event is detected, the system automatically:
 
-- Lưu dữ liệu Telemetry vào Amazon DynamoDB.
-- Lưu thông tin cảnh báo.
-- Gửi Email cảnh báo thông qua Amazon SNS.
-- Hỗ trợ tạo báo cáo định kỳ để phục vụ việc phân tích và thống kê.
-
----
-
-# Mục tiêu của Workshop
-
-Sau khi hoàn thành Workshop này, người học sẽ có thể:
-
-- Hiểu cách xây dựng một hệ thống IoT Serverless trên AWS.
-- Kết nối và xử lý dữ liệu cảm biến bằng AWS IoT Core.
-- Xây dựng luồng xử lý dữ liệu bằng AWS Lambda.
-- Lưu trữ dữ liệu trên Amazon DynamoDB.
-- Gửi Email cảnh báo bằng Amazon SNS.
-- Triển khai REST API với Amazon API Gateway.
-- Xác thực người dùng bằng Amazon Cognito.
-- Tạo báo cáo tự động và lưu trữ trên Amazon S3.
-- Triển khai giao diện Web bằng AWS Amplify Hosting.
-- Bảo vệ ứng dụng với AWS WAF.
+- Stores telemetry data in Amazon DynamoDB.
+- Records the alert information.
+- Sends email notifications through Amazon SNS.
+- Supports scheduled report generation for monitoring and data analysis.
 
 ---
 
-# Tổng quan Workshop
+# Workshop Objectives
 
-Trong Workshop này, chúng ta sẽ triển khai hoàn chỉnh hệ thống **Smart Home Energy Waste Monitoring & Alert System** theo kiến trúc Serverless trên nền tảng AWS.
+After completing this workshop, participants will be able to:
 
-Kiến trúc của hệ thống được chia thành các luồng chức năng chính như sau:
+- Understand how to build an IoT monitoring system using a Serverless architecture on AWS.
+- Deploy and process sensor data with AWS IoT Core.
+- Implement business logic using AWS Lambda.
+- Store application data in Amazon DynamoDB.
+- Send email notifications using Amazon SNS.
+- Build RESTful APIs with Amazon API Gateway.
+- Authenticate users with Amazon Cognito.
+- Generate automated reports and store them in Amazon S3.
+- Deploy a web application using AWS Amplify Hosting.
+- Protect web applications with AWS WAF.
+
+---
+
+# Workshop Overview
+
+In this workshop, we will build the complete **Smart Home Energy Waste Monitoring & Alert System** step by step using a Serverless architecture on AWS.
+
+The overall system architecture consists of several functional workflows.
 
 ### Virtual Sensor Flow
 
-Amazon EventBridge sẽ kích hoạt **Lambda Virtual Sensor** theo chu kỳ mỗi phút để mô phỏng dữ liệu cảm biến.
+Amazon EventBridge triggers the **Lambda Virtual Sensor** function every minute to generate simulated sensor data.
 
-Các dữ liệu sau khi được tạo sẽ được gửi đến **AWS IoT Core** thông qua giao thức MQTT.
+After the data is generated, it is published to **AWS IoT Core** using the MQTT protocol for further processing.
 
 ---
 
 ### Waste Detection Flow
 
-AWS IoT Rule sẽ tiếp nhận dữ liệu từ IoT Core và chuyển đến **Lambda Waste Detector**.
+AWS IoT Rules receive incoming sensor data from AWS IoT Core and forward it to the **Lambda Waste Detector** function.
 
-Lambda sẽ phân tích dữ liệu cảm biến để xác định các trường hợp lãng phí điện.
+The Lambda function analyzes the incoming telemetry to determine whether an energy waste situation has occurred.
 
-Nếu phát hiện bất thường, hệ thống sẽ:
+If energy waste is detected, the system automatically:
 
-- Lưu Telemetry vào Amazon DynamoDB.
-- Lưu thông tin Alert.
-- Gửi Email cảnh báo bằng Amazon SNS.
+- Stores telemetry data in Amazon DynamoDB.
+- Records alert information.
+- Sends email notifications to users through Amazon SNS.
 
 ---
 
 ### Authentication & API Flow
 
-Người dùng đăng nhập thông qua **Amazon Cognito**.
+Users authenticate with the application using **Amazon Cognito**.
 
-Sau khi xác thực thành công, các yêu cầu từ Web Application sẽ được gửi đến **Amazon API Gateway**.
+After successful authentication, requests from the web application are routed to **Amazon API Gateway**.
 
-API Gateway sẽ kích hoạt **Lambda API Handler** để truy xuất dữ liệu từ DynamoDB và trả kết quả về giao diện.
+API Gateway invokes the **Lambda API Handler**, which retrieves data from Amazon DynamoDB and returns the response to the frontend application.
 
 ---
 
 ### Report Generation Flow
 
-Lambda Report Generator sẽ đọc dữ liệu từ DynamoDB theo lịch trình.
+The **Lambda Report Generator** function is triggered on a scheduled basis to retrieve monitoring data from Amazon DynamoDB.
 
-Sau khi xử lý, báo cáo sẽ được xuất dưới định dạng JSON và lưu vào **Amazon S3** để phục vụ việc lưu trữ và tải xuống sau này.
-
----
-
-### Frontend Deployment
-
-Giao diện người dùng được phát triển bằng **Next.js** và triển khai trên **AWS Amplify Hosting**.
-
-Để tăng cường bảo mật, toàn bộ lưu lượng truy cập HTTP/HTTPS sẽ được bảo vệ thông qua **AWS WAF**, giúp giảm thiểu các cuộc tấn công phổ biến vào ứng dụng Web.
+After processing the data, the function generates a JSON report and stores it in **Amazon S3** for long-term storage and download.
 
 ---
 
-# Kiến trúc tổng thể của hệ thống
+### Frontend Application
 
-Hình dưới đây mô tả toàn bộ kiến trúc triển khai của hệ thống Smart Home Energy Waste Monitoring & Alert System trên nền tảng AWS.
+The frontend application is developed using **Next.js** and deployed with **AWS Amplify Hosting**.
+
+All incoming HTTP/HTTPS traffic is protected by **AWS WAF**, helping mitigate common web application attacks while enhancing the overall security of the system.
+
+---
+
+# Overall System Architecture
+
+The figure below illustrates the overall architecture of the **Smart Home Energy Waste Monitoring & Alert System** deployed on **Amazon Web Services (AWS)**.
+
+The architecture provides a complete overview of the data processing workflow, beginning with virtual sensor simulation, followed by data collection, processing, energy waste detection, data storage, notification delivery, automated report generation, and finally data visualization through the web application.
 
 ![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
