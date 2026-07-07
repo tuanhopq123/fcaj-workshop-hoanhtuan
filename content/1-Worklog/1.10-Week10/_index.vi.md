@@ -6,9 +6,6 @@ chapter: false
 pre: " <b> 1.10. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Nội dung dưới đây chỉ mang tính chất tham khảo. Vui lòng **không sao chép nguyên văn** vào báo cáo của bạn, bao gồm cả phần cảnh báo này.
-{{% /notice %}}
 
 ## Mục tiêu tuần
 

@@ -1,242 +1,92 @@
 ---
-title : "Các bước chuẩn bị"
-date : 2024-01-01 
+title : "Điều kiện chuẩn bị"
+date : 2024-01-01
 weight : 2
 chapter : false
 pre : " <b> 5.2. </b> "
 ---
 
-#### IAM permissions
-Gắn IAM permission policy sau vào tài khoản aws user của bạn để triển khai và dọn dẹp tài nguyên trong workshop này.
-```
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "VisualEditor0",
-            "Effect": "Allow",
-            "Action": [
-                "cloudformation:*",
-                "cloudwatch:*",
-                "ec2:AcceptTransitGatewayPeeringAttachment",
-                "ec2:AcceptTransitGatewayVpcAttachment",
-                "ec2:AllocateAddress",
-                "ec2:AssociateAddress",
-                "ec2:AssociateIamInstanceProfile",
-                "ec2:AssociateRouteTable",
-                "ec2:AssociateSubnetCidrBlock",
-                "ec2:AssociateTransitGatewayRouteTable",
-                "ec2:AssociateVpcCidrBlock",
-                "ec2:AttachInternetGateway",
-                "ec2:AttachNetworkInterface",
-                "ec2:AttachVolume",
-                "ec2:AttachVpnGateway",
-                "ec2:AuthorizeSecurityGroupEgress",
-                "ec2:AuthorizeSecurityGroupIngress",
-                "ec2:CreateClientVpnEndpoint",
-                "ec2:CreateClientVpnRoute",
-                "ec2:CreateCustomerGateway",
-                "ec2:CreateDhcpOptions",
-                "ec2:CreateFlowLogs",
-                "ec2:CreateInternetGateway",
-                "ec2:CreateLaunchTemplate",
-                "ec2:CreateNetworkAcl",
-                "ec2:CreateNetworkInterface",
-                "ec2:CreateNetworkInterfacePermission",
-                "ec2:CreateRoute",
-                "ec2:CreateRouteTable",
-                "ec2:CreateSecurityGroup",
-                "ec2:CreateSubnet",
-                "ec2:CreateSubnetCidrReservation",
-                "ec2:CreateTags",
-                "ec2:CreateTransitGateway",
-                "ec2:CreateTransitGatewayPeeringAttachment",
-                "ec2:CreateTransitGatewayPrefixListReference",
-                "ec2:CreateTransitGatewayRoute",
-                "ec2:CreateTransitGatewayRouteTable",
-                "ec2:CreateTransitGatewayVpcAttachment",
-                "ec2:CreateVpc",
-                "ec2:CreateVpcEndpoint",
-                "ec2:CreateVpcEndpointConnectionNotification",
-                "ec2:CreateVpcEndpointServiceConfiguration",
-                "ec2:CreateVpnConnection",
-                "ec2:CreateVpnConnectionRoute",
-                "ec2:CreateVpnGateway",
-                "ec2:DeleteCustomerGateway",
-                "ec2:DeleteFlowLogs",
-                "ec2:DeleteInternetGateway",
-                "ec2:DeleteNetworkInterface",
-                "ec2:DeleteNetworkInterfacePermission",
-                "ec2:DeleteRoute",
-                "ec2:DeleteRouteTable",
-                "ec2:DeleteSecurityGroup",
-                "ec2:DeleteSubnet",
-                "ec2:DeleteSubnetCidrReservation",
-                "ec2:DeleteTags",
-                "ec2:DeleteTransitGateway",
-                "ec2:DeleteTransitGatewayPeeringAttachment",
-                "ec2:DeleteTransitGatewayPrefixListReference",
-                "ec2:DeleteTransitGatewayRoute",
-                "ec2:DeleteTransitGatewayRouteTable",
-                "ec2:DeleteTransitGatewayVpcAttachment",
-                "ec2:DeleteVpc",
-                "ec2:DeleteVpcEndpoints",
-                "ec2:DeleteVpcEndpointServiceConfigurations",
-                "ec2:DeleteVpnConnection",
-                "ec2:DeleteVpnConnectionRoute",
-                "ec2:Describe*",
-                "ec2:DetachInternetGateway",
-                "ec2:DisassociateAddress",
-                "ec2:DisassociateRouteTable",
-                "ec2:GetLaunchTemplateData",
-                "ec2:GetTransitGatewayAttachmentPropagations",
-                "ec2:ModifyInstanceAttribute",
-                "ec2:ModifySecurityGroupRules",
-                "ec2:ModifyTransitGatewayVpcAttachment",
-                "ec2:ModifyVpcAttribute",
-                "ec2:ModifyVpcEndpoint",
-                "ec2:ReleaseAddress",
-                "ec2:ReplaceRoute",
-                "ec2:RevokeSecurityGroupEgress",
-                "ec2:RevokeSecurityGroupIngress",
-                "ec2:RunInstances",
-                "ec2:StartInstances",
-                "ec2:StopInstances",
-                "ec2:UpdateSecurityGroupRuleDescriptionsEgress",
-                "ec2:UpdateSecurityGroupRuleDescriptionsIngress",
-                "iam:AddRoleToInstanceProfile",
-                "iam:AttachRolePolicy",
-                "iam:CreateInstanceProfile",
-                "iam:CreatePolicy",
-                "iam:CreateRole",
-                "iam:DeleteInstanceProfile",
-                "iam:DeletePolicy",
-                "iam:DeleteRole",
-                "iam:DeleteRolePolicy",
-                "iam:DetachRolePolicy",
-                "iam:GetInstanceProfile",
-                "iam:GetPolicy",
-                "iam:GetRole",
-                "iam:GetRolePolicy",
-                "iam:ListPolicyVersions",
-                "iam:ListRoles",
-                "iam:PassRole",
-                "iam:PutRolePolicy",
-                "iam:RemoveRoleFromInstanceProfile",
-                "lambda:CreateFunction",
-                "lambda:DeleteFunction",
-                "lambda:DeleteLayerVersion",
-                "lambda:GetFunction",
-                "lambda:GetLayerVersion",
-                "lambda:InvokeFunction",
-                "lambda:PublishLayerVersion",
-                "logs:CreateLogGroup",
-                "logs:DeleteLogGroup",
-                "logs:DescribeLogGroups",
-                "logs:PutRetentionPolicy",
-                "route53:ChangeTagsForResource",
-                "route53:CreateHealthCheck",
-                "route53:CreateHostedZone",
-                "route53:CreateTrafficPolicy",
-                "route53:DeleteHostedZone",
-                "route53:DisassociateVPCFromHostedZone",
-                "route53:GetHostedZone",
-                "route53:ListHostedZones",
-                "route53domains:ListDomains",
-                "route53domains:ListOperations",
-                "route53domains:ListTagsForDomain",
-                "route53resolver:AssociateResolverEndpointIpAddress",
-                "route53resolver:AssociateResolverRule",
-                "route53resolver:CreateResolverEndpoint",
-                "route53resolver:CreateResolverRule",
-                "route53resolver:DeleteResolverEndpoint",
-                "route53resolver:DeleteResolverRule",
-                "route53resolver:DisassociateResolverEndpointIpAddress",
-                "route53resolver:DisassociateResolverRule",
-                "route53resolver:GetResolverEndpoint",
-                "route53resolver:GetResolverRule",
-                "route53resolver:ListResolverEndpointIpAddresses",
-                "route53resolver:ListResolverEndpoints",
-                "route53resolver:ListResolverRuleAssociations",
-                "route53resolver:ListResolverRules",
-                "route53resolver:ListTagsForResource",
-                "route53resolver:UpdateResolverEndpoint",
-                "route53resolver:UpdateResolverRule",
-                "s3:AbortMultipartUpload",
-                "s3:CreateBucket",
-                "s3:DeleteBucket",
-                "s3:DeleteObject",
-                "s3:GetAccountPublicAccessBlock",
-                "s3:GetBucketAcl",
-                "s3:GetBucketOwnershipControls",
-                "s3:GetBucketPolicy",
-                "s3:GetBucketPolicyStatus",
-                "s3:GetBucketPublicAccessBlock",
-                "s3:GetObject",
-                "s3:GetObjectVersion",
-                "s3:GetBucketVersioning",
-                "s3:ListAccessPoints",
-                "s3:ListAccessPointsForObjectLambda",
-                "s3:ListAllMyBuckets",
-                "s3:ListBucket",
-                "s3:ListBucketMultipartUploads",
-                "s3:ListBucketVersions",
-                "s3:ListJobs",
-                "s3:ListMultipartUploadParts",
-                "s3:ListMultiRegionAccessPoints",
-                "s3:ListStorageLensConfigurations",
-                "s3:PutAccountPublicAccessBlock",
-                "s3:PutBucketAcl",
-                "s3:PutBucketPolicy",
-                "s3:PutBucketPublicAccessBlock",
-                "s3:PutObject",
-                "secretsmanager:CreateSecret",
-                "secretsmanager:DeleteSecret",
-                "secretsmanager:DescribeSecret",
-                "secretsmanager:GetSecretValue",
-                "secretsmanager:ListSecrets",
-                "secretsmanager:ListSecretVersionIds",
-                "secretsmanager:PutResourcePolicy",
-                "secretsmanager:TagResource",
-                "secretsmanager:UpdateSecret",
-                "sns:ListTopics",
-                "ssm:DescribeInstanceProperties",
-                "ssm:DescribeSessions",
-                "ssm:GetConnectionStatus",
-                "ssm:GetParameters",
-                "ssm:ListAssociations",
-                "ssm:ResumeSession",
-                "ssm:StartSession",
-                "ssm:TerminateSession"
-            ],
-            "Resource": "*"
-        }
-    ]
-}
+# Điều kiện chuẩn bị
+
+Trước khi bắt đầu Workshop, cần chuẩn bị tài khoản AWS và cấu hình môi trường làm việc để toàn bộ tài nguyên được triển khai đúng khu vực (Region).
+
+Trong Workshop này, tất cả các dịch vụ AWS đều được triển khai tại **Asia Pacific (Singapore)**. Việc sử dụng cùng một Region giúp các dịch vụ có thể kết nối với nhau dễ dàng, giảm độ trễ, đồng thời tránh việc vô tình tạo tài nguyên ở nhiều Region khác nhau gây phát sinh chi phí không cần thiết.
+
+Ngoài ra, việc thiết lập **Region mặc định** sẽ giúp toàn bộ các bước trong Workshop diễn ra thống nhất và hạn chế sai sót trong quá trình triển khai.
+
+---
+
+# Bước 5.2.1 - Chọn AWS Region
+
+AWS cho phép người dùng lựa chọn Region thông qua thanh điều hướng ở phía trên AWS Management Console.
+
+Các tài nguyên như Amazon EC2, Amazon S3, AWS Lambda, Amazon DynamoDB hay Amazon API Gateway đều được tạo theo từng Region riêng biệt. Vì vậy, trước khi triển khai Workshop, cần đảm bảo đang làm việc tại đúng Region được yêu cầu.
+
+## Các bước thực hiện
+
+1. Đăng nhập vào **AWS Management Console**.
+2. Quan sát góc trên bên phải của giao diện.
+3. Nhấp vào tên Region hiện tại.
+4. Trong danh sách các Region, chọn:
 
 ```
+Asia Pacific (Singapore)
+```
 
-#### Khởi tạo tài nguyên bằng CloudFormation
+5. Chờ AWS Console tải lại.
+6. Kiểm tra góc trên bên phải hiển thị:
 
-Trong lab này, chúng ta sẽ dùng N.Virginia region (us-east-1).
+```
+Singapore
+```
 
-Để chuẩn bị cho môi trường làm workshop, chúng ta deploy CloudFormation template sau (click link): [PrivateLinkWorkshop ](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://s3.us-east-1.amazonaws.com/reinvent-endpoints-builders-session/Nested.yaml&stackName=PLCloudSetup). Để nguyên các lựa chọn mặc định.
+hoặc
 
-![create stack](/images/5-Workshop/5.2-Prerequisite/create-stack1.png)
+```
+Asia Pacific (Singapore)
+```
 
-+ Lựa chọn 2 mục acknowledgement 
-+ Chọn Create stack
+Hình dưới đây minh họa vị trí lựa chọn AWS Region.
 
-![create stack](/images/5-Workshop/5.2-Prerequisite/create-stack2.png)
+![Select Region](/images/5-Workshop/5.2-Prerequisite/prerequisite1.png)
 
-Quá trình triển khai CloudFormation cần khoảng 15 phút để hoàn thành.
+---
 
-![complete](/images/5-Workshop/5.2-Prerequisite/complete.png)
+# Bước 5.2.2 - Thiết lập Region mặc định
 
-+ 2 VPCs đã được tạo
+Sau khi lựa chọn đúng Region, nên thiết lập **Singapore** làm Region mặc định cho tài khoản.
 
-![vpcs](/images/5-Workshop/5.2-Prerequisite/vpcs.png)
+Việc này giúp AWS Console tự động sử dụng Region Singapore mỗi khi đăng nhập, hạn chế tối đa việc triển khai nhầm tài nguyên sang Region khác.
 
-+ 3 EC2s đã được tạo
+## Các bước thực hiện
 
-![EC2](/images/5-Workshop/5.2-Prerequisite/ec2.png)
+1. Trên thanh điều hướng của AWS Console, chọn biểu tượng **Settings**.
+2. Chọn **See all user settings**.
+3. Tìm mục:
+
+```
+Localization and default Region
+```
+
+4. Chọn **Edit**.
+5. Trong phần **Default Region**, chọn:
+
+```
+Asia Pacific (Singapore)
+```
+
+6. Lưu thay đổi.
+
+Sau khi hoàn tất, mọi phiên làm việc mới sẽ tự động sử dụng Region Singapore làm Region mặc định.
+
+Hình dưới đây minh họa giao diện thiết lập Region mặc định.
+
+![Default Region](/images/5-Workshop/5.2-Prerequisite/prerequisite2.png)
+
+---
+
+# Kết quả
+
+Sau khi hoàn thành bước này, môi trường AWS đã sẵn sàng để triển khai Workshop.
+
+Tất cả các tài nguyên được tạo trong những phần tiếp theo sẽ nằm trong **Asia Pacific (Singapore)**, đảm bảo tính thống nhất của toàn bộ hệ thống và tránh phát sinh chi phí do triển khai sai Region.

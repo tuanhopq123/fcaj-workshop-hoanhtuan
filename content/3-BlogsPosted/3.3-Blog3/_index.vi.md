@@ -6,9 +6,6 @@ chapter: false
 pre: " <b> 3.3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Nội dung dưới đây chỉ mang tính chất tham khảo. Vui lòng **không sao chép nguyên văn** vào báo cáo của bạn, bao gồm cả phần lưu ý này.
-{{% /notice %}}
 
 # BẢO MẬT AI AGENT TRÊN AWS VỚI AUTH0 VÀ AMAZON BEDROCK AGENTCORE
 
