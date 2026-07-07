@@ -12,9 +12,9 @@ pre : " <b> 5.18. </b> "
 
 #### Nội dung
 
-- [Xóa EventBridge Scheduler](18.1-delete-eventbridge/)
-- [Gỡ AWS WAF khỏi Amplify](18.2-remove-waf/)
-- [Xóa ứng dụng AWS Amplify](18.3-delete-amplify/)
-- [Xóa API Gateway](18.4-delete-api-gateway/)
-- [Xóa Cognito User Pool](18.5-delete-cognito/)
-- [Xóa AWS IoT Rule](18.6-delete-iot-rule/)
+- [Xóa EventBridge Scheduler](5.18.1-delete-eventbridge/)
+- [Gỡ AWS WAF khỏi Amplify](5.18.2-remove-waf/)
+- [Xóa ứng dụng AWS Amplify](5.18.3-delete-amplify/)
+- [Xóa API Gateway](5.18.4-delete-api-gateway/)
+- [Xóa Cognito User Pool](5.18.5-delete-cognito/)
+- [Xóa AWS IoT Rule](5.18.6-delete-iot-rule/)
