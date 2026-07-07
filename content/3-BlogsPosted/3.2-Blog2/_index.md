@@ -1,5 +1,5 @@
 ---
-title: "Automate DMS Migration Troubleshooting (Oracle to Redshift) with AWS DevOps Agent"
+title: "Blog 2"
 date: 2026-07-06
 weight: 2
 chapter: false
