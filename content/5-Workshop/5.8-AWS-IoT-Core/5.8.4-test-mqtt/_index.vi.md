@@ -8,23 +8,23 @@ pre : " <b> 5.8.4 </b> "
 
 Bây giờ ta sẽ publish thủ công một message để kiểm tra:
 
-1. Trong AWS IoT Core, chọn menu bên trái: **Test**[cite: 11].
-2. Chọn: **MQTT test client**[cite: 11].
-3. **Bước 2: Subscribe topic**[cite: 11]
-   + Chọn tab: **Subscribe to a topic**[cite: 11].
-   + Tại **Topic filter**, nhập: `home/lab/telemetry`[cite: 11].
-   + Nếu có mục QoS, chọn: **QoS 0**[cite: 11].
-   + Bấm: **Subscribe**[cite: 11].
-   + Bên trái hoặc phía dưới phải xuất hiện subscription: `home/lab/telemetry`[cite: 11].
+1. Trong AWS IoT Core, chọn menu bên trái: **Test**.
+2. Chọn: **MQTT test client**.
+3. **Bước 2: Subscribe topic**
+   + Chọn tab: **Subscribe to a topic**.
+   + Tại **Topic filter**, nhập: `home/lab/telemetry`.
+   + Nếu có mục QoS, chọn: **QoS 0**.
+   + Bấm: **Subscribe**.
+   + Bên trái hoặc phía dưới phải xuất hiện subscription: `home/lab/telemetry`.
 
 ![Subscribe](/images/5-Workshop/5.8-AWS-IoT-Core/MQTT test client1.png)
 
-4. **Bước 3: Publish message**[cite: 11]
-   + Chọn tab: **Publish to a topic**[cite: 11].
-   + Tại **Topic name**, nhập: `home/lab/telemetry`[cite: 11].
-   + Nếu có QoS, chọn: **0**[cite: 11].
-   + Nếu có Retain message, giữ: **Off**[cite: 11].
-   + Xóa payload mẫu và dán[cite: 11]:
+4. **Bước 3: Publish message**
+   + Chọn tab: **Publish to a topic**.
+   + Tại **Topic name**, nhập: `home/lab/telemetry`.
+   + Nếu có QoS, chọn: **0**.
+   + Nếu có Retain message, giữ: **Off**.
+   + Xóa payload mẫu và dán:
 
     {
       "sensorId": "manual-iot-test-01",
@@ -40,6 +40,6 @@ Bây giờ ta sẽ publish thủ công một message để kiểm tra:
       "energyKwh": 1.5
     }
 
-   + Bấm: **Publish**[cite: 11].
+   + Bấm: **Publish**.
 
 ![Publish](/images/5-Workshop/5.8-AWS-IoT-Core/02-mqtt-test-message1.png)

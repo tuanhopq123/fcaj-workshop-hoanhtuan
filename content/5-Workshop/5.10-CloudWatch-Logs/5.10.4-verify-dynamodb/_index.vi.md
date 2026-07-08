@@ -6,17 +6,17 @@ chapter : false
 pre : " <b> 5.10.4 </b> "
 ---
 
-Bước này dùng để đối chiếu log với dữ liệu thực tế[cite: 13].
+Bước này dùng để đối chiếu log với dữ liệu thực tế.
 
-1. Mở tab AWS Console mới[cite: 13].
-2. Tìm: **DynamoDB**[cite: 13].
-3. Chọn: **Tables** -> chọn bảng `EnergyWasteData`[cite: 13].
-4. Chọn: **Explore table items** -> Bấm **Run** (hoặc Scan)[cite: 13].
-5. Tìm các item có `PK = ROOM#lab-01`[cite: 13].
-6. Kiểm tra có các loại sort key: `PROFILE`, `TELEMETRY#...`, `ALERT#...`[cite: 13].
+1. Mở tab AWS Console mới.
+2. Tìm: **DynamoDB**.
+3. Chọn: **Tables** -> chọn bảng `EnergyWasteData`.
+4. Chọn: **Explore table items** -> Bấm **Run** (hoặc Scan).
+5. Tìm các item có `PK = ROOM#lab-01`.
+6. Kiểm tra có các loại sort key: `PROFILE`, `TELEMETRY#...`, `ALERT#...`.
 7. **Dữ liệu Telemetry**:
-   * Mở một item mới được tạo và kiểm tra: `sensorId = virtual-sensor-01`, `roomId = lab-01`, `deviceStatus = ON hoặc OFF`, và `source = eventbridge-scheduler`[cite: 13].
+   * Mở một item mới được tạo và kiểm tra: `sensorId = virtual-sensor-01`, `roomId = lab-01`, `deviceStatus = ON hoặc OFF`, và `source = eventbridge-scheduler`.
 8. **Dữ liệu Alert** (nếu có):
-   * Mở một item `ALERT#...` và kiểm tra: `roomId = lab-01`, `deviceStatus = ON`, `occupancy = false`, `powerW >= 120`[cite: 13].
+   * Mở một item `ALERT#...` và kiểm tra: `roomId = lab-01`, `deviceStatus = ON`, `occupancy = false`, `powerW >= 120`.
 
 ![DynamoDB Verification](/images/5-Workshop/5.10-CloudWatch/04-dynamodb-core-result.png)
