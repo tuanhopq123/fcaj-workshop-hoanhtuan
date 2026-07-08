@@ -1,29 +1,44 @@
 ---
-title: "5.16. Triển khai Ứng dụng Frontend"
+title: "5.16. Triển khai ứng dụng Frontend"
 date: 2026-07-06T20:30:00+07:00
 draft: false
-weight: 560
-description: "Tổng quan quy trình triển khai ứng dụng frontend Next.js bằng AWS Amplify và tích hợp các API backend."
+weight: 16
+description: "Tổng quan về việc triển khai ứng dụng frontend Next.js bằng AWS Amplify và tích hợp với backend API."
 ---
 
-AWS Amplify Hosting được sử dụng để tự động triển khai, bảo mật và mở rộng ứng dụng frontend, cho phép người dùng tương tác với các số liệu đo lường nhà thông minh theo thời gian thực một cách mượt mà.
+AWS Amplify Hosting được sử dụng để deploy, bảo mật và tự động mở rộng ứng dụng frontend, giúp người dùng tương tác với dữ liệu smart home theo thời gian thực một cách liền mạch.
 
-Trong mục này, chúng ta sẽ thực hiện sáu bước chính:
+Trong phần này, chúng ta sẽ thực hiện mười một bước chính:
 
-### 1. [Lấy đường dẫn Invoke URL của API Gateway](5.16.1-Get-API-Gateway-Invoke-URL/)
-Hướng dẫn truy cập bảng điều khiển API Gateway và sao chép endpoint của stage triển khai mặc định để tích hợp vào frontend.
+### 1. [Lấy API Gateway Invoke URL](5.16.1-invoke-url/)
+Hướng dẫn truy cập console API Gateway và sao chép endpoint của stage mặc định để tích hợp với frontend.
 
-### 2. [Khởi tạo Ứng dụng trên AWS Amplify](5.16.2-Initialize-Amplify-Application/)
-Hướng dẫn từng bước kết nối nhánh kho lưu trữ (repository) từ nhà cung cấp mã nguồn Git với nền tảng AWS Amplify Hosting.
+### 2. [Tạo project Next.js](5.16.2-create-nextjs-project/)
+Hướng dẫn từng bước khởi tạo ứng dụng Next.js và cài đặt thư viện AWS Amplify.
 
-### 3. [Cấu hình Build và Biến Môi trường](5.16.3-Configure-App-Build-and-Environment-Variables/)
-Hướng dẫn cấu hình các bước build nâng cao và cấu hình các biến môi trường chứa URL API backend một cách an toàn.
+### 3. [Tạo file .env.local](5.16.3-env-file/)
+Hướng dẫn lưu trữ an toàn các giá trị cấu hình Cognito và API Gateway dưới dạng biến môi trường cục bộ.
 
-### 4. [Cấu hình CORS và Cấp quyền Origin](5.16.4-Configure-CORS-and-Security-Origins/)
-Hướng dẫn cấp quyền chia sẻ tài nguyên giữa các nguồn khác nhau (CORS) trên hạ tầng backend cho tên miền production vừa được tạo ra từ Amplify.
+### 4. [Cấu hình Amplify kết nối Cognito](5.16.4-configure-amplify/)
+Hướng dẫn cấu hình thư viện AWS Amplify phía client để frontend có thể xác thực với Cognito User Pool.
 
-### 5. [Truy cập Giao diện Đăng nhập đã Triển khai](5.16.5-Access-Hosted-Login-Interface/)
-Kiểm tra đường dẫn URL công khai của ứng dụng sau khi deploy và xác thực cấu trúc giao diện đăng nhập được tích hợp với Cognito.
+### 5. [Cấu hình CSS và Layout](5.16.5-css-layout/)
+Thiết lập stylesheet toàn cục và layout gốc của ứng dụng.
 
-### 6. [Kiểm tra và Xác thực Hệ thống trên Dashboard](5.16.6-System-Dashboard-Verification/)
-Các bước kiểm tra vận hành cuối cùng nhằm đảm bảo luồng dữ liệu đăng nhập và các biểu đồ đo lường hiển thị chính xác trên giao diện dashboard chính.
+### 6. [Tạo hàm lấy JWT và gọi API Gateway](5.16.6-api-helper/)
+Xây dựng hàm dùng chung để lấy JWT token từ Cognito và gọi các endpoint API Gateway của backend.
+
+### 7. [Tạo giao diện Dashboard](5.16.7-dashboard-ui/)
+Xây dựng component Dashboard chính hiển thị phòng, telemetry, cảnh báo và báo cáo.
+
+### 8. [Tạo trang đăng nhập và kiểm tra phiên Cognito](5.16.8-login-page/)
+Triển khai form đăng nhập và logic kiểm tra phiên, hiển thị Dashboard sau khi xác thực thành công.
+
+### 9. [Đưa project lên GitHub](5.16.9-push-github/)
+Commit và đẩy source code hoàn chỉnh lên repository GitHub.
+
+### 10. [Tạo ứng dụng AWS Amplify Hosting](5.16.10-amplify-hosting/)
+Hướng dẫn từng bước kết nối branch của repository GitHub với AWS Amplify Hosting, cấu hình build settings, biến môi trường và deploy ứng dụng.
+
+### 11. [Cập nhật API Gateway CORS](5.16.11-cors-config/)
+Cấp quyền Cross-Origin Resource Sharing (CORS) trên hạ tầng backend cho domain production vừa được Amplify tạo ra, và kiểm tra kết quả cuối cùng.

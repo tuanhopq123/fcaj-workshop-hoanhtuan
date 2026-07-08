@@ -1,16 +1,22 @@
 ---
-title: "5.4 Initialize DynamoDB Database"
+title: "5.4. Create DynamoDB Table"
+date: 2026-07-01T17:00:00+07:00
+draft: false
 weight: 4
-value: 4
-description: "Step-by-step guide to open Amazon DynamoDB service and start creating a data table."
+tags: ["aws", "dynamodb", "database"]
+categories: ["Workshop"]
+description: "Overview of creating a DynamoDB table to store room profiles and energy waste data for the project."
 ---
 
-In this practical lab, we will start working with the NoSQL database service **Amazon DynamoDB** to store information for our project[cite: 1].
+Amazon DynamoDB is used as the main data store for the project, holding room profiles and the energy waste data collected from sensors.
 
-In this section, we will perform two main steps:
+In this section, we will perform three main steps:
 
-### 1. [Table Details Configuration](5.4.1-table-details/)
-Learn how to access the DynamoDB console, initiate the table creation process, and configure the primary keys (Partition Key and Sort Key).
+### 1. [Create DynamoDB Table](5.4.1-create-dynamodb/)
+Instructions on how to access the DynamoDB console and start creating the `EnergyWasteData` table.
 
-### 2. [Create and Manage Items](5.4.2-create-item/)
-Step-by-step guidance on how to insert, view, and manage data rows (items) inside your newly created DynamoDB table.
+### 2. [Configure Table Details](5.4.2-configure-table/)
+Step-by-step guidance to configure the partition key, sort key, and capacity mode for the table.
+
+### 3. [Create Sample Room Item](5.4.3-create-sample-item/)
+How to create a sample item in the table to verify that it works correctly.
