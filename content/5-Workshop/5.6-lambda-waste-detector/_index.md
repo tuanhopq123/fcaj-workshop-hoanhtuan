@@ -1,30 +1,37 @@
 ---
-title: "5.6 Configuring AWS Lambda and Testing the System"
+title: "5.6. Build the Energy Waste Detector Lambda"
+date: 2026-07-01T18:00:00+07:00
+draft: false
 weight: 6
-value: 56
-description: "Overview of implementing AWS Lambda to process IoT telemetry data and executing end-to-end integration tests."
+tags: ["aws", "lambda", "dynamodb", "sns"]
+categories: ["Workshop"]
+description: "Overview of building an AWS Lambda function that detects energy waste, stores telemetry in DynamoDB, and sends alerts via SNS."
 ---
 
-In this module, we will explore and implement **AWS Lambda** to bridge our IoT core telemetry ingestion with downstream analytics and notification processing. AWS Lambda acts as a serverless event-driven compute service that will automatically process data packet payloads on demand.
+AWS Lambda hosts the `energy-waste-detector` function, which processes incoming telemetry, decides whether energy is being wasted, stores the result in DynamoDB, and publishes an alert to SNS when needed.
 
-### Objectives
-* **Initialize Serverless Compute:** Deploy an isolated Python-based AWS Lambda function environment.
-* **State Management Variable Isolation:** Secure system configuration credentials using Lambda Environment Variables.
-* **Identity and Access Management Policy Control:** Enforce secure operational behaviors to enable read/write state interaction with Amazon DynamoDB and Amazon SNS.
-* **End-to-End System Integration Testing:** Trigger simulated energy waste event payloads and audit live database tables alongside real-time target notifications.
+In this section, we will perform eight main steps:
 
----
+### 1. [Open AWS Lambda](5.6.1-open-lambda/)
+Instructions on how to access the AWS Lambda console and start creating a function.
 
-### Module Outline
+### 2. [Create the energy-waste-detector Function](5.6.2-create-function/)
+Step-by-step guidance to create the Lambda function using the Python 3.14 runtime.
 
-#### 1. [5.6.1 Create AWS Lambda Function](5.6.1-create-function/)
-Step-by-step instructions to initialize a Python runtime environment inside the AWS Lambda console.
+### 3. [Add Environment Variables](5.6.3-add-environment-variables/)
+How to configure the `DDB_TABLE`, `SNS_TOPIC_ARN`, and `POWER_THRESHOLD_W` environment variables.
 
-#### 2. [5.6.2 Configure Environment Variables](5.6.2-env-variables/)
-Guidelines on setting up isolated key-value configurations to securely store references for target AWS resources.
+### 4. [Configure IAM Permissions for Lambda](5.6.4-configure-iam-permissions/)
+How to grant the function permission to write to DynamoDB and publish to SNS, and how to add the function code.
 
-#### 3. [5.6.3 Configure IAM Execution Permissions](5.6.3-iam-permissions/)
-Modifying the Lambda IAM execution role to safely grant full write capabilities to Amazon DynamoDB and Amazon SNS.
+### 5. [Test the Lambda Waste Detector](5.6.5-test-lambda-function/)
+How to create and run a test event that simulates an energy waste scenario.
 
-#### 4. [5.6.4 Deploy Logic and Verify System Results](5.6.4-deploy-test/)
-Deploying the final application script, triggering simulated waste event payloads, and auditing system outputs.
+### 6. [Check the Test Result](5.6.6-check-test-result/)
+How to verify that the test execution succeeded and returned the expected response.
+
+### 7. [Check DynamoDB](5.6.7-check-dynamodb/)
+How to confirm that new telemetry and alert items were stored in the table.
+
+### 8. [Check the Alert Email](5.6.8-check-alert-email/)
+How to verify that the energy waste alert email was received.

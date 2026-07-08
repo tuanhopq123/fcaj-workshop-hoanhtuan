@@ -1,19 +1,34 @@
 ---
-title: "5.5 Khởi tạo Dịch vụ Thông báo Amazon SNS"
+title: "5.5. Thiết lập cảnh báo Amazon SNS"
+date: 2026-07-01T17:30:00+07:00
+draft: false
 weight: 5
-value: 55
-description: "Hướng dẫn từng bước truy cập dịch vụ Amazon Simple Notification Service và chuẩn bị tích hợp kênh cảnh báo."
+tags: ["aws", "sns", "notifications"]
+categories: ["Workshop"]
+description: "Tổng quan về việc thiết lập Amazon SNS để gửi email cảnh báo khi phát hiện lãng phí năng lượng."
 ---
 
-Trong phần này, chúng ta sẽ làm việc với **Amazon Simple Notification Service (SNS)**. Dịch vụ nhắn tin được quản lý này cho phép hệ thống của chúng ta đẩy các cảnh báo tiêu thụ điện năng tức thời đến người dùng.
+Amazon SNS (Simple Notification Service) được dùng để gửi email cảnh báo mỗi khi hệ thống phát hiện lãng phí năng lượng, ví dụ như thiết bị vẫn bật trong phòng không có người.
 
-Trong phần này, chúng ta sẽ thực hiện ba bước chính:
+Trong phần này, chúng ta sẽ thực hiện 7 bước chính:
 
-### 1. [Tạo SNS Topic](5.5.1-create-topic/)
-Các bước chi tiết để truy cập giao diện điều khiển Amazon SNS, bắt đầu quy trình khởi tạo và cấu hình một Topic mới để phát các thông báo.
+### 1. [Mở Amazon SNS](5.5.1-open-sns/)
+Hướng dẫn cách truy cập console Amazon SNS và bắt đầu tạo topic.
 
-### 2. [Tạo Subscriptions](5.5.2-subscription/)
-Hướng dẫn cách đăng ký các đầu cuối nhận tin của người dùng (như Email hoặc SMS) để đăng ký theo dõi (subscribe) vào Topic vừa tạo nhằm nhận các cảnh báo.
+### 2. [Tạo SNS Topic](5.5.2-create-topic/)
+Hướng dẫn từng bước để tạo topic `energy-waste-alert-topic`.
 
-### 3. [Kiểm tra Phát Tin nhắn](5.5.3-test-publish/)
-Hướng dẫn cách gửi thử một tin nhắn trực tiếp từ AWS Console để xác minh hệ thống gửi nhận thông báo hoạt động thành công.
+### 3. [Tạo Email Subscription](5.5.3-create-email-subscription/)
+Cách đăng ký một địa chỉ email vào topic để nhận cảnh báo.
+
+### 4. [Xác nhận email SNS](5.5.4-confirm-subscription-email/)
+Cách tìm và xác nhận email subscription do AWS gửi.
+
+### 5. [Kiểm tra Subscription status](5.5.5-check-subscription-status/)
+Cách kiểm tra trạng thái subscription là **Confirmed**.
+
+### 6. [Test gửi email cảnh báo](5.5.6-test-publish-message/)
+Cách gửi một tin nhắn test đến topic để mô phỏng cảnh báo lãng phí năng lượng.
+
+### 7. [Kiểm tra email nhận được](5.5.7-check-received-email/)
+Cách kiểm tra email cảnh báo test đã được nhận thành công.
