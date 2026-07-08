@@ -3,7 +3,6 @@ title: "5.6. Build the Energy Waste Detector Lambda"
 date: 2026-07-01T18:00:00+07:00
 draft: false
 weight: 6
-tags: ["aws", "lambda", "dynamodb", "sns"]
 categories: ["Workshop"]
 description: "Overview of building an AWS Lambda function that detects energy waste, stores telemetry in DynamoDB, and sends alerts via SNS."
 ---
