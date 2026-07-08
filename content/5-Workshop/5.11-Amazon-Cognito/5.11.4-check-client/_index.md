@@ -6,9 +6,9 @@ chapter : false
 pre : " <b> 5.11.4 </b> "
 ---
 
-1. In the left menu of the user pool, find the group: **Applications**[cite: 14].
-2. Choose: **App clients**[cite: 14].
-3. Click on: `energy-waste-dashboard-client`[cite: 14].
-4. Verify that **Client secret** shows as missing or empty[cite: 14].
+1. In the left menu of the user pool, find the group: **Applications**.
+2. Choose: **App clients**.
+3. Click on: `energy-waste-dashboard-client`.
+4. Verify that **Client secret** shows as missing or empty.
 
 ![App Client](/images/5-Workshop/5.11-Cognito/03-cognito-app-client.png)
