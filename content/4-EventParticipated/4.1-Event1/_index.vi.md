@@ -1,7 +1,7 @@
 ---
-title: "FCAJ Community Day"
+title: "Event1"
 date: 2024-01-01
-weight: 2
+weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
@@ -103,6 +103,6 @@ Ngoài việc học hỏi kiến thức chuyên môn, sự kiện còn là cơ h
 
 #### Một số hình ảnh tại sự kiện
 
-*Thêm hình ảnh của bạn tại đây.*
+![ảnh](/images/4-Event/event1.png)
 
 > Nhìn chung, FCAJ Community Day là một sự kiện bổ ích, giúp mình cập nhật nhiều xu hướng mới về AI và AWS Cloud, đồng thời mở rộng góc nhìn về cách xây dựng các hệ thống AI hiện đại đáp ứng yêu cầu của doanh nghiệp.

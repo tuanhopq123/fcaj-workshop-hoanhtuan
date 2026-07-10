@@ -1,7 +1,7 @@
 ---
-title: "FCAJ Community Day"
+title: "Event1"
 date: 2024-01-01
-weight: 2
+weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
@@ -96,6 +96,6 @@ The event also helped me understand that successful AI applications require not 
 
 #### Some event photos
 
-*Add your event photos here*
+![images](/images/4-Event/event1.png)
 
 > Overall, the event provided practical knowledge about AI and AWS cloud technologies while helping me better understand how enterprise organizations are adopting Generative AI solutions.

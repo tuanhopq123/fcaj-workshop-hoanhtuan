@@ -1,5 +1,5 @@
 ---
-title: "Event 2"
+title: "Event2"
 date: 2024-01-01
 weight: 2
 chapter: false
@@ -115,6 +115,6 @@ Attending the **"From First Cloud AI Journey to AWS Partner"** event provided va
 
 #### Some event photos
 
-*Add your event photos here.*
+![images](/images/4-Event/event2.png)
 
 > Overall, the event not only strengthened my technical knowledge of AWS and DevOps but also inspired me to continue developing my Cloud Computing career through continuous learning and practical experience.

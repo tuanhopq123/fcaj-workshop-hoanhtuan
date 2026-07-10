@@ -1,5 +1,5 @@
 ---
-title: "Event 2"
+title: "Event2"
 date: 2024-01-01
 weight: 2
 chapter: false
@@ -90,6 +90,6 @@ Sự kiện mang đến nhiều góc nhìn thực tế về nghề nghiệp tron
 
 #### Một số hình ảnh tại sự kiện
 
-*Thêm hình ảnh của bạn tại đây.*
+![ảnh](/images/4-Event/event2.png)
 
 > Nhìn chung, đây là một sự kiện hữu ích giúp mình mở rộng kiến thức về AWS, Cloud Computing, DevOps cũng như định hướng nghề nghiệp trong lĩnh vực công nghệ.
