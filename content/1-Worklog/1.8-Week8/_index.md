@@ -1,6 +1,6 @@
 ---
 title: "Week 8 Worklog"
-date: 2024-01-01
+date: 2026-06-05
 weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
@@ -18,13 +18,13 @@ pre: " <b> 1.8. </b> "
 
 ## Tasks Completed This Week
 
-| Task | Result |
-|------|--------|
-| Workshop Documentation | Completed the Workshop guide for the **Smart Home Energy Waste Monitoring & Alert System using Virtual Sensors on AWS** by adding deployment screenshots, API validation procedures, and final documentation updates. |
-| Security Architecture Enhancement | Enhanced the Workshop architecture by introducing AWS KMS for encryption at rest and AWS CloudTrail for auditing and monitoring API activities across AWS services. |
-| Lab 5 - Amazon RDS | Studied Amazon RDS architecture, including Multi-AZ deployment, Read Replicas, storage optimization, and compared relational databases with Amazon DynamoDB. |
-| Lab 33 - AWS KMS, CloudTrail & Athena | Practiced creating AWS KMS encryption keys, enabling CloudTrail for auditing, storing logs in Amazon S3, and querying log data using Amazon Athena. |
-| Lab 44 & Lab 48 - IAM Deep Dive & EC2 Roles | Explored IAM core concepts and implemented IAM Roles for EC2 instances, eliminating the need for hard-coded AWS Access Keys while improving security best practices. |
+| Day | Task | Start Date | Completion Date |
+|-----|------|------------|-----------------|
+| 1 | Completed the Workshop documentation by adding deployment screenshots and API validation procedures. | 06/05/2026 | 06/06/2026 |
+| 2 | Enhanced the system architecture with AWS KMS and AWS CloudTrail. | 06/07/2026 | 06/08/2026 |
+| 3 | Completed Lab 5 – Amazon RDS. | 06/09/2026 | 06/09/2026 |
+| 4 | Completed Lab 33 – AWS KMS, CloudTrail & Athena. | 06/10/2026 | 06/10/2026 |
+| 5 | Completed Lab 44 & Lab 48 – IAM Deep Dive & EC2 Roles. | 06/11/2026 | 06/11/2026 |
 
 ---
 

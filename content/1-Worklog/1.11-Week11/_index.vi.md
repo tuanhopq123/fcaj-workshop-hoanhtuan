@@ -1,6 +1,6 @@
 ---
 title: "Nhật ký công việc Tuần 11"
-date: 2024-01-01
+date: 2026-06-26
 weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
@@ -18,13 +18,13 @@ pre: " <b> 1.11. </b> "
 
 ## Công việc đã thực hiện
 
-| Công việc | Kết quả |
-|-----------|----------|
-| Cấu hình AWS Lambda | Tạo hàm **energy-report-generator** sử dụng Python. Tối ưu bộ nhớ (Memory) và thời gian thực thi (Timeout) nhằm cải thiện hiệu năng xử lý báo cáo đồng thời tối ưu chi phí vận hành. |
-| Thiết lập Environment Variables | Cấu hình các biến môi trường cho bảng DynamoDB, bucket Amazon S3, tiền tố lưu báo cáo và các tham số hệ thống nhằm loại bỏ việc hard-code trong mã nguồn và thuận tiện khi triển khai nhiều môi trường khác nhau. |
-| Cấu hình bảo mật IAM | Thiết lập IAM Execution Role theo nguyên tắc **Least Privilege**, chỉ cấp các quyền cần thiết như DynamoDB Query, PutItem, Amazon S3 PutObject và CloudWatch Logs cho Lambda. |
-| Xây dựng quy trình tạo báo cáo | Hoàn thiện luồng xử lý tự động: AWS Lambda truy vấn dữ liệu từ DynamoDB, sinh báo cáo định dạng JSON và lưu trực tiếp lên Amazon S3. |
-| Rà soát bảo mật | Kiểm tra lại quyền truy cập, cấu hình Lambda và chiến lược ghi log nhằm đảm bảo module đáp ứng các khuyến nghị bảo mật của AWS. |
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành |
+|------|-----------|--------------|-----------------|
+| 1 | Tạo và cấu hình hàm **energy-report-generator** bằng AWS Lambda sử dụng Python. | 26/06/2026 | 27/06/2026 |
+| 2 | Thiết lập Environment Variables cho Amazon DynamoDB, Amazon S3 và các tham số của hệ thống. | 28/06/2026 | 28/06/2026 |
+| 3 | Cấu hình IAM Execution Role theo nguyên tắc **Least Privilege**. | 29/06/2026 | 29/06/2026 |
+| 4 | Hoàn thiện quy trình tạo báo cáo tự động bằng cách tích hợp AWS Lambda, Amazon DynamoDB và Amazon S3. | 30/06/2026 | 01/07/2026 |
+| 5 | Rà soát cấu hình bảo mật, ghi log và chuẩn bị hệ thống cho giai đoạn kiểm thử cuối cùng. | 02/07/2026 | 02/07/2026 |
 
 ---
 

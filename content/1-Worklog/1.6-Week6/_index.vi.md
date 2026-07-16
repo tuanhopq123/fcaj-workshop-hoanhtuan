@@ -1,6 +1,6 @@
 ---
 title: "Nhật ký công việc Tuần 6"
-date: 2024-01-01
+date: 2026-05-25
 weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
@@ -17,13 +17,14 @@ pre: " <b> 1.6. </b> "
 
 ## Công việc thực hiện trong tuần
 
-| Nội dung | Kết quả |
-|----------|----------|
-| Amazon CloudWatch | Tích hợp CloudWatch để thu thập log từ AWS Lambda và API Gateway. Thiết lập Metric Filters và CloudWatch Alarms nhằm theo dõi lỗi hệ thống và gửi cảnh báo qua Amazon SNS khi phát hiện bất thường. |
-| Kiểm thử hệ thống | Thực hiện kiểm thử End-to-End bằng Postman để xác minh các API xử lý dữ liệu cảm biến, cảnh báo lãng phí điện và truy xuất báo cáo. Đồng thời đối chiếu dữ liệu trên DynamoDB với log trong CloudWatch để đảm bảo hệ thống hoạt động chính xác. |
-| Lab 18 - AWS Security Hub | Thực hành kích hoạt và cấu hình AWS Security Hub nhằm đánh giá mức độ bảo mật của tài khoản AWS theo các tiêu chuẩn bảo mật phổ biến như AWS Foundational Security Best Practices và CIS Benchmark. |
-| Lab 22 - Optimizing EC2 Costs with Lambda | Xây dựng giải pháp tự động bật và tắt EC2 theo lịch bằng AWS Lambda kết hợp IAM Role nhằm tối ưu chi phí vận hành và nâng cao hiệu quả quản lý tài nguyên. |
-| Lab 27 - Resource Tags & Resource Groups | Thực hành gán Tags cho tài nguyên AWS và sử dụng Resource Groups để tổ chức, quản lý và tự động hóa các tài nguyên theo từng môi trường hoặc dự án. |
+
+| Công việc | Ngày bắt đầu | Ngày hoàn thành |
+|-----------|--------------|-----------------|
+| Tích hợp Amazon CloudWatch với AWS Lambda và API Gateway để theo dõi log tập trung. | 25/05/2026 | 25/05/2026 |
+| Thiết lập CloudWatch Metric Filters, CloudWatch Alarms và Amazon SNS để giám sát hệ thống. | 26/05/2026 | 26/05/2026 |
+| Kiểm thử toàn bộ hệ thống bằng Postman và kiểm tra dữ liệu trên Amazon DynamoDB. | 27/05/2026 | 27/05/2026 |
+| Hoàn thành Lab 18 – AWS Security Hub và Lab 22 – Optimizing EC2 Costs with Lambda. | 28/05/2026 | 28/05/2026 |
+| Hoàn thành Lab 27 – Resource Tags & Resource Groups và tổng hợp kết quả trong tuần. | 29/05/2026 | 29/05/2026 |
 
 ---
 

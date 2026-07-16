@@ -1,6 +1,6 @@
 ---
 title: "Week 11 Worklog"
-date: 2024-01-01
+date: 2026-06-26
 weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
@@ -18,13 +18,13 @@ pre: " <b> 1.11. </b> "
 
 ## Tasks Completed This Week
 
-| Task | Result |
-|------|--------|
-| AWS Lambda Configuration | Created the **energy-report-generator** Lambda function using Python. Optimized memory allocation and timeout settings to improve report generation performance while maintaining cost efficiency. |
-| Environment Variables | Configured environment variables for DynamoDB tables, Amazon S3 buckets, report prefixes, and application settings to eliminate hardcoded configurations and simplify deployment across multiple environments. |
-| IAM Security Configuration | Implemented IAM Execution Roles following the Least Privilege principle. Granted only the required DynamoDB Query, PutItem, Amazon S3 PutObject, and CloudWatch logging permissions. |
-| Serverless Report Generation | Developed the Report Generator workflow that retrieves data from DynamoDB, generates JSON reports, and automatically stores the generated reports in Amazon S3. |
-| Security Optimization | Reviewed Lambda permissions, configuration management, and logging strategy to ensure the module complies with AWS security best practices. |
+| Day | Task | Start Date | Completion Date |
+|-----|------|------------|-----------------|
+| 1 | Created and configured the **energy-report-generator** AWS Lambda function using Python. | 06/26/2026 | 06/27/2026 |
+| 2 | Configured Environment Variables for Amazon DynamoDB, Amazon S3, and application settings. | 06/28/2026 | 06/28/2026 |
+| 3 | Implemented IAM Execution Roles following the Least Privilege principle. | 06/29/2026 | 06/29/2026 |
+| 4 | Developed the Serverless report generation workflow by integrating AWS Lambda, DynamoDB, and Amazon S3. | 06/30/2026 | 07/01/2026 |
+| 5 | Reviewed security settings, logging configuration, and deployment readiness before the final system validation. | 07/02/2026 | 07/02/2026 |
 
 ---
 

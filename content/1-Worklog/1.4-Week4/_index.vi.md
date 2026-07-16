@@ -1,6 +1,6 @@
 ---
 title: "Nhật ký công việc Tuần 4"
-date: 2024-01-01
+date: 2026-05-08
 weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
@@ -17,14 +17,15 @@ pre: " <b> 1.4. </b> "
 
 ## Công việc thực hiện trong tuần
 
-| Nội dung | Kết quả |
-|----------|----------|
-| Phát triển AWS Lambda | Xây dựng các hàm Lambda xử lý dữ liệu từ cảm biến ảo, truy vấn thông tin phòng, thiết bị và cảnh báo lãng phí điện. |
-| Tích hợp Amazon DynamoDB | Kết nối Lambda với DynamoDB để đọc và ghi dữ liệu của hệ thống Smart Home Energy Monitoring. |
-| Thiết kế kiến trúc xử lý | Hoàn thiện luồng xử lý Serverless giữa Lambda và DynamoDB, chuẩn bị cho việc tích hợp API Gateway ở tuần tiếp theo. |
-| Lab 10 - Route 53 Hybrid DNS | Thực hành cấu hình Hybrid DNS với Route 53 Resolver, Inbound/Outbound Endpoints và Resolver Rules. |
-| Lab 19 - VPC Peering & Network ACL | Thiết lập kết nối giữa nhiều VPC bằng VPC Peering, cấu hình Network ACL và Cross-Peering DNS. |
-| Lab 20 - AWS Transit Gateway | Triển khai AWS Transit Gateway để kết nối nhiều VPC, tìm hiểu mô hình mạng ở quy mô doanh nghiệp và thực hiện dọn dẹp tài nguyên sau khi hoàn thành. |
+| Ngày | Công việc                                                                                                         | Ngày bắt đầu | Ngày hoàn thành |
+| ---- | ----------------------------------------------------------------------------------------------------------------- | ------------ | --------------- |
+| 1    | Phát triển các hàm AWS Lambda để xử lý dữ liệu từ cảm biến ảo và xây dựng chức năng phát hiện lãng phí điện năng. | 08/05/2026   | 08/05/2026      |
+| 2    | Tích hợp AWS Lambda với Amazon DynamoDB để lưu trữ và truy xuất dữ liệu giám sát.                                 | 09/05/2026   | 09/05/2026      |
+| 3    | Kiểm thử các hàm Lambda bằng dữ liệu mô phỏng và xác minh quá trình đọc/ghi dữ liệu trên DynamoDB.                | 10/05/2026   | 10/05/2026      |
+| 4    | Hoàn thiện luồng xử lý Serverless và chuẩn bị Backend để tích hợp với Amazon API Gateway.                         | 11/05/2026   | 11/05/2026      |
+| 5    | Kiểm tra CloudWatch Logs, tối ưu IAM Permissions và khắc phục các lỗi phát sinh trong quá trình chạy Lambda.      | 12/05/2026   | 12/05/2026      |
+
+
 
 ---
 

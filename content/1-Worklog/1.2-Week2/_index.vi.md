@@ -1,6 +1,6 @@
 ---
 title: "Nhật ký công việc Tuần 2"
-date: 2024-01-01
+date: 2026-04-24
 weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
@@ -17,13 +17,14 @@ pre: " <b> 1.2. </b> "
 
 ### Công việc thực hiện trong tuần
 
-| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
-|------|-----------|--------------|-----------------|-------------------|
-| 2 | Nghiên cứu Rubric và tiêu chí đánh giá của dự án. | 18/08/2025 | 18/08/2025 | AWS Study Group |
-| 3 | Phân tích yêu cầu và lựa chọn các dịch vụ AWS phù hợp. | 19/08/2025 | 19/08/2025 | AWS Documentation |
-| 4 | Thiết kế sơ đồ kiến trúc Serverless cho hệ thống. | 20/08/2025 | 20/08/2025 | AWS Architecture Center |
-| 5 | Hoàn thiện Proposal song ngữ Anh - Việt. | 21/08/2025 | 21/08/2025 | Project Guideline |
-| 6 | Rà soát kiến trúc và chuẩn bị cho giai đoạn triển khai. | 22/08/2025 | 22/08/2025 | AWS Well-Architected Framework |
+| Ngày | Công việc                                                                                                                        | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo             |
+| ---- | -------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ------------------------------ |
+| 1    | Nghiên cứu yêu cầu Workshop, Rubric đánh giá và tài liệu hướng dẫn của chương trình AWS Workforce Bootcamp.                      | 24/04/2026   | 24/04/2026      | AWS Study Group                |
+| 2    | Phân tích yêu cầu của hệ thống và lựa chọn các dịch vụ AWS phù hợp cho đề tài Smart Home Energy Waste Monitoring & Alert System. | 25/04/2026   | 25/04/2026      | AWS Documentation              |
+| 3    | Thiết kế phiên bản đầu tiên của kiến trúc Serverless và xây dựng luồng hoạt động tổng thể của hệ thống.                          | 26/04/2026   | 27/04/2026      | AWS Architecture Center        |
+| 4    | Hoàn thiện Proposal song ngữ, bao gồm mục tiêu, kiến trúc hệ thống, kết quả mong đợi và lộ trình triển khai.                     | 28/04/2026   | 29/04/2026      | Project Guideline              |
+| 5    | Rà soát và tối ưu kiến trúc theo AWS Well-Architected Framework trước khi bắt đầu giai đoạn triển khai.                          | 30/04/2026   | 30/04/2026      | AWS Well-Architected Framework |
+
 
 ---
 
@@ -104,14 +105,14 @@ Sau tuần làm việc này, em đã hiểu rõ hơn về:
 - Hoàn thiện sơ đồ kiến trúc đầu tiên.
 - Lựa chọn sáu dịch vụ AWS cốt lõi.
 - Xây dựng luồng hoạt động tổng thể.
-- Chuẩn bị đầy đủ cho giai đoạn triển khai ở các tuần tiếp theo.
+- Chuẩn bị đầy đủ tài liệu kỹ thuật trước khi bước vào giai đoạn triển khai.
 
 ---
 
 ### Kế hoạch Tuần tiếp theo
 
-- Cấu hình IAM Role và IAM Policy.
+- Cấu hình AWS IAM User, Role và Policy.
 - Khởi tạo bảng Amazon DynamoDB.
 - Thiết kế cấu trúc cơ sở dữ liệu.
-- Chuẩn bị dữ liệu mẫu để kiểm thử.
-- Bắt đầu triển khai các chức năng Backend bằng AWS Lambda.
+- Chuẩn bị dữ liệu mẫu phục vụ kiểm thử.
+- Bắt đầu triển khai các dịch vụ AWS đầu tiên của Workshop.

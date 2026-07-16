@@ -1,6 +1,6 @@
 ---
 title: "Week 2 Worklog"
-date: 2024-01-01
+date: 2026-04-24
 weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
@@ -18,13 +18,14 @@ pre: " <b> 1.2. </b> "
 
 ### Tasks to be carried out this week
 
-| Day | Task | Start Date | Completion Date | Reference Material |
-|-----|------|------------|-----------------|-------------------|
-| 2 | Study the final project rubric and understand the evaluation criteria. | 08/18/2025 | 08/18/2025 | AWS Study Group |
-| 3 | Analyze project requirements and identify suitable AWS services for the system. | 08/19/2025 | 08/19/2025 | AWS Documentation |
-| 4 | Design the overall serverless architecture of the project. | 08/20/2025 | 08/20/2025 | AWS Architecture Center |
-| 5 | Prepare the bilingual project proposal (English & Vietnamese). | 08/21/2025 | 08/21/2025 | Project Guideline |
-| 6 | Review the architecture, optimize the design, and prepare for implementation. | 08/22/2025 | 08/22/2025 | AWS Well-Architected Framework |
+| Day | Task                                                                                                                                  | Start Date | Completion Date | Reference Material             |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ------------------------------ |
+| 1   | Studied the workshop requirements, evaluation rubric, and project guidelines provided by the AWS Workforce Bootcamp.                  | 24/04/2026 | 24/04/2026      | AWS Study Group                |
+| 2   | Analyzed the project requirements and identified the AWS services required for the Smart Home Energy Waste Monitoring & Alert System. | 25/04/2026 | 25/04/2026      | AWS Documentation              |
+| 3   | Designed the first version of the serverless solution architecture and defined the overall system workflow.                           | 26/04/2026 | 27/04/2026      | AWS Architecture Center        |
+| 4   | Prepared the bilingual project proposal, including objectives, architecture, expected outcomes, and implementation roadmap.           | 28/04/2026 | 29/04/2026      | Project Guideline              |
+| 5   | Reviewed and refined the architecture according to AWS Well-Architected Framework best practices before starting implementation.      | 30/04/2026 | 30/04/2026      | AWS Well-Architected Framework |
+
 
 ---
 
@@ -105,14 +106,14 @@ After completing this week's tasks, I gained a better understanding of:
 - Finished the first version of the architecture diagram.
 - Selected six core AWS services.
 - Defined the overall system workflow.
-- Established the implementation roadmap for the following weeks.
+- Prepared all technical documents before beginning the deployment stage.
 
 ---
 
 ### Plan for Next Week
 
-- Configure IAM Roles and IAM Policies.
-- Create DynamoDB tables.
+- Configure AWS IAM users, roles, and policies.
+- Create Amazon DynamoDB tables.
 - Design the database schema.
 - Prepare sample data for testing.
-- Begin implementing backend services using AWS Lambda.
+- Begin implementing the first AWS services of the workshop.

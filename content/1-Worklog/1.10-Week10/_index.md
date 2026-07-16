@@ -1,6 +1,6 @@
 ---
 title: "Week 10 Worklog"
-date: 2024-01-01
+date: 2026-06-19
 weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
@@ -18,13 +18,13 @@ pre: " <b> 1.10. </b> "
 
 ## Tasks Completed This Week
 
-| Task | Result |
-|------|--------|
-| Enterprise Architecture Design | Redesigned the overall architecture of the **Smart Home Energy Waste Monitoring & Alert System using Virtual Sensors on AWS** based on enterprise cloud architecture principles, improving scalability, availability, and maintainability. |
-| High Availability Infrastructure | Designed a highly available network architecture using multiple Availability Zones, Application Load Balancer, private networking, and secure outbound connectivity. |
-| Advanced Data Layer Design | Proposed an enhanced data layer by combining relational databases, document databases, and in-memory caching technologies to support different application workloads and future scalability. |
-| External Service Integration | Extended the architecture to support CDN delivery, secure secret management, cloud storage, notification services, and third-party integrations while maintaining security best practices. |
-| Architecture Documentation | Updated the final architecture documentation and refined the deployment design based on AWS Well-Architected Framework recommendations. |
+| Day | Task | Start Date | Completion Date |
+|-----|------|------------|-----------------|
+| 1 | Redesigned the overall system architecture based on enterprise cloud design principles. | 06/19/2026 | 06/20/2026 |
+| 2 | Designed a highly available infrastructure using multiple Availability Zones and secure networking. | 06/21/2026 | 06/22/2026 |
+| 3 | Proposed an enhanced data layer with relational databases, document databases, and caching technologies. | 06/23/2026 | 06/23/2026 |
+| 4 | Extended the architecture with CDN, secret management, cloud storage, notification services, and third-party integrations. | 06/24/2026 | 06/24/2026 |
+| 5 | Updated the final architecture documentation following AWS Well-Architected Framework recommendations. | 06/25/2026 | 06/25/2026 |
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Nhật ký thực tập Tuần 8"
-date: 2024-01-01
+date: 2026-06-05
 weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
@@ -18,13 +18,13 @@ pre: " <b> 1.8. </b> "
 
 ## Công việc đã thực hiện
 
-| Công việc | Kết quả |
-|-----------|----------|
-| Hoàn thiện tài liệu Workshop | Hoàn thiện tài liệu triển khai cho dự án **Smart Home Energy Waste Monitoring & Alert System using Virtual Sensors on AWS**, bổ sung hình ảnh minh họa, quy trình kiểm thử API và cập nhật toàn bộ nội dung còn thiếu. |
-| Hoàn thiện kiến trúc bảo mật | Bổ sung AWS KMS để mã hóa dữ liệu lưu trữ và AWS CloudTrail để ghi nhận lịch sử thao tác, giúp tăng cường khả năng bảo mật và kiểm toán hệ thống. |
-| Lab 5 - Amazon RDS | Nghiên cứu kiến trúc Amazon RDS, tìm hiểu Multi-AZ, Read Replica, tối ưu lưu trữ và so sánh giữa Amazon RDS với Amazon DynamoDB. |
-| Lab 33 - AWS KMS, CloudTrail & Athena | Thực hành tạo khóa mã hóa bằng AWS KMS, kích hoạt CloudTrail, lưu trữ log trên Amazon S3 và truy vấn log bằng Amazon Athena. |
-| Lab 44 & Lab 48 - IAM Deep Dive & EC2 Roles | Tìm hiểu chuyên sâu về IAM và thực hành gán IAM Role cho EC2 nhằm loại bỏ việc sử dụng Access Key trực tiếp và nâng cao tính bảo mật của hệ thống. |
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành |
+|------|-----------|--------------|-----------------|
+| 1 | Hoàn thiện tài liệu Workshop, bổ sung hình ảnh minh họa và quy trình kiểm thử API. | 05/06/2026 | 06/06/2026 |
+| 2 | Cập nhật kiến trúc bảo mật với AWS KMS và AWS CloudTrail. | 07/06/2026 | 08/06/2026 |
+| 3 | Hoàn thành Lab 5 – Amazon RDS. | 09/06/2026 | 09/06/2026 |
+| 4 | Hoàn thành Lab 33 – AWS KMS, CloudTrail & Athena. | 10/06/2026 | 10/06/2026 |
+| 5 | Hoàn thành Lab 44 & Lab 48 – IAM Deep Dive & EC2 Roles. | 11/06/2026 | 11/06/2026 |
 
 ---
 

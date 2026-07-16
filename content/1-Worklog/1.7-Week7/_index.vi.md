@@ -1,6 +1,6 @@
 ---
 title: "Nhật ký công việc Tuần 7"
-date: 2024-01-01
+date: 2026-05-29
 weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
@@ -18,13 +18,13 @@ pre: " <b> 1.7. </b> "
 
 ## Công việc thực hiện trong tuần
 
-| Nội dung | Kết quả |
-|----------|----------|
-| Tài liệu Workshop | Xây dựng khung tài liệu hướng dẫn triển khai hệ thống Smart Home Energy Waste Monitoring theo từng bước. Nội dung bao gồm tổng quan hệ thống, kiến trúc Serverless, hướng dẫn cấu hình các dịch vụ AWS và quy trình triển khai. |
-| Thiết kế Website Workshop | Thiết kế giao diện website phục vụ trình bày tài liệu Workshop với bố cục rõ ràng, trực quan và dễ theo dõi, giúp người học dễ dàng thực hiện các bước triển khai. |
-| Clean-up Scripts | Chuẩn bị các AWS CLI Scripts để tự động xóa các tài nguyên như Lambda Functions, DynamoDB Tables, S3 Buckets và CloudWatch Logs sau khi hoàn thành thực hành nhằm tối ưu chi phí. |
-| Lab 28 - Managing EC2 with Resource Tags | Thực hành quản lý quyền truy cập tài nguyên dựa trên Resource Tags bằng IAM Policies và IAM Roles, giúp giới hạn phạm vi thao tác của người dùng theo từng nhóm tài nguyên. |
-| Lab 30 - IAM Permission Boundary | Tìm hiểu và triển khai Permission Boundary nhằm giới hạn quyền tối đa của IAM Users và IAM Roles, ngăn ngừa nguy cơ leo thang đặc quyền trong môi trường AWS. |
+| Nội dung | Ngày bắt đầu | Ngày hoàn thành | Kết quả |
+|----------|--------------|-----------------|----------|
+| Tài liệu Workshop | 29/05/2026 | 29/05/2026 | Tiếp tục hoàn thiện tài liệu hướng dẫn triển khai hệ thống, bổ sung kiến trúc, điều kiện chuẩn bị và quy trình triển khai. |
+| Thiết kế Website Workshop | 30/05/2026 | 30/05/2026 | Hoàn thiện bố cục và điều hướng của website Workshop giúp người dùng dễ theo dõi nội dung hơn. |
+| Clean-up Scripts | 01/06/2026 | 01/06/2026 | Chuẩn bị các lệnh AWS CLI để tự động xóa Lambda, DynamoDB, S3 và CloudWatch sau khi hoàn thành Workshop. |
+| Lab 28 - Managing EC2 with Resource Tags | 02/06/2026 | 02/06/2026 | Hoàn thành bài thực hành quản lý tài nguyên bằng Resource Tags và IAM Policies. |
+| Lab 30 - IAM Permission Boundary | 03/06/2026 | 03/06/2026 | Hoàn thành bài thực hành cấu hình Permission Boundary nhằm giới hạn quyền tối đa của IAM Users và Roles. |
 
 ---
 

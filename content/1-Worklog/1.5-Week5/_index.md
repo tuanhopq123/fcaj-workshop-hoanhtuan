@@ -1,6 +1,6 @@
 ---
 title: "Week 5 Worklog"
-date: 2024-01-01
+date: 2026-05-15
 weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
@@ -18,13 +18,14 @@ pre: " <b> 1.5. </b> "
 
 ## Tasks Completed This Week
 
-| Task | Result |
-|------|--------|
-| Amazon API Gateway | Created the API Gateway and implemented RESTful APIs for retrieving room information, virtual sensor data, energy waste alerts, and system reports. The APIs were integrated directly with AWS Lambda functions. |
-| Amazon S3 | Created an Amazon S3 Bucket to store static resources such as user interface assets, system documentation, and dashboard-related files. Configured basic bucket security policies. |
-| Lab 13 - AWS Backup & Amazon SNS | Practiced automated backup planning for AWS resources and integrated Amazon SNS to send backup status notifications via email. |
-| Lab 57 - Amazon S3 | Studied Amazon S3 Object Storage, Storage Classes, bucket permissions, and storage cost optimization techniques. |
-| FCAJ Community Day | Participated in an AI and AWS Cloud community event covering Context Engineering, Amazon CloudFront, Amazon Q, Multi-Agent systems, and emerging AI technologies. |
+| Day | Task                                                                                                                                                   | Start Date     | Completion Date |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------- | --------------- |
+| 1   | Designed and deployed RESTful APIs using Amazon API Gateway, then integrated the APIs with AWS Lambda functions.                                       | 15/05/2026 | 15/05/2026  |
+| 2   | Created and configured Amazon S3 buckets to store project resources, documentation, and static files securely.                                         | 16/05/2026 | 16/05/2026  |
+| 3   | Completed the AWS Backup and Amazon SNS hands-on lab to understand automated backup strategies and notification services.                              | 17/05/2026 | 17/05/2026  |
+| 4   | Completed the Amazon S3 lab, practiced bucket policies, storage classes, lifecycle management, and access permissions.                                 | 18/05/2026 | 18/05/2026  |
+| 5   | Participated in FCAJ Community Day, learned about Amazon CloudFront, Amazon Q, Context Engineering, Multi-Agent AI, and current AWS technology trends. | 19/05/2026 | 19/05/2026  |
+
 
 ---
 

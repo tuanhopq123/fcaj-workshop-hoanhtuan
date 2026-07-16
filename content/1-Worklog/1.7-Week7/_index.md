@@ -1,6 +1,6 @@
 ---
 title: "Week 7 Worklog"
-date: 2024-01-01
+date: 2026-05-29
 weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
@@ -18,13 +18,13 @@ pre: " <b> 1.7. </b> "
 
 ## Tasks Completed This Week
 
-| Task | Result |
-|------|--------|
-| Workshop Documentation | Developed the deployment guide for the Smart Home Energy Waste Monitoring & Alert System using Virtual Sensors on AWS. The documentation includes the system overview, Serverless architecture, AWS service configuration, and deployment procedures. |
-| Workshop Website Design | Designed the Workshop website with a clean and organized layout, making the deployment instructions easier to understand and follow. |
-| Resource Cleanup Scripts | Prepared AWS CLI scripts to automatically remove AWS Lambda functions, DynamoDB tables, Amazon S3 buckets, and CloudWatch logs after completing the workshop, helping reduce unnecessary cloud costs. |
-| Lab 28 - Managing EC2 with Resource Tags | Practiced managing AWS resource access using IAM Policies and Resource Tags, allowing administrators to control permissions based on resource classifications. |
-| Lab 30 - IAM Permission Boundary | Learned and implemented IAM Permission Boundaries to restrict the maximum permissions that IAM Users and Roles can obtain, preventing privilege escalation within AWS environments. |
+| Task | Start Date | Completion Date | Result |
+|------|------------|-----------------|--------|
+| Workshop Documentation | 05/29/2026 | 05/29/2026 | Continued writing the deployment guide, including system architecture, prerequisites, and deployment procedures. |
+| Workshop Website Design | 05/30/2026 | 05/30/2026 | Improved the Workshop website structure and navigation for better readability and user experience. |
+| Resource Cleanup Scripts | 06/01/2026 | 06/01/2026 | Prepared AWS CLI cleanup commands to remove Lambda, DynamoDB, S3, and CloudWatch resources after completing the workshop. |
+| Lab 28 - Managing EC2 with Resource Tags | 06/02/2026 | 06/02/2026 | Completed the lab and practiced resource management using IAM Policies and Resource Tags. |
+| Lab 30 - IAM Permission Boundary | 06/03/2026 | 06/03/2026 | Configured IAM Permission Boundaries to restrict maximum permissions for IAM Users and Roles. |
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Nhật ký công việc Tuần 3"
-date: 2024-01-01
+date: 2026-05-01
 weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
@@ -17,13 +17,14 @@ pre: " <b> 1.3. </b> "
 
 ## Công việc thực hiện trong tuần
 
-| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành |
-|------|-----------|--------------|-----------------|
-| 2 | Cấu hình IAM Role và IAM Policy cho AWS Lambda. | 25/08/2025 | 25/08/2025 |
-| 3 | Khởi tạo các bảng DynamoDB và chuẩn bị dữ liệu mẫu. | 26/08/2025 | 26/08/2025 |
-| 4 | Hoàn thành Lab AWS IAM. | 27/08/2025 | 27/08/2025 |
-| 5 | Hoàn thành Lab Amazon VPC. | 28/08/2025 | 28/08/2025 |
-| 6 | Hoàn thành Lab AWS Budget và rà soát toàn bộ kết quả. | 29/08/2025 | 29/08/2025 |
+| Ngày | Công việc                                                                                                        | Ngày bắt đầu | Ngày hoàn thành |
+| ---- | ---------------------------------------------------------------------------------------------------------------- | ------------ | --------------- |
+| 1    | Cấu hình IAM User, IAM Role và IAM Policy cho hệ thống theo nguyên tắc Least Privilege.                          | 01/05/2026   | 01/05/2026      |
+| 2    | Khởi tạo các bảng DynamoDB gồm Rooms, Telemetry, Alerts và Reports, đồng thời thêm dữ liệu mẫu phục vụ kiểm thử. | 02/05/2026   | 02/05/2026      |
+| 3    | Hoàn thành bài thực hành AWS IAM và thực hành quản lý User, Group, Role và Policy.                               | 03/05/2026   | 03/05/2026      |
+| 4    | Hoàn thành bài thực hành Amazon VPC để tìm hiểu về VPC, Subnet, Route Table, Internet Gateway và NAT Gateway.    | 04/05/2026   | 04/05/2026      |
+| 5    | Hoàn thành bài thực hành AWS Budget và rà soát lại kiến trúc hệ thống, cấu hình IAM và cơ sở dữ liệu.            | 05/05/2026   | 05/05/2026      |
+
 
 ---
 

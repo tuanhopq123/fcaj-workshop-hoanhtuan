@@ -1,6 +1,6 @@
 ---
 title: "Week 3 Worklog"
-date: 2024-01-01
+date: 2026-05-01
 weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
@@ -17,13 +17,14 @@ pre: " <b> 1.3. </b> "
 
 ## Tasks Performed This Week
 
-| Day | Task | Start Date | Completion Date |
-|-----|------|------------|-----------------|
-|2|Configure IAM Roles and Policies for AWS Lambda.|08/25/2025|08/25/2025|
-|3|Create DynamoDB tables and prepare sample data.|08/26/2025|08/26/2025|
-|4|Complete AWS IAM Lab.|08/27/2025|08/27/2025|
-|5|Complete Amazon VPC Lab.|08/28/2025|08/28/2025|
-|6|Complete AWS Budget Lab and review all completed work.|08/29/2025|08/29/2025|
+| Day | Task                                                                                                                                    | Start Date | Completion Date |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
+| 1   | Configured IAM Users, IAM Roles, and IAM Policies for the project following the Least Privilege principle.                              | 01/05/2026 | 01/05/2026      |
+| 2   | Created DynamoDB tables for Rooms, Telemetry, Alerts, and Reports, and inserted sample data.                                            | 02/05/2026 | 02/05/2026      |
+| 3   | Completed the AWS IAM hands-on lab and practiced user, group, role, and policy management.                                              | 03/05/2026 | 03/05/2026      |
+| 4   | Completed the Amazon VPC lab to understand networking concepts including VPC, Subnets, Route Tables, Internet Gateway, and NAT Gateway. | 04/05/2026 | 04/05/2026      |
+| 5   | Completed the AWS Budget lab and reviewed the project architecture, IAM configuration, and database design.                             | 05/05/2026 | 05/05/2026      |
+
 
 ---
 

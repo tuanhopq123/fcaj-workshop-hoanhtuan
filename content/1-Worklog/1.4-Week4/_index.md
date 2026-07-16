@@ -1,6 +1,6 @@
 ---
 title: "Week 4 Worklog"
-date: 2024-01-01
+date: 2026-05-08
 weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
@@ -17,14 +17,14 @@ pre: " <b> 1.4. </b> "
 
 ## Tasks Completed This Week
 
-| Task | Result |
-|------|--------|
-| AWS Lambda Development | Implemented Lambda functions to process virtual sensor data, retrieve room information, and manage energy waste alerts. |
-| Amazon DynamoDB Integration | Connected Lambda functions with DynamoDB to store and retrieve monitoring data for the Smart Home Energy Waste Monitoring system. |
-| Serverless Architecture Development | Completed the serverless processing flow between Lambda and DynamoDB, preparing for API Gateway integration in the following week. |
-| Lab 10 - Route 53 Hybrid DNS | Practiced configuring Hybrid DNS using Route 53 Resolver, Inbound/Outbound Endpoints, and Resolver Rules. |
-| Lab 19 - VPC Peering & Network ACL | Established secure communication between VPCs using VPC Peering, configured Network ACLs, and implemented Cross-Peering DNS. |
-| Lab 20 - AWS Transit Gateway | Deployed AWS Transit Gateway to connect multiple VPCs, studied enterprise-scale networking architecture, and cleaned up resources after completing the lab. |
+| Day | Task                                                                                                      | Start Date | Completion Date |
+| --- | --------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
+| 1   | Developed AWS Lambda functions to process virtual sensor data and implement energy waste detection logic. | 08/05/2026 | 08/05/2026      |
+| 2   | Integrated AWS Lambda with Amazon DynamoDB for reading and storing monitoring data.                       | 09/05/2026 | 09/05/2026      |
+| 3   | Tested Lambda functions using sample sensor data and verified database operations.                        | 10/05/2026 | 10/05/2026      |
+| 4   | Refined the serverless processing workflow and prepared backend services for API Gateway integration.     | 11/05/2026 | 11/05/2026      |
+| 5   | Reviewed Lambda execution logs, optimized IAM permissions, and fixed runtime issues.                      | 12/05/2026 | 12/05/2026      |
+
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Week 6 Worklog"
-date: 2024-01-01
+date: 2026-05-25
 weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
@@ -17,13 +17,15 @@ pre: " <b> 1.6. </b> "
 
 ## Tasks Completed This Week
 
-| Task | Result |
-|------|--------|
-| Amazon CloudWatch | Integrated Amazon CloudWatch to collect logs from AWS Lambda and API Gateway. Configured Metric Filters and CloudWatch Alarms to monitor system errors and send notifications through Amazon SNS when abnormal events occur. |
-| System Testing | Performed end-to-end testing using Postman to validate APIs responsible for processing virtual sensor data, energy waste alerts, and reporting functions. Verified DynamoDB data consistency against CloudWatch logs. |
-| Lab 18 - AWS Security Hub | Enabled and configured AWS Security Hub to evaluate the AWS account against recognized security standards, including AWS Foundational Security Best Practices and CIS Benchmarks. |
-| Lab 22 - Optimizing EC2 Costs with Lambda | Implemented an automated solution using AWS Lambda and IAM Roles to schedule EC2 instance start and stop operations, improving cost efficiency and resource management. |
-| Lab 27 - Resource Tags & Resource Groups | Practiced assigning Tags to AWS resources and organizing them using AWS Resource Groups to simplify resource management and automation across environments. |
+## Tasks Completed This Week
+
+| Task | Start Date | Completion Date |
+|------|------------|-----------------|
+| Integrate Amazon CloudWatch with AWS Lambda and API Gateway for centralized logging and monitoring. | 05/25/2026 | 05/25/2026 |
+| Configure CloudWatch Metric Filters, CloudWatch Alarms, and Amazon SNS notifications for system monitoring. | 05/26/2026 | 05/26/2026 |
+| Perform end-to-end testing of the Serverless application using Postman and verify data consistency in DynamoDB. | 05/27/2026 | 05/27/2026 |
+| Complete Lab 18 – AWS Security Hub and Lab 22 – Optimizing EC2 Costs with Lambda. | 05/28/2026 | 05/28/2026 |
+| Complete Lab 27 – Resource Tags & Resource Groups and review all completed tasks. | 05/29/2026 | 05/29/2026 |
 
 ---
 

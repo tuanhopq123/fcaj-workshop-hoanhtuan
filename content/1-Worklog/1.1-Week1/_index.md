@@ -1,6 +1,6 @@
 ---
 title: "Week 1 Worklog"
-date: 2024-01-01
+date: 2026-04-17
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
@@ -15,13 +15,14 @@ pre: " <b> 1.1. </b> "
 
 ### Tasks Carried Out This Week
 
-| Day | Task | Start Date | Completion Date | Reference Material |
-| --- | --- | --- | --- | --- |
-| 1 | Registered an AWS Free Tier account, completed identity verification, linked a payment method, and activated the Free Account Plan. | 06/01/2026 | 06/01/2026 | AWS Documentation |
-| 2 | Resolved the SMS verification issue by creating an AWS Support ticket and successfully activating the AWS account. | 06/02/2026 | 06/02/2026 | AWS Support Center |
-| 3 | Configured AWS Budgets and created an email budget alert to monitor cloud spending. | 06/03/2026 | 06/03/2026 | AWS Budgets Documentation |
-| 4 | Completed hands-on labs with Amazon EC2 and Amazon RDS to understand cloud infrastructure and database deployment. | 06/04/2026 | 06/04/2026 | AWS Skill Builder |
-| 5 | Practiced creating AWS Lambda functions and explored Amazon Bedrock Foundation Models while resolving permission-related issues. | 06/05/2026 | 06/05/2026 | AWS Documentation |
+| Day | Task                                                                                                                                                      | Start Date | Completion Date | Reference Material |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ------------------ |
+| 1   | Participated in the AWS Workforce Bootcamp orientation, understood the internship requirements, and prepared the development environment.                 | 17/04/2026 | 17/04/2026      | Bootcamp Materials |
+| 2   | Registered an AWS Free Tier account, completed identity verification, linked a payment method, and activated the AWS account.                             | 18/04/2026 | 18/04/2026      | AWS Documentation  |
+| 3   | Resolved the SMS verification issue by submitting an AWS Support request and successfully activated the account.                                          | 19/04/2026 | 19/04/2026      | AWS Support Center |
+| 4   | Explored the AWS Management Console, learned about IAM, Billing Dashboard, and configured AWS Budgets for cost monitoring.                                | 20/04/2026 | 21/04/2026      | AWS Documentation  |
+| 5   | Completed introductory AWS Skill Builder labs involving Amazon EC2, Amazon RDS, AWS Lambda, and Amazon Bedrock to become familiar with core AWS services. | 22/04/2026 | 23/04/2026      | AWS Skill Builder  |
+
 
 ### Week 1 Achievements
 

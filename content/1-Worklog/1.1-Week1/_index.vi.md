@@ -1,6 +1,6 @@
 ---
 title: "Nhật ký công việc tuần 1"
-date: 2024-01-01
+date: 2026-04-17
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
@@ -15,13 +15,14 @@ pre: " <b> 1.1. </b> "
 
 ### Công việc thực hiện trong tuần
 
-| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
-| --- | --- | --- | --- | --- |
-| 1 | Đăng ký tài khoản AWS Free Tier, hoàn tất xác thực thông tin, liên kết phương thức thanh toán và kích hoạt Free Account Plan. | 01/06/2026 | 01/06/2026 | AWS Documentation |
-| 2 | Xử lý sự cố không nhận được SMS xác thực bằng cách tạo AWS Support Ticket và kích hoạt thành công tài khoản AWS. | 02/06/2026 | 02/06/2026 | AWS Support Center |
-| 3 | Thiết lập AWS Budgets và cấu hình cảnh báo chi phí qua email để quản lý ngân sách sử dụng AWS. | 03/06/2026 | 03/06/2026 | AWS Budgets Documentation |
-| 4 | Thực hành với Amazon EC2 và Amazon RDS nhằm tìm hiểu cách triển khai máy chủ và cơ sở dữ liệu trên nền tảng AWS. | 04/06/2026 | 04/06/2026 | AWS Skill Builder |
-| 5 | Thực hành tạo AWS Lambda Function và trải nghiệm Amazon Bedrock Foundation Models, đồng thời xử lý các lỗi liên quan đến quyền truy cập. | 05/06/2026 | 05/06/2026 | AWS Documentation |
+| Ngày | Công việc                                                                                                                                                      | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ------------------ |
+| 1    | Tham gia buổi định hướng chương trình AWS Workforce Bootcamp, tìm hiểu yêu cầu thực tập và chuẩn bị môi trường làm việc.                                       | 17/04/2026   | 17/04/2026      | Bootcamp Materials |
+| 2    | Đăng ký tài khoản AWS Free Tier, hoàn tất xác thực danh tính, liên kết phương thức thanh toán và kích hoạt tài khoản AWS.                                      | 18/04/2026   | 18/04/2026      | AWS Documentation  |
+| 3    | Khắc phục sự cố không nhận được mã xác thực SMS bằng cách gửi yêu cầu hỗ trợ đến AWS Support và kích hoạt thành công tài khoản.                                | 19/04/2026   | 19/04/2026      | AWS Support Center |
+| 4    | Làm quen với AWS Management Console, tìm hiểu IAM, Billing Dashboard và thiết lập AWS Budgets để theo dõi chi phí sử dụng dịch vụ.                             | 20/04/2026   | 21/04/2026      | AWS Documentation  |
+| 5    | Hoàn thành các bài thực hành cơ bản trên AWS Skill Builder với Amazon EC2, Amazon RDS, AWS Lambda và Amazon Bedrock nhằm làm quen với các dịch vụ AWS cốt lõi. | 22/04/2026   | 23/04/2026      | AWS Skill Builder  |
+
 
 ### Kết quả đạt được
 

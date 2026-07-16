@@ -1,6 +1,6 @@
 ---
 title: "Nhật ký công việc Tuần 5"
-date: 2024-01-01
+date: 2026-05-15
 weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
@@ -18,13 +18,14 @@ pre: " <b> 1.5. </b> "
 
 ## Công việc thực hiện trong tuần
 
-| Nội dung | Kết quả |
-|----------|----------|
-| Amazon API Gateway | Khởi tạo API Gateway và xây dựng các RESTful API phục vụ truy xuất thông tin phòng, dữ liệu cảm biến, cảnh báo và báo cáo của hệ thống giám sát điện năng. Các API được tích hợp trực tiếp với AWS Lambda để xử lý nghiệp vụ. |
-| Amazon S3 | Tạo S3 Bucket để lưu trữ các tài nguyên tĩnh như hình ảnh giao diện, tài liệu hệ thống và các tệp phục vụ Dashboard. Đồng thời cấu hình các chính sách bảo mật cơ bản cho Bucket. |
-| Lab 13 - AWS Backup & Amazon SNS | Thực hành xây dựng kế hoạch sao lưu tự động cho tài nguyên AWS và tích hợp Amazon SNS để gửi thông báo trạng thái sao lưu qua email. |
-| Lab 57 - Amazon S3 | Tìm hiểu cơ chế lưu trữ đối tượng trên Amazon S3, các lớp lưu trữ (Storage Classes), phân quyền truy cập và tối ưu chi phí lưu trữ dữ liệu. |
-| Tham gia FCAJ Community Day | Tham dự sự kiện công nghệ về AI và AWS Cloud, tìm hiểu về Context trong AI, Amazon CloudFront, Amazon Q, kiến trúc Multi-Agent và các xu hướng AI hiện đại. |
+| Ngày | Công việc                                                                                                                                    | Ngày bắt đầu   | Ngày hoàn thành |
+| ---- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | --------------- |
+| 1    | Xây dựng các RESTful API bằng Amazon API Gateway và tích hợp với các hàm AWS Lambda để xử lý nghiệp vụ của hệ thống.                         | 15/05/2026 | 15/05/2026  |
+| 2    | Tạo và cấu hình Amazon S3 Bucket để lưu trữ tài liệu, hình ảnh và các tài nguyên tĩnh phục vụ dự án.                                         | 16/05/2026 | 16/05/2026  |
+| 3    | Hoàn thành bài thực hành AWS Backup và Amazon SNS nhằm tìm hiểu cơ chế sao lưu tự động và gửi thông báo qua email.                           | 17/05/2026 | 17/05/2026  |
+| 4    | Hoàn thành bài thực hành Amazon S3, tìm hiểu Bucket Policy, Storage Class, Lifecycle và phân quyền truy cập dữ liệu.                         | 18/05/2026 | 18/05/2026  |
+| 5    | Tham gia FCAJ Community Day, tìm hiểu về Amazon CloudFront, Amazon Q, Context Engineering, Multi-Agent AI và các xu hướng công nghệ AWS mới. | 19/05/2026 | 19/05/2026  |
+
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Nhật ký công việc Tuần 12"
-date: 2024-01-01
+date: 2026-07-03
 weight: 12
 chapter: false
 pre: " <b> 1.12. </b> "
@@ -18,13 +18,13 @@ pre: " <b> 1.12. </b> "
 
 ## Công việc đã thực hiện
 
-| Công việc | Kết quả |
-|-----------|----------|
-| Kiểm thử hệ thống | Thực hiện kiểm thử toàn bộ quy trình hoạt động của hệ thống Serverless, xác nhận AWS Lambda, API Gateway, Amazon DynamoDB, Amazon S3, IAM và CloudWatch hoạt động ổn định và đồng bộ. |
-| Hoàn thiện tài liệu | Rà soát và cập nhật toàn bộ tài liệu Workshop, kiểm tra định dạng, mã nguồn minh họa và hướng dẫn triển khai để đảm bảo tính chính xác và dễ sử dụng. |
-| Đóng gói dự án | Hoàn thiện việc sắp xếp mã nguồn, sơ đồ kiến trúc, tài liệu triển khai, script dọn dẹp tài nguyên và các tài liệu liên quan để phục vụ báo cáo và bàn giao. |
-| Chuẩn bị báo cáo | Hoàn thành slide thuyết trình, tổng hợp quá trình triển khai, các dịch vụ AWS đã sử dụng, kiến trúc hệ thống và các giải pháp bảo mật được áp dụng. |
-| Tổng kết thực tập | Tổng hợp toàn bộ kiến thức, kinh nghiệm thực tế và kỹ năng đạt được trong suốt quá trình thực tập trên nền tảng AWS Cloud. |
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành |
+|------|-----------|--------------|-----------------|
+| 1 | Kiểm thử toàn bộ hệ thống theo quy trình End-to-End, xác nhận AWS Lambda, API Gateway, DynamoDB, Amazon S3, IAM và CloudWatch hoạt động ổn định. | 03/07/2026 | 08/07/2026 |
+| 2 | Rà soát và hoàn thiện toàn bộ tài liệu Workshop, hướng dẫn triển khai, hình ảnh minh họa và mã nguồn mẫu. | 09/07/2026 | 15/07/2026 |
+| 3 | Hoàn thiện việc đóng gói dự án, sắp xếp mã nguồn, sơ đồ kiến trúc, tài liệu triển khai và các script dọn dẹp tài nguyên AWS. | 16/07/2026 | 21/07/2026 |
+| 4 | Chuẩn bị slide thuyết trình, rà soát kiến trúc hệ thống và kiểm tra lại toàn bộ nội dung trước khi nộp. | 22/07/2026 | 26/07/2026 |
+| 5 | Tổng kết quá trình thực tập, hoàn thiện báo cáo và nộp đầy đủ các tài liệu theo yêu cầu của chương trình. | 27/07/2026 | 30/07/2026 |
 
 ---
 
@@ -48,6 +48,8 @@ pre: " <b> 1.12. </b> "
 ---
 
 ## Tổng kết thực tập
+
+Trong suốt 12 tuần thực tập, em đã hoàn thành đầy đủ các nội dung đào tạo và các bài thực hành theo lộ trình của chương trình First Cloud AI Journey – Workforce Bootcamp. Bên cạnh việc xây dựng Workshop Website và triển khai dự án Smart Home Energy Waste Monitoring & Alert System using Virtual Sensors on AWS, em còn có cơ hội tiếp cận nhiều dịch vụ quan trọng của AWS, tham gia các buổi Workshop, Community Day và áp dụng các kiến thức đã học vào một dự án hoàn chỉnh. Đây là trải nghiệm thực tế quý báu giúp em hiểu rõ hơn về quy trình phát triển ứng dụng Cloud cũng như định hướng nghề nghiệp trong lĩnh vực Cloud Computing.
 
 Trong suốt quá trình thực tập, em đã từng bước xây dựng và hoàn thiện một hệ thống AWS Serverless hoàn chỉnh, đồng thời tiếp cận nhiều dịch vụ quan trọng của AWS như IAM, VPC, Lambda, API Gateway, DynamoDB, Amazon S3, CloudWatch, CloudFront, KMS, CloudTrail cùng nhiều dịch vụ khác.
 

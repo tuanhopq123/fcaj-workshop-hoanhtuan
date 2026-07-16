@@ -18,11 +18,13 @@ pre: " <b> 1.9. </b> "
 
 ## Công việc đã thực hiện
 
-| Công việc | Kết quả |
-|-----------|----------|
-| Hoàn thiện tài liệu Workshop | Rà soát toàn bộ tài liệu Workshop, chỉnh sửa định dạng, hoàn thiện các đoạn mã minh họa và bổ sung đầy đủ phần Tự đánh giá cùng Phản hồi theo yêu cầu của chương trình thực tập. |
-| Đề xuất kiến trúc mở rộng | Thiết kế định hướng mở rộng hệ thống bằng kiến trúc Data Lake trên AWS. Đề xuất sử dụng Amazon S3 để lưu trữ dữ liệu, AWS Glue để xử lý ETL và Amazon QuickSight để trực quan hóa dữ liệu phục vụ báo cáo và phân tích. |
-| Lab 35 - AWS Glue, Athena & QuickSight | Tìm hiểu kiến trúc Data Lake, thực hành AWS Glue Crawlers, xây dựng quy trình ETL, truy vấn dữ liệu trên Amazon S3 bằng Amazon Athena và xây dựng Dashboard trực quan với Amazon QuickSight. |
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành |
+|------|-----------|--------------|-----------------|
+| 1 | Rà soát và hoàn thiện tài liệu Workshop, chỉnh sửa định dạng, nội dung và các đoạn mã minh họa. | 12/06/2026 | 13/06/2026 |
+| 2 | Hoàn thiện mục Tự đánh giá và Phản hồi theo yêu cầu của chương trình thực tập. | 14/06/2026 | 14/06/2026 |
+| 3 | Nghiên cứu và đề xuất kiến trúc mở rộng hệ thống bằng Amazon S3, AWS Glue, Amazon Athena và Amazon QuickSight. | 15/06/2026 | 16/06/2026 |
+| 4 | Hoàn thành Lab 35 – AWS Glue, Athena & QuickSight. | 17/06/2026 | 17/06/2026 |
+| 5 | Kiểm tra và rà soát toàn bộ nội dung Workshop, chuẩn bị cho giai đoạn công bố và đóng gói tài liệu. | 18/06/2026 | 18/06/2026 |
 
 ---
 

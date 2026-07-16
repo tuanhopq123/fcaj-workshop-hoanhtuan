@@ -1,6 +1,6 @@
 ---
 title: "Nhật ký thực tập Tuần 10"
-date: 2024-01-01
+date: 2026-06-19
 weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
@@ -18,13 +18,13 @@ pre: " <b> 1.10. </b> "
 
 ## Công việc đã thực hiện
 
-| Công việc | Kết quả |
-|-----------|----------|
-| Thiết kế kiến trúc doanh nghiệp | Hoàn thiện và tái thiết kế kiến trúc cho dự án **Smart Home Energy Waste Monitoring & Alert System using Virtual Sensors on AWS** theo định hướng kiến trúc Cloud hiện đại, giúp hệ thống dễ mở rộng và quản lý hơn. |
-| Thiết kế hạ tầng High Availability | Xây dựng kiến trúc nhiều Availability Zone, sử dụng cân bằng tải, mạng riêng và kết nối Internet an toàn nhằm tăng khả năng chịu lỗi của hệ thống. |
-| Thiết kế tầng dữ liệu | Đề xuất mô hình lưu trữ dữ liệu kết hợp nhiều loại cơ sở dữ liệu và bộ nhớ đệm nhằm đáp ứng các nhu cầu xử lý khác nhau và hỗ trợ mở rộng trong tương lai. |
-| Tích hợp dịch vụ mở rộng | Thiết kế khả năng tích hợp CDN, dịch vụ lưu trữ, quản lý thông tin bí mật, thông báo và các dịch vụ bên thứ ba theo các tiêu chuẩn bảo mật của AWS. |
-| Hoàn thiện tài liệu kiến trúc | Cập nhật sơ đồ kiến trúc cuối cùng và hoàn thiện tài liệu thiết kế dựa trên các nguyên tắc của AWS Well-Architected Framework. |
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành |
+|------|-----------|--------------|-----------------|
+| 1 | Hoàn thiện và tái thiết kế kiến trúc tổng thể của hệ thống theo mô hình Cloud doanh nghiệp. | 19/06/2026 | 20/06/2026 |
+| 2 | Thiết kế hạ tầng có tính sẵn sàng cao với nhiều Availability Zone và mạng riêng an toàn. | 21/06/2026 | 22/06/2026 |
+| 3 | Đề xuất mô hình lưu trữ dữ liệu kết hợp nhiều loại cơ sở dữ liệu và bộ nhớ đệm phục vụ mở rộng hệ thống. | 23/06/2026 | 23/06/2026 |
+| 4 | Thiết kế khả năng tích hợp CDN, dịch vụ quản lý thông tin bí mật, lưu trữ dữ liệu, thông báo và các dịch vụ bên thứ ba. | 24/06/2026 | 24/06/2026 |
+| 5 | Cập nhật tài liệu và sơ đồ kiến trúc cuối cùng theo các nguyên tắc của AWS Well-Architected Framework. | 25/06/2026 | 25/06/2026 |
 
 ---
 
