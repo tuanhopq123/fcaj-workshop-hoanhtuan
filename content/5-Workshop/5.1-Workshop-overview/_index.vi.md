@@ -6,7 +6,6 @@ chapter : false
 pre : " <b> 5.1. </b> "
 ---
 
-# Giới thiệu
 
 ## Hệ thống Smart Home Energy Waste Monitoring & Alert System
 

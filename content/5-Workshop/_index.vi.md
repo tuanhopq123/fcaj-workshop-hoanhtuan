@@ -6,7 +6,12 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-# Workshop
+
+**📺 Workshop Demo**  
+https://drive.google.com/drive/folders/10XQNVaO9AZtIU9Ekfz7rjhWBC09gREjp?usp=sharing
+
+**💻 GitHub Repository**  
+https://github.com/tuanhopq123/fcaj-workshop-hoanhtuan
 
 ## Giới thiệu
 

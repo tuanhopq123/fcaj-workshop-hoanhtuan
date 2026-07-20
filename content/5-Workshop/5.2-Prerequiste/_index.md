@@ -6,7 +6,6 @@ chapter : false
 pre : " <b> 5.2. </b> "
 ---
 
-# Prerequisites
 
 Before deploying the Smart Home Energy Waste Monitoring & Alert System, it is important to configure the AWS environment correctly. One of the most important preparations is selecting the correct AWS Region.
 

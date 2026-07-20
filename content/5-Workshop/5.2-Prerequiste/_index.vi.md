@@ -6,7 +6,6 @@ chapter : false
 pre : " <b> 5.2. </b> "
 ---
 
-# Điều kiện chuẩn bị
 
 Trước khi bắt đầu Workshop, cần chuẩn bị tài khoản AWS và cấu hình môi trường làm việc để toàn bộ tài nguyên được triển khai đúng khu vực (Region).
 
